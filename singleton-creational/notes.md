@@ -1,0 +1,2 @@
+- Let you access your object from anywhere in your application
+- Only one instance is allowed
