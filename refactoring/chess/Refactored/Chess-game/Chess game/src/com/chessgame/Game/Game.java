@@ -256,35 +256,38 @@ public class Game {
 	}
 
 	public static void choosePiece(Piece p, int choice) {
-		switch (choice) {
-		case 0:
-			AllPieces.remove(p);
-			p = new Queen(p.getXcord(), p.getYcord(), p.isWhite(), board, p.isWhite() ? 8 : -8);
-			AllPieces.add(p);
+	    List<Piece> playerPieces = p.isWhite() ? wPieces : bPieces;
+	    Board board = Board.getInstance();
+	    PieceFactory factory = new ConcretePieceFactory();
 
-			break;
-		case 1:
-			AllPieces.remove(p);
-			p = new Rook(p.getXcord(), p.getYcord(), p.isWhite(), board, p.isWhite() ? 5 : -5);
-			AllPieces.add(p);
-			break;
-		case 2:
-			AllPieces.remove(p);
-			p = new Knight(p.getXcord(), p.getYcord(), p.isWhite(), board, p.isWhite() ? 3 : -3);
-			AllPieces.add(p);
-			break;
-		case 3:
-			AllPieces.remove(p);
-			p = new Bishop(p.getXcord(), p.getYcord(), p.isWhite(), board, p.isWhite() ? 3 : -3);
-			AllPieces.add(p);
-			break;
-		default:
-			AllPieces.remove(p);
-			p = new Queen(p.getXcord(), p.getYcord(), p.isWhite(), board, p.isWhite() ? 8 : -8);
-			AllPieces.add(p);
-			break;
-		}
-		fillPieces();
+	    AllPieces.remove(p);
+	    playerPieces.remove(p);
+
+	    char newPieceType;
+	    switch (choice) {
+	        case 0:
+	            newPieceType = 'Q';
+	            break;
+	        case 1:
+	            newPieceType = 'R';
+	            break;
+	        case 2:
+	            newPieceType = 'N';
+	            break;
+	        case 3:
+	            newPieceType = 'B';
+	            break;
+	        default:
+	            newPieceType = 'Q';
+	            break;
+	    }
+
+	    Piece newPiece = factory.createPiece(newPieceType, p.getXcord(), p.getYcord(), p.isWhite());
+
+	    AllPieces.add(newPiece);
+	    playerPieces.add(newPiece);
+
+	    fillPieces();
 	}
 
 	public void drawPossibleMoves(Graphics g, JPanel panel) {

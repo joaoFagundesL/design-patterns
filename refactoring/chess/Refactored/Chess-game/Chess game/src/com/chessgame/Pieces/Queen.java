@@ -9,7 +9,6 @@ public class Queen extends Piece {
 		super(x, y, iswhite, board, value, new QueenMoveStrategy());
 		this.pieceImage = PieceImages.QUEEN;
 	}
-	
 
 	public void intializeSide(int value){
 		super.intializeSide(value);
@@ -22,86 +21,4 @@ public class Queen extends Piece {
 	}
 
 	
-	public boolean queenMovesStraight(int x,int y, Board board) {
-			if(x == xCord && (y<yCord )) {
-					for(int i=yCord-1; i>y;i--) {
-						if(board.getXY(x, i) != 0) {
-							return false;
-						}
-					}
-					return true;
-			}
-			
-			if(x == xCord && (y>yCord )) {
-				for(int i=yCord+1; i<y;i++) {
-					if(board.getXY(x, i) != 0) {
-						return false;
-					}
-				}
-				return true;
-			}
-			
-			if(y == yCord && (x>xCord )) {
-				for(int i=xCord+1; i<x;i++) {
-					if(board.getXY(i, y) != 0) {
-						return false;
-					}
-				}
-				return true;
-			}
-			if(y == yCord && (x<xCord )) {
-				for(int i=xCord-1; i>x;i--) {
-					if(board.getXY(i, y) != 0) {
-						return false;
-					}
-				}
-				return true;
-			}
-			
-		return false;
-	}
-	
-	public boolean queenMovesDiagonial(int x,int y, Board board) {
-		if(x > xCord && y > yCord) {
-			int j = yCord+1;
-			for(int i=xCord+1; i<x; i++) {
-				if(board.getXY(i, j) != 0) {
-					return false;
-				}
-				j++;
-			}
-			
-		}
-		else if(x < xCord && y < yCord) {
-			int j = yCord-1;
-			for(int i=xCord-1; i>x; i--) {
-				if(board.getXY(i, j) != 0) {
-					return false;
-				}
-				j--;
-			}
-			
-		}
-		else if(x > xCord && y < yCord) {
-			int j = yCord - 1;
-			for(int i=xCord+1; i<x; i++) {
-				if(board.getXY(i, j) != 0) {
-					return false;
-				}
-				j--;
-			}
-		}
-		else if(x < xCord && y > yCord) {
-			int j = yCord+1;
-			for(int i=xCord-1; i>x; i--) {
-				if(board.getXY(i, j) != 0) {
-					return false;
-				}
-				j++;
-			}
-		}
-		return true;
-	}
-		
-
 }

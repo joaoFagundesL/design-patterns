@@ -13,9 +13,25 @@ public class BishopMoveStrategy implements MoveStrategy {
 		}
 	
 		if(Math.abs(x-piece.getXcord()) == Math.abs( y-piece.getYcord())) {
-            return ((Bishop) piece).bishopMoves(x, y, board);
+            return bishopMoves(x, y, board, piece.getXcord(), piece.getYcord());
 		}
 		return false;
 	}
+	
+	private boolean bishopMoves(int x, int y, Board board, int xCord, int yCord) {
+        if (x > xCord && y > yCord) {
+            return checkDiagonalMove(x, y, 1, 1, board, xCord, yCord);
+        } 
+        if (x < xCord && y < yCord) {
+            return checkDiagonalMove(x, y, -1, -1, board, xCord, yCord);
+        }
+        if (x > xCord && y < yCord) {
+            return checkDiagonalMove(x, y, 1, -1, board, xCord, yCord);
+        }
+        if (x < xCord && y > yCord) {
+            return checkDiagonalMove(x, y, -1, 1, board, xCord, yCord);
+        }
+        return false;
+    }
 
 }
