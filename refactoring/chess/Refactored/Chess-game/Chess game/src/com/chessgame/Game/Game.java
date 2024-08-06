@@ -12,10 +12,9 @@ import javax.swing.JPanel;
 import com.chessgame.Board.Board;
 import com.chessgame.Board.Move;
 import com.chessgame.Pieces.*;
-import com.chessgame.Game.*;
 
 public class Game {
-	public static Board board = new Board();
+	public static Board board = Board.getInstance();
 
 	static King wk;
 	static King bk;
@@ -26,18 +25,13 @@ public class Game {
 	public Piece active = null;
 	public static boolean drag = false;
 	public static ArrayList<Piece> AllPieces = new ArrayList<Piece>();
-	
-    private MoveGenerationStrategy moveGenerationStrategy;
 
 	ArrayList<Move> allPossiblesMoves = new ArrayList<Move>();
 
 	static List<Move> allPlayersMove = new ArrayList<Move>();
 	public static List<Move> allEnemysMove = new ArrayList<Move>();
 	private static boolean gameOver = false;
-
-	public void setMoveGenerationStrategy(MoveGenerationStrategy strategy) {
-        this.moveGenerationStrategy = strategy;
-    }
+	
 	
 	public Game() {
 		new PieceImages();
@@ -47,8 +41,7 @@ public class Game {
 
 	public void start() {
 		fillPieces();
-        setMoveGenerationStrategy(new PlayerMoveGeneration());
-        generatePlayersTurnMoves(board);
+		generatePlayersTurnMoves(board);
 		generateEnemysMoves(board);
 		checkPlayersLegalMoves();
 	}
@@ -61,33 +54,25 @@ public class Game {
 		drawKingInCheck(player, g, panel);
 	}
 
-	public void generatePlayersTurnMoves(Board board) {
-        allPlayersMove = moveGenerationStrategy.generateMoves(board, getPlayerPieces());
+	public static void generatePlayersTurnMoves(Board board) {
+		allPlayersMove = new ArrayList<Move>();
+		for (Piece p : AllPieces) {
+			if (p.isWhite() == player) {
+				p.fillAllPseudoLegalMoves(board);
+				allPlayersMove.addAll(p.getMoves());
+			}
+		}
 	}
 
-	public void generateEnemysMoves(Board board) {
-        allEnemysMove = moveGenerationStrategy.generateMoves(board, getEnemyPieces());
+	public static void generateEnemysMoves(Board board) {
+		allEnemysMove = new ArrayList<Move>();
+		for (Piece p : AllPieces) {
+			if (p.isWhite() != player) {
+				p.fillAllPseudoLegalMoves(board);
+				allEnemysMove.addAll(p.getMoves());
+			}
+		}
 	}
-	
-	 private List<Piece> getPlayerPieces() {
-	        List<Piece> playerPieces = new ArrayList<>();
-	        for (Piece p : AllPieces) {
-	            if (p.isWhite() == player) {
-	                playerPieces.add(p);
-	            }
-	        }
-	        return playerPieces;
-	   }
-
-    private List<Piece> getEnemyPieces() {	
-        List<Piece> enemyPieces = new ArrayList<>();
-        for (Piece p : AllPieces) {
-            if (p.isWhite() != player) {
-                enemyPieces.add(p);
-            }
-        }
-        return enemyPieces;
-    }
 
 	public static void changeSide() {
 		player = !player;
@@ -361,32 +346,9 @@ public class Game {
 	}
 
 	public void addToBoard(int x, int y, char c, boolean isWhite) {
-		switch (String.valueOf(c).toUpperCase()) {
-		case "R":
-			AllPieces.add(new Rook(x, y, isWhite, board, isWhite ? 5 : -5));
-			break;
-		case "N":
-			AllPieces.add(new Knight(x, y, isWhite, board, isWhite ? 3 : -3));
-			break;
-		case "B":
-			AllPieces.add(new Bishop(x, y, isWhite, board, isWhite ? 3 : -3));
-			break;
-		case "Q":
-			AllPieces.add(new Queen(x, y, isWhite, board, isWhite ? 8 : -8));
-			break;
-		case "K":
-			King king = new King(x, y, isWhite, board, isWhite ? 10 : -10);
-			AllPieces.add(king);
-			if (isWhite) {
-				wk = king;
-			} else {
-				bk = king;
-			}
-			break;
-		case "P":
-			AllPieces.add(new Pawn(x, y, isWhite, board, isWhite ? 1 : -1));
-			break;
-		}
+		PieceFactory factory = new ConcretePieceFactory();
+	    Piece piece = factory.createPiece(c, x, y, isWhite);
+	    AllPieces.add(piece);
 	}
 
 }

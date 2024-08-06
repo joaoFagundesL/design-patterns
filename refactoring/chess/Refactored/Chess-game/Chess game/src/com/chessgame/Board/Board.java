@@ -23,6 +23,20 @@ public class Board implements Cloneable{
 		pieces = new Piece[ROWS][COLUMNS];
 	}
 	
+    private static Board instance;
+	
+	public static Board getInstance() {
+        if (instance == null) {
+            synchronized (Board.class) {
+                if (instance == null) {
+                    instance = new Board();
+                }
+            }
+        }
+        return instance;
+    }
+
+	
 
 	public void setPieceIntoBoard(int x,int y,Piece piece) {
 		if(piece != null) {
