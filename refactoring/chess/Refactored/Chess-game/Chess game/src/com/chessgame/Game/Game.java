@@ -148,55 +148,52 @@ public class Game {
 	}
 
 	public static void checkLegalMoves(Piece piece) {
-		List<Move> movesToRemove = new ArrayList<Move>();
-		Board clonedBoard = board.getNewBoard();
-		Piece clonedActive = piece.getClone();
+	    List<Move> movesToRemove = new ArrayList<>();
+	    Board clonedBoard;
+	    Piece clonedActive;
+	    Piece king = piece.isWhite() ? wk : bk;
+	    List<Piece> enemyPieces = piece.isWhite() ? bPieces : wPieces;
 
-		for (Move move : clonedActive.getMoves()) {
-			clonedBoard = board.getNewBoard();
-			clonedActive = piece.getClone();
+	    for (Move move : piece.getMoves()) {
+	        clonedBoard = board.getNewBoard();
+	        clonedActive = piece.getClone();
 
-			clonedActive.makeMove(move.getToX(), move.getToY(), clonedBoard);
+	        clonedActive.makeMove(move.getToX(), move.getToY(), clonedBoard);
 
-			List<Piece> enemyPieces = new ArrayList<Piece>();
-			Piece king = null;
+	        if (isMoveThreateningKing(clonedActive, move, clonedBoard, enemyPieces, king)) {
+	            movesToRemove.add(move);
+	        }
+	    }
 
-			if (piece.isWhite()) {
-				enemyPieces = bPieces;
-				king = wk;
-			} else {
-				enemyPieces = wPieces;
-				king = bk;
-			}
-
-			for (Piece enemyP : enemyPieces) {
-
-				Piece clonedEnemyPiece = enemyP.getClone();
-				clonedEnemyPiece.fillAllPseudoLegalMoves(clonedBoard);
-
-				for (Move bMove : clonedEnemyPiece.getMoves()) {
-					if (!(clonedActive instanceof King) && bMove.getToX() == king.getXcord()
-							&& bMove.getToY() == king.getYcord()
-							&& clonedBoard.getGrid()[enemyP.getXcord()][enemyP.getYcord()] == enemyP
-									.getValueInTheboard()) {
-						movesToRemove.add(move);
-					} else if (clonedActive instanceof King) {
-						if (bMove.getToX() == clonedActive.getXcord() && bMove.getToY() == clonedActive.getYcord()
-								&& clonedBoard.getGrid()[enemyP.getXcord()][enemyP.getYcord()] == enemyP
-										.getValueInTheboard()) {
-							movesToRemove.add(move);
-						}
-					}
-				}
-
-			}
-
-		}
-
-		for (Move move : movesToRemove) {
-			piece.getMoves().remove(move);
-		}
+	    piece.getMoves().removeAll(movesToRemove);
 	}
+
+	private static boolean isMoveThreateningKing(Piece activePiece, Move move, Board board, List<Piece> enemyPieces, Piece king) {
+	    for (Piece enemyP : enemyPieces) {
+	        Piece clonedEnemyPiece = enemyP.getClone();
+	        clonedEnemyPiece.fillAllPseudoLegalMoves(board);
+
+	        for (Move enemyMove : clonedEnemyPiece.getMoves()) {
+	            if (isMoveAttackingKing(activePiece, enemyMove, king) || isKingMovingIntoCheck(activePiece, enemyMove)) {
+	                return true;
+	            }
+	        }
+	    }
+	    return false;
+	}
+
+	private static boolean isMoveAttackingKing(Piece activePiece, Move enemyMove, Piece king) {
+	    return !(activePiece instanceof King) &&
+	            enemyMove.getToX() == king.getXcord() &&
+	            enemyMove.getToY() == king.getYcord();
+	}
+
+	private static boolean isKingMovingIntoCheck(Piece activePiece, Move enemyMove) {
+	    return activePiece instanceof King &&
+	            enemyMove.getToX() == activePiece.getXcord() &&
+	            enemyMove.getToY() == activePiece.getYcord();
+	}
+
 
 	public void drag(Piece piece, int x, int y, Graphics g, JPanel panel) {
 		if (piece != null && drag == true) {
