@@ -27,6 +27,7 @@ public class Piece implements Cloneable{
 	protected ImageIcon  image;
 	protected MoveStrategy moveStrategy;
 	
+	
 	public boolean makeMove(int toX, int toY, Board board) {
 		Move move = new Move(xCord, yCord, toX, toY, this);
 		if(!alive()) {

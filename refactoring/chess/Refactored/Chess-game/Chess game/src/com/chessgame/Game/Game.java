@@ -4,14 +4,19 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import com.chessgame.Board.Board;
 import com.chessgame.Board.Move;
-import com.chessgame.Pieces.*;
+import com.chessgame.Pieces.King;
+import com.chessgame.Pieces.Pawn;
+import com.chessgame.Pieces.Piece;
+import com.chessgame.Pieces.PieceImages;
 
 public class Game {
 	public static Board board = Board.getInstance();
@@ -31,8 +36,8 @@ public class Game {
 	static List<Move> allPlayersMove = new ArrayList<Move>();
 	public static List<Move> allEnemysMove = new ArrayList<Move>();
 	private static boolean gameOver = false;
-	
-	
+
+    
 	public Game() {
 		new PieceImages();
 		loadFenPosition("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
@@ -104,36 +109,23 @@ public class Game {
 	}
 
 	public static void checkMate() {
-		if (player) {
-			for (Piece p : wPieces) {
-				if (!p.getMoves().isEmpty()) {
-					return;
-				}
-			}
-		} else {
-			for (Piece p : bPieces) {
-				if (!p.getMoves().isEmpty()) {
-					return;
-				}
-			}
-		}
-		if (player) {
-			if (wk.isInCheck()) {
-				JOptionPane.showMessageDialog(null, "check mate " + (!player ? "white" : "black") + " wins");
-			} else {
-				JOptionPane.showMessageDialog(null, "stalemate ");
+	    List<Piece> currentPieces = player ? wPieces : bPieces;
+	    King currentKing = player ? wk : bk;
+	    String winningColor = player ? "white" : "black";
 
-			}
-		} else {
-			if (bk.isInCheck()) {
-				JOptionPane.showMessageDialog(null, "check mate " + (!player ? "white" : "black") + " wins");
-			} else {
-				JOptionPane.showMessageDialog(null, "stalemate ");
+	    boolean hasValidMove = currentPieces.stream()
+	                                         .anyMatch(p -> !p.getMoves().isEmpty());
 
-			}
-		}
-		gameOver = true;
+	    if (!hasValidMove) {
+	        if (currentKing.isInCheck()) {
+	            JOptionPane.showMessageDialog(null, "Checkmate! " + winningColor + " wins");
+	        } else {
+	            JOptionPane.showMessageDialog(null, "Stalemate");
+	        }
+	        gameOver = true;
+	    }
 	}
+
 
 	public static void checkPlayersLegalMoves() {
 		List<Piece> pieces = null;

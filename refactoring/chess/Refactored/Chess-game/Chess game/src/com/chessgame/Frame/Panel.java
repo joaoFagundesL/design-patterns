@@ -10,6 +10,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import com.chessgame.Board.Board;
 import com.chessgame.Game.*;
 import com.chessgame.Pieces.Piece;
 

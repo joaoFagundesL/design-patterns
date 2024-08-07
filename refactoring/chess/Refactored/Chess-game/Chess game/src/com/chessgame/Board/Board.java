@@ -19,6 +19,7 @@ public class Board implements Cloneable {
     public List<Piece> piecesList = new ArrayList<>();
 
     private static Board instance;
+    
 
     private Board() {
         grid = new int[ROWS][COLUMNS];
@@ -99,8 +100,7 @@ public class Board implements Cloneable {
                 grid[move.toX][move.toY] = 0;
                 pieces[move.toX][move.toY] = dead;
             }
-            Game.changeSide();
-        }
+            Game.changeSide();        }
     }
 
     public Piece getPiece(int x, int y) {
