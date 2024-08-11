@@ -22,6 +22,8 @@ public class Main implements Mediator{
 	private int[] chances = {4};
 	private JLabel labelChances;
 	private int encontrou;
+	ButtonBuilder builder = new ButtonBuilder();
+    private FileReader fileReader = new FileReader(); 
 
 	public static void newScreen(int op) {
 		EventQueue.invokeLater(new Runnable() {
@@ -74,34 +76,10 @@ public class Main implements Mediator{
 	    frame.getContentPane().add(labelChances);
 
 	    List<String> palavras = new ArrayList<>();
-
-	    try {
-	        if (op == 1) {
-	            File file = new File("/home/arch/Documents/design-patterns/refactoring/hangman/refactored/HangmanGame/hangman/src/animais");
-	            Scanner sc = new Scanner(file);
-	            while (sc.hasNextLine()) {
-	                palavras.add(sc.nextLine());
-	            }
-	            sc.close();
-	        } else if (op == 2) {
-	            File file = new File("/home/arch/Documents/design-patterns/refactoring/hangman/refactored/HangmanGame/hangman/src/comidas");
-	            Scanner sc = new Scanner(file);
-	            while (sc.hasNextLine()) {
-	                palavras.add(sc.nextLine());
-	            }
-	            sc.close();
-	        } else if (op == 3) {
-	            File file = new File("/home/arch/Documents/design-patterns/refactoring/hangman/refactored/HangmanGame/hangman/src/profissoes");
-	            Scanner sc = new Scanner(file);
-	            while (sc.hasNextLine()) {
-	                palavras.add(sc.nextLine());
-	            }
-	            sc.close();
-	        }
-	    } catch (FileNotFoundException e) {
-	        e.printStackTrace();
-	    }
-
+	    
+	    String filePath = getFilePath(op);
+        palavras = fileReader.loadWords(filePath);
+	   
 	    Random rand = new Random();
 	    palavraDoJogo = palavras.get(rand.nextInt(palavras.size()));
 
@@ -123,24 +101,25 @@ public class Main implements Mediator{
 	    int gap = 94;
 
 	    for (int i = 0; i < letras.length; i++) {
-	        JButton button = new JButton(String.valueOf(letras[i]));
+	        String letter = String.valueOf(letras[i]);
 	        int x = startX + (i % 10) * gap;
 	        int y = startY + (i / 10) * (height + 10);
-	        button.setBounds(x, y, width, height);
 	        int index = i;
-	        button.addActionListener(new ActionListener() {
-	            public void actionPerformed(ActionEvent arg0) {
-	                int encontrou = teste(palavraDoJogo, letras[index], campos, button);
-	                verificar(encontrou, chances, labelChances, palavraDoJogo);
-	            }
-	        });
+	        
+	        Button button = builder.withLetter(letter)
+	        		.withPosition(x, y)
+	        		.withSize(width, height)
+	        		.build();
+	        
+	        button.setMediator(this);
+	        	
 	        frame.getContentPane().add(button);
 	    }
 	}
 
 	
 	@Override
-	public void verificar(int encontrou, int[] chances, JLabel labelChances, String palavraDoJogo) {
+	public void processGuess(int encontrou, int[] chances, JLabel labelChances, String palavraDoJogo) {
 		if (encontrou == 0) {
 			if (chances[0] != 0) {
 				chances[0] = chances[0] - 1; 
@@ -156,8 +135,21 @@ public class Main implements Mediator{
 		}
 	}
 	
+	private String getFilePath(int op) {
+        switch (op) {
+            case 1:
+                return "/home/arch/Documents/design-patterns/refactoring/hangman/refactored/HangmanGame/hangman/src/animais";
+            case 2:
+                return "/home/arch/Documents/design-patterns/refactoring/hangman/refactored/HangmanGame/hangman/src/comidas";
+            case 3:
+                return "/home/arch/Documents/design-patterns/refactoring/hangman/refactored/HangmanGame/hangman/src/profissoes";
+            default:
+                throw new IllegalArgumentException("Invalid option: " + op);
+        }
+    }
+	
 	@Override
-	public int teste (String palavraDoJogo, char letra, List<JLabel> campos, JButton l) {
+	public int checkGuess (String palavraDoJogo, char letra, List<JLabel> campos, JButton l) {
 		int encontrou = 0;
 		int cont = 0;
 		String s = "__";
