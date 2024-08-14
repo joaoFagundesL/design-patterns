@@ -2,11 +2,22 @@
 
 // https://github.com/dfutran/Memory-Game/blob/master/MemoryGame.java
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 // import java.io.*;
-import java.util.*;
-import javax.swing.*;
+import java.util.HashMap;
+import java.util.Random;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 // btn1.setBackground(colors[index]
 public class GameM implements ActionListener {
     JFrame frame = new JFrame("Memory Game");
@@ -18,6 +29,11 @@ public class GameM implements ActionListener {
     JPanel mini = new JPanel();
 
     ButtonBuilder builder = new ButtonBuilder();
+    
+    private HashMap<Button, Command> buttonCommands = new HashMap<>();
+    private StartCommand startCommand;
+    private ExitCommand exitCommand;
+    
     private GameStrategy strategy;
 
     JPanel start_screen = new JPanel();
@@ -38,16 +54,16 @@ public class GameM implements ActionListener {
     private boolean purgatory = false;
     JLabel winner;
     Boolean game_over = false;
-    int level = 0;
-    int score = 0;
+    private int level = 0;
+    private int score = 0;
 
-    String[] board;
-    int[] boardQ = new int[20];
+    private String[] board;
+    private int[] boardQ = new int[20];
     Boolean shown = true;
     int temp = 30;
     int temp2 = 30;
     String a[] = new String[10];
-    boolean eh = true;
+    private boolean eh = true;
 
     public GameStrategy getStrategy() { return strategy; }
 
@@ -78,7 +94,9 @@ public class GameM implements ActionListener {
         inst = createButton("Instructions");
         redo = createButton("Play Again");
         goBack = createButton("Main Menu");
-
+        
+        initializeCommands();
+       
         start_screen.add(menu, BorderLayout.NORTH);
         start_screen.add(menu3, BorderLayout.CENTER);
         start_screen.add(menu2, BorderLayout.SOUTH);
@@ -103,6 +121,11 @@ public class GameM implements ActionListener {
 
     private Button createButton(String name) {
         return builder.setName(name).setActionListener(this).build();
+    }
+    
+    public void initializeCommands() {
+         buttonCommands.put(start, new StartCommand(this));
+         buttonCommands.put(over, new ExitCommand());
     }
 
     public void setUpGame(int x, Boolean easy) {
@@ -216,8 +239,7 @@ public class GameM implements ActionListener {
         field.setBackground(Color.black);
         field.requestFocus();
     }
-    public void
-    clearMain() { // clears the main menu so i can add the board or instructions
+    public void clearMain() { // clears the main menu so i can add the board or instructions
         start_screen.remove(menu);
         start_screen.remove(menu2);
         start_screen.remove(menu3);
@@ -226,8 +248,29 @@ public class GameM implements ActionListener {
         start_screen.repaint();
     }
     
+    public void startGame() {
+        score = 0;
+        game_over = false;
+        clearMain(); 
+        setUpGame(level, eh); 
+    }
+
+    
+    public String getLevelText() {
+        return text.getText(); 
+    }
+
+    public boolean isEasy() {
+        return eh; 
+    }
+
     public void actionPerformed(ActionEvent click) {
         Object source = click.getSource();
+        
+        if (buttonCommands.containsKey(source)) {
+            buttonCommands.get(source).execute();
+        }
+        
         if (purgatory) {
             switchSpot(temp2);
             switchSpot(temp);
@@ -236,19 +279,7 @@ public class GameM implements ActionListener {
             temp2 = 30;
             purgatory = false;
         }
-        if (source == start) { // start sets level and difficulty and calls
-                               // method to set up game
-            try {
-                level = Integer.parseInt(text.getText());
-            } catch (Exception e) {
-                level = 1;
-            }
-
-            setUpGame(level, eh); // level between 1 and 2, eh is true or false
-        }
-        if (source == over) { // quits
-            System.exit(0);
-        }
+        
         if (source == inst) { // this just sets the instruction screen
             clearMain();
 
@@ -267,10 +298,12 @@ public class GameM implements ActionListener {
             goBack.addActionListener(this);
             goBack.setEnabled(true);
         }
+        
         if (source == goBack) { // backt to main screen
             frame.dispose();
             goToMainScreen();
         }
+        
         if (source == easy) { // sets the type. ex. if easy is clicked it turns
                               // blue and hard remains black
             eh = true;
