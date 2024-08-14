@@ -10,7 +10,7 @@ public class GoBackCommand implements Command {
 	
 	@Override
 	public void execute() {
-		game.getFrame().dispose();
+		game.frame.dispose();
 		game.goToMainScreen();
 	}
 

@@ -24,7 +24,7 @@ import command.*;
 import strategy.*;
 
 public class GameM implements ActionListener {
-    private JFrame frame = new JFrame("Memory Game");
+    public JFrame frame = new JFrame("Memory Game");
 
 	JPanel field = new JPanel();
     JPanel menu = new JPanel();
@@ -38,21 +38,21 @@ public class GameM implements ActionListener {
     
     private GameStrategy strategy;
 
-    private JPanel start_screen = new JPanel();
+    private JPanel startScreen = new JPanel();
  
-	private JPanel end_screen = new JPanel();
-    private JPanel instruct_screen = new JPanel();
+	private JPanel endScreen = new JPanel();
+    private JPanel instructScreen = new JPanel();
 
     Button btn[] = new Button[20];
 
-    private Button start;
-    private Button over;
-    private Button easy;
+    public Button start;
+    public Button over;
+    public Button easy;
 
-	private Button hard;
-    private Button inst;
-    private Button redo;
-    private Button goBack;
+    public Button hard;
+    public Button inst;
+    public Button redo;
+    public Button goBack;
 
 	Random randomGenerator = new Random();
     private boolean purgatory = false;
@@ -86,7 +86,7 @@ public class GameM implements ActionListener {
         frame.setLocation(500, 300);
         frame.setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        start_screen.setLayout(new BorderLayout());
+        startScreen.setLayout(new BorderLayout());
         menu.setLayout(new FlowLayout(FlowLayout.CENTER));
         menu2.setLayout(new FlowLayout(FlowLayout.CENTER));
         menu3.setLayout(new FlowLayout(FlowLayout.CENTER));
@@ -102,9 +102,9 @@ public class GameM implements ActionListener {
         
         initializeCommands();
        
-        start_screen.add(menu, BorderLayout.NORTH);
-        start_screen.add(menu3, BorderLayout.CENTER);
-        start_screen.add(menu2, BorderLayout.SOUTH);
+        startScreen.add(menu, BorderLayout.NORTH);
+        startScreen.add(menu3, BorderLayout.CENTER);
+        startScreen.add(menu2, BorderLayout.SOUTH);
         menu3.add(mini, BorderLayout.CENTER);
         menu.add(label);
         menu.add(text);
@@ -120,45 +120,9 @@ public class GameM implements ActionListener {
         hard.setEnabled(true);
         inst.setEnabled(true);
 
-        frame.add(start_screen, BorderLayout.CENTER);
+        frame.add(startScreen, BorderLayout.CENTER);
         frame.setVisible(true);
     }
-				
-	public Button getEasy() {
-		return easy;
-	}
-	
-	public JFrame getFrame() {
-			return frame;
-	}
-
-	public void setEasy(Button easy) {
-		this.easy = easy;
-	}
-
-	public Button getHard() {
-		return hard;
-	}
-
-	public void setHard(Button hard) {
-		this.hard = hard;
-	}
-	
-    public JPanel getStartScreen() {
-		return start_screen;
-	}
-
-	public void setStart_screen(JPanel start_screen) {
-		this.start_screen = start_screen;
-	}
-
-	public JPanel getInstructScreen() {
-		return instruct_screen;
-	}
-
-	public void setInstruct_screen(JPanel instruct_screen) {
-		this.instruct_screen = instruct_screen;
-	}
     
     private Button createButton(String name) {
         return builder.setName(name).setActionListener(this).build();
@@ -181,21 +145,13 @@ public class GameM implements ActionListener {
 		this.instructM = instructM;
 	}
     
-    public Button getGoBack() {
-		return goBack;
-	}
-
-	public void setGoBack(Button goBack) {
-		this.goBack = goBack;
-	}
-    
     public void initializeCommands() {
          buttonCommands.put(start, new StartCommand(this));
          buttonCommands.put(over, new ExitCommand());
-         buttonCommands.put(inst, new InstructionsCommand(this));
+         buttonCommands.put(inst, new InstructionsCommand(this, goBack, instructScreen, startScreen));
          buttonCommands.put(goBack, new GoBackCommand(this));
-         buttonCommands.put(easy, new EasyCommand(this));
-         buttonCommands.put(hard, new HardCommand(this));
+         buttonCommands.put(easy, new EasyCommand(this, easy, hard));
+         buttonCommands.put(hard, new HardCommand(this, easy, hard));
     }
 
     public void setUpGame(int x, Boolean easy) {
@@ -290,11 +246,11 @@ public class GameM implements ActionListener {
     }
     
     public void winner() {
-        start_screen.remove(field);
-        start_screen.add(end_screen, BorderLayout.CENTER);
-        end_screen.add(new TextField("You Win"), BorderLayout.NORTH);
-        end_screen.add(new TextField("Score: " + score), BorderLayout.SOUTH);
-        end_screen.add(goBack);
+        startScreen.remove(field);
+        startScreen.add(endScreen, BorderLayout.CENTER);
+        endScreen.add(new TextField("You Win"), BorderLayout.NORTH);
+        endScreen.add(new TextField("Score: " + score), BorderLayout.SOUTH);
+        endScreen.add(goBack);
         goBack.setEnabled(true);
         goBack.addActionListener(this);
     }
@@ -303,19 +259,19 @@ public class GameM implements ActionListener {
 
     public void createBoard() { // this is just gui stuff to show the board
         field.setLayout(new BorderLayout());
-        start_screen.add(field, BorderLayout.CENTER);
+        startScreen.add(field, BorderLayout.CENTER);
 
         field.setLayout(new GridLayout(5, 4, 2, 2));
         field.setBackground(Color.black);
         field.requestFocus();
     }
     public void clearMain() { // clears the main menu so i can add the board or instructions
-        start_screen.remove(menu);
-        start_screen.remove(menu2);
-        start_screen.remove(menu3);
+        startScreen.remove(menu);
+        startScreen.remove(menu2);
+        startScreen.remove(menu3);
 
-        start_screen.revalidate();
-        start_screen.repaint();
+        startScreen.revalidate();
+        startScreen.repaint();
     }
     
     public void startGame() {
@@ -350,30 +306,33 @@ public class GameM implements ActionListener {
             purgatory = false;
         }
 
-        for (int i = 0; i < (level * 2);
-             i++) { // gameplay when a button is pressed
-            if (source == btn[i]) {
-                if (shown) {
-                    hideField(level); // if first time, hides field
-                } else {              // otherwise play
-                    switchSpot(i);
-                    if (temp >= (level * 2)) {
-                        temp = i;
-                    } else {
-                        if ((board[temp] != board[i]) || (temp == i)) {
-                            temp2 = i;
-                            purgatory = true;
-
-                        } else {
-                            board[i] = "done";
-                            board[temp] = "done";
-                            checkWin();
-                            temp = (level * 2);
-                        }
-                    }
-                }
-            }
-        }
+       processGameTurn(source);
+    }
+    
+    public void processGameTurn(Object source) {
+	    for(int i = 0; i < (level * 2); i++) { // gameplay when a button is pressed
+	        if (source == btn[i]) {
+	            if (shown) {
+	                hideField(level); // if first time, hides field
+	            } else {              // otherwise play
+	                switchSpot(i);
+	                if (temp >= (level * 2)) {
+	                    temp = i;
+	                } else {
+	                    if ((board[temp] != board[i]) || (temp == i)) {
+	                        temp2 = i;
+	                        purgatory = true;
+	
+	                    } else {
+	                        board[i] = "done";
+	                        board[temp] = "done";
+	                        checkWin();
+	                        temp = (level * 2);
+	                    }
+	                }
+	            }
+	        }
+	    }
     }
     
     public static void main(String[] args) {
