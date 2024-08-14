@@ -1,3 +1,7 @@
+package command;
+
+import game.GameM;
+
 public class StartCommand implements Command {
     private GameM game;
 

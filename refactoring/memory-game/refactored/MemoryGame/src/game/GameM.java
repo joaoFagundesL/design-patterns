@@ -1,6 +1,7 @@
 // note the count variable is not reset when a new game is pressed
 
 // https://github.com/dfutran/Memory-Game/blob/master/MemoryGame.java
+package game;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -9,7 +10,6 @@ import java.awt.GridLayout;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-// import java.io.*;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -18,11 +18,15 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-// btn1.setBackground(colors[index]
-public class GameM implements ActionListener {
-    JFrame frame = new JFrame("Memory Game");
 
-    JPanel field = new JPanel();
+import button.*;
+import command.*;
+import strategy.*;
+
+public class GameM implements ActionListener {
+    private JFrame frame = new JFrame("Memory Game");
+
+	JPanel field = new JPanel();
     JPanel menu = new JPanel();
     JPanel menu2 = new JPanel();
     JPanel menu3 = new JPanel();
@@ -31,41 +35,40 @@ public class GameM implements ActionListener {
     ButtonBuilder builder = new ButtonBuilder();
     
     private HashMap<Button, Command> buttonCommands = new HashMap<>();
-    private StartCommand startCommand;
-    private ExitCommand exitCommand;
     
     private GameStrategy strategy;
 
-    JPanel start_screen = new JPanel();
-    JPanel end_screen = new JPanel();
-    JPanel instruct_screen = new JPanel();
+    private JPanel start_screen = new JPanel();
+ 
+	private JPanel end_screen = new JPanel();
+    private JPanel instruct_screen = new JPanel();
 
     Button btn[] = new Button[20];
 
-    Button start;
-    Button over;
-    Button easy;
-    Button hard;
-    Button inst;
-    Button redo;
-    Button goBack;
+    private Button start;
+    private Button over;
+    private Button easy;
 
-    Random randomGenerator = new Random();
+	private Button hard;
+    private Button inst;
+    private Button redo;
+    private Button goBack;
+
+	Random randomGenerator = new Random();
     private boolean purgatory = false;
-    JLabel winner;
-    Boolean game_over = false;
+    private JLabel winner;
+    private Boolean game_over = false;
     private int level = 0;
     private int score = 0;
 
     private String[] board;
     private int[] boardQ = new int[20];
     Boolean shown = true;
-    int temp = 30;
-    int temp2 = 30;
-    String a[] = new String[10];
+    private int temp = 30;
+    private int temp2 = 30;
+    private String a[] = new String[10];
     private boolean eh = true;
-
-    public GameStrategy getStrategy() { return strategy; }
+	public GameStrategy getStrategy() { return strategy; }
 
     public void setStrategy(GameStrategy strategy) { this.strategy = strategy; }
 
@@ -76,7 +79,9 @@ public class GameM implements ActionListener {
         +
         "for a single level: enter a level between 1 and 10,\nselect easy or hard, then press start.");
 
-    public GameM() {
+   
+
+	public GameM() {
         frame.setSize(500, 300);
         frame.setLocation(500, 300);
         frame.setLayout(new BorderLayout());
@@ -118,14 +123,79 @@ public class GameM implements ActionListener {
         frame.add(start_screen, BorderLayout.CENTER);
         frame.setVisible(true);
     }
+				
+	public Button getEasy() {
+		return easy;
+	}
+	
+	public JFrame getFrame() {
+			return frame;
+	}
 
+	public void setEasy(Button easy) {
+		this.easy = easy;
+	}
+
+	public Button getHard() {
+		return hard;
+	}
+
+	public void setHard(Button hard) {
+		this.hard = hard;
+	}
+	
+    public JPanel getStartScreen() {
+		return start_screen;
+	}
+
+	public void setStart_screen(JPanel start_screen) {
+		this.start_screen = start_screen;
+	}
+
+	public JPanel getInstructScreen() {
+		return instruct_screen;
+	}
+
+	public void setInstruct_screen(JPanel instruct_screen) {
+		this.instruct_screen = instruct_screen;
+	}
+    
     private Button createButton(String name) {
         return builder.setName(name).setActionListener(this).build();
     }
     
+    public boolean isEh() {
+		return eh;
+	}
+
+	public void setEh(boolean eh) {
+		this.eh = eh;
+	}
+
+    
+    public JTextArea getInstructM() {
+		return instructM;
+	}
+
+	public void setInstructM(JTextArea instructM) {
+		this.instructM = instructM;
+	}
+    
+    public Button getGoBack() {
+		return goBack;
+	}
+
+	public void setGoBack(Button goBack) {
+		this.goBack = goBack;
+	}
+    
     public void initializeCommands() {
          buttonCommands.put(start, new StartCommand(this));
          buttonCommands.put(over, new ExitCommand());
+         buttonCommands.put(inst, new InstructionsCommand(this));
+         buttonCommands.put(goBack, new GoBackCommand(this));
+         buttonCommands.put(easy, new EasyCommand(this));
+         buttonCommands.put(hard, new HardCommand(this));
     }
 
     public void setUpGame(int x, Boolean easy) {
@@ -272,47 +342,12 @@ public class GameM implements ActionListener {
         }
         
         if (purgatory) {
-            switchSpot(temp2);
+            switchSpot(temp2);	
             switchSpot(temp);
             score++;
             temp = (level * 2);
             temp2 = 30;
             purgatory = false;
-        }
-        
-        if (source == inst) { // this just sets the instruction screen
-            clearMain();
-
-            start_screen.add(instruct_screen, BorderLayout.NORTH);
-
-            JPanel one = new JPanel();
-            one.setLayout(new FlowLayout(FlowLayout.CENTER));
-            JPanel two = new JPanel();
-            two.setLayout(new FlowLayout(FlowLayout.CENTER));
-            instruct_screen.setLayout(new BorderLayout());
-            instruct_screen.add(one, BorderLayout.NORTH);
-            instruct_screen.add(two, BorderLayout.SOUTH);
-
-            one.add(instructM);
-            two.add(goBack);
-            goBack.addActionListener(this);
-            goBack.setEnabled(true);
-        }
-        
-        if (source == goBack) { // backt to main screen
-            frame.dispose();
-            goToMainScreen();
-        }
-        
-        if (source == easy) { // sets the type. ex. if easy is clicked it turns
-                              // blue and hard remains black
-            eh = true;
-            easy.setForeground(Color.BLUE);
-            hard.setForeground(Color.BLACK);
-        } else if (source == hard) {
-            eh = false;
-            hard.setForeground(Color.BLUE);
-            easy.setForeground(Color.BLACK);
         }
 
         for (int i = 0; i < (level * 2);

@@ -1,3 +1,6 @@
+package strategy;
+
+import game.GameM;
 
 public class HardGameStrategy implements GameStrategy{
 
