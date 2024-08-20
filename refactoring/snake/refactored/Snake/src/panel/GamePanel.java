@@ -12,6 +12,9 @@ import java.util.Random;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+import state.GameOverState;
+import state.GameState;
+import state.RunningState;
 import strategy.Direction;
 import strategy.MoveDownStrategy;
 import strategy.MoveLeftStrategy;
@@ -20,8 +23,10 @@ import strategy.MoveStrategy;
 import strategy.MoveUpStrategy;
 
 public class GamePanel extends JPanel implements ActionListener {
-	
+
 	private MoveStrategy moveStrategy;
+	private GameState gameState;
+	
 	static final int SCREEN_WIDTH = 700;
 	static final int SCREEN_HEIGHT = 700;
 	static final int UNIT_SIZE = 26;
@@ -46,13 +51,22 @@ public class GamePanel extends JPanel implements ActionListener {
 		this.setFocusable(true);
 		this.addKeyListener(new MyKeyAdapter());
 		this.moveStrategy = new MoveRightStrategy();
+		this.gameState = new RunningState();
 		startGame();
 	}
-	
-	public void setMoveStrategy(MoveStrategy moveStrategy) {
-        this.moveStrategy = moveStrategy;
-    } 
 
+	public void setMoveStrategy(MoveStrategy moveStrategy) {
+		this.moveStrategy = moveStrategy;
+	}
+
+	public void setGameState(GameState gameState) {
+		this.gameState = gameState;
+	}
+
+	public MoveStrategy getMoveStrategy() {
+		return moveStrategy;
+	}
+	
 	public void startGame() {
 		newApple();
 		running = true;
@@ -66,14 +80,14 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	public void draw(Graphics g) {
-    if (running) {
-    	 drawGrid(g);
-         drawApple(g);
-         drawSnake(g);
-    } else {
-      gameOver(g);
-    }
-  }
+		if (running) {
+			drawGrid(g);
+			drawApple(g);
+			drawSnake(g);
+		} else {
+			gameOver(g);
+		}
+	}
 
 	private void drawGrid(Graphics g) {
 		for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
@@ -104,13 +118,12 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	public void move() {
-	    for (int i = bodyParts; i > 0; i--) {
-	        x[i] = x[i - 1];
-	        y[i] = y[i - 1];
-	    }
-	    moveStrategy.move(x, y, UNIT_SIZE);
+		for (int i = bodyParts; i > 0; i--) {
+			x[i] = x[i - 1];
+			y[i] = y[i - 1];
+		}
+		moveStrategy.move(x, y, UNIT_SIZE);
 	}
-
 
 	public void checkApple() {
 		if ((x[0] == appleX) && (y[0] == appleY)) {
@@ -131,18 +144,18 @@ public class GamePanel extends JPanel implements ActionListener {
 
 	public void checkCollisions() {
 		boolean hitSelf = false;
-	    for (int i = bodyParts; i > 0; i--) {
-	        if ((x[0] == x[i]) && (y[0] == y[i])) {
-	            hitSelf = true;
-	            break;
-	        }
-	    }
-	    boolean hitWall = (x[0] < 0 || x[0] >= SCREEN_WIDTH || y[0] < 0 || y[0] >= SCREEN_HEIGHT);
+		for (int i = bodyParts; i > 0; i--) {
+			if ((x[0] == x[i]) && (y[0] == y[i])) {
+				hitSelf = true;
+				break;
+			}
+		}
+		boolean hitWall = (x[0] < 0 || x[0] >= SCREEN_WIDTH || y[0] < 0 || y[0] >= SCREEN_HEIGHT);
 
-	    if (hitSelf || hitWall) {
-	        running = false;
-	        timer.stop();
-	    }
+		if (hitSelf || hitWall) {
+			running = false;
+			setGameState(new GameOverState());
+		}
 	}
 
 	public void gameOver(Graphics g) {
@@ -158,59 +171,30 @@ public class GamePanel extends JPanel implements ActionListener {
 		// restart the game
 
 	}
-	
+
 	public void restartGame() {
-	    bodyParts = 6;
-	    applesEaten = 0;
-	    direction = 'R';
-	    running = true;
+		bodyParts = 6;
+		applesEaten = 0;
+		direction = 'R';
+		running = true;
 
-	    for (int i = 0; i < bodyParts; i++) {
-	        x[i] = 0;
-	        y[i] = 0;
-	    }
+		for (int i = 0; i < bodyParts; i++) {
+			x[i] = 0;
+			y[i] = 0;
+		}
 
-	    newApple();
-	    setMoveStrategy(new MoveRightStrategy());
+		newApple();
+		setMoveStrategy(new MoveRightStrategy());
 
-	    timer.restart();
-	    repaint();
+		timer.restart();
+		repaint();
 	}
 
-
 	public class MyKeyAdapter extends KeyAdapter {
-	    @Override
-	    public void keyPressed(KeyEvent e) {
-	        Direction currentDirection = moveStrategy.getDirection();
-	        switch (e.getKeyCode()) {
-	            case KeyEvent.VK_LEFT:
-	                if (currentDirection != Direction.RIGHT) {
-	                    setMoveStrategy(new MoveLeftStrategy());
-	                }
-	                break;
-	            case KeyEvent.VK_RIGHT:
-	                if (currentDirection != Direction.LEFT) {
-	                    setMoveStrategy(new MoveRightStrategy());
-	                }
-	                break;
-	            case KeyEvent.VK_UP:
-	                if (currentDirection != Direction.DOWN) {
-	                    setMoveStrategy(new MoveUpStrategy());
-	                }
-	                break;
-	            case KeyEvent.VK_DOWN:
-	                if (currentDirection != Direction.UP) {
-	                    setMoveStrategy(new MoveDownStrategy());
-	                }
-	                break;
-	                
-	            case KeyEvent.VK_SPACE:
-	                if (!running) {
-	                    restartGame();
-	                }
-	                break;
-	        }
-	    }
+		@Override
+		public void keyPressed(KeyEvent e) {
+			gameState.handleInput(e, GamePanel.this);
+		}
 	}
 
 	@Override
