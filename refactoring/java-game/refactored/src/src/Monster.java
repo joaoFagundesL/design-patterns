@@ -1,6 +1,13 @@
+package src;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;
+
+import strategy.MoveDownStrategy;
+import strategy.MoveLeftStrategy;
+import strategy.MoveRightStrategy;
+import strategy.MoveUpStrategy;
+import strategy.MovementStrategy;
 
 public class Monster extends Item {
 
@@ -67,15 +74,29 @@ public class Monster extends Item {
    }
 
    public void hunting() {
-      int dir = rdm.nextInt(20);
-      if (dir == 0) {
-         moveLeft();
-      } else if (dir == 1) {
-         moveUp();
-      } else if (dir == 2) {
-         moveRight();
-      } else if (dir == 3) {
-         moveDown();
-      }
-   }
+	    int dir = rdm.nextInt(20);
+	    MovementStrategy strategy = null;
+
+	    switch (dir) {
+	        case 0:
+	            strategy = new MoveLeftStrategy();
+	            break;
+	        case 1:
+	            strategy = new MoveUpStrategy();
+	            break;
+	        case 2:
+	            strategy = new MoveRightStrategy();
+	            break;
+	        case 3:
+	            strategy = new MoveDownStrategy();
+	            break;
+	        default:
+	            return;
+	    }
+
+	    if (strategy != null) {
+	        setMovementStrategy(strategy);
+	        move();
+	    }
+	}
 }
