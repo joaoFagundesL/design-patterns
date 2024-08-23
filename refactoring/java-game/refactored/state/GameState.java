@@ -10,6 +10,8 @@ public interface GameState {
     void update(GamePanel panel);
     void draw(GamePanel panel, Graphics g);
     void handleInput(GamePanel panel, KeyEvent e);
-//    void startTimer(GamePanel panel); // Add this method
-//    void stopTimer(GamePanel panel);
+
+    public default void handleStart(GamePanel gamePanel) {
+    }
+    
 }

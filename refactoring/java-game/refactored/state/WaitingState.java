@@ -33,14 +33,8 @@ public class WaitingState implements GameState {
         }
     }
 
-//    @Override
-//    public void startTimer(GamePanel panel) {
-//        panel.getaTimer().start();
-//        panel.setState(new RunningState()); // Transition to running state
-//    }
-//
-//    @Override
-//    public void stopTimer(GamePanel panel) {
-//        panel.getaTimer().stop(); // Optionally stop the timer if needed
-//    }
+    @Override
+    public void handleStart(GamePanel gamePanel) {
+        gamePanel.setState(new RunningState());
+    }
 }
