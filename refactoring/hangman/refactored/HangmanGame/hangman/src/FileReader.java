@@ -6,18 +6,18 @@ import java.util.Scanner;
 
 public class FileReader {
 
-    public List<String> loadWords(String filePath) {
-        List<String> words = new ArrayList<>();
-        File file = new File(filePath);
-        
-        try (Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNextLine()) {
-                words.add(scanner.nextLine());
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        
-        return words;
+  public List<String> loadWords(String filePath) {
+    List<String> words = new ArrayList<>();
+    File file = new File(filePath);
+
+    try (Scanner scanner = new Scanner(file)) {
+      while (scanner.hasNextLine()) {
+        words.add(scanner.nextLine());
+      }
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
     }
+
+    return words;
+  }
 }
