@@ -9,32 +9,32 @@ import src.GamePanel;
 
 public class WaitingState implements GameState {
 
-    @Override
-    public void start(GamePanel panel) {
-        panel.setState(new RunningState());  
-    }
+  @Override
+  public void start(GamePanel panel) {
+    panel.setState(new RunningState());  
+  }
 
-    @Override
-    public void update(GamePanel panel) {
-    }
+  @Override
+  public void update(GamePanel panel) {
+  }
 
-    @Override
-    public void draw(GamePanel panel, Graphics g) {
-    	g.setColor(Color.DARK_GRAY);
-        g.fillRect(0, 0, 600, 600);
-        g.setColor(Color.WHITE);
-        g.drawString("PRESS START TO BEGIN..", 250, 300);
-    }
+  @Override
+  public void draw(GamePanel panel, Graphics g) {
+    g.setColor(Color.DARK_GRAY);
+    g.fillRect(0, 0, 600, 600);
+    g.setColor(Color.WHITE);
+    g.drawString("PRESS START TO BEGIN..", 250, 300);
+  }
 
-    @Override
-    public void handleInput(GamePanel panel, KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-            start(panel);
-        }
+  @Override
+  public void handleInput(GamePanel panel, KeyEvent e) {
+    if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+      start(panel);
     }
+  }
 
-    @Override
-    public void handleStart(GamePanel gamePanel) {
-        gamePanel.setState(new RunningState());
-    }
+  @Override
+  public void handleStart(GamePanel gamePanel) {
+    gamePanel.setState(new RunningState());
+  }
 }
