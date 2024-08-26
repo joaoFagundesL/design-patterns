@@ -16,159 +16,159 @@ import button.ButtonBuilder;
 import game.GameM;
 
 public class GameView {
-    private GameM game;
+  private GameM game;
 
-    public JFrame frame = new JFrame("Memory Game");
-    private JPanel field = new JPanel();
-    private JPanel startScreen = new JPanel();
-    private JPanel menu = new JPanel();
-    private JPanel menu2 = new JPanel();
-    private JPanel menu3 = new JPanel();
-    private JPanel mini = new JPanel();
-    private JLabel label = new JLabel("Enter level from 1 to 10");
-    private JTextField text = new JTextField(10);
-    private JTextArea instructM = new JTextArea(
-            "When the game begins, the screen will be filled\nwith pairs of buttons.\n Memorize their placement.\nOnce you press any button, they will all clear. \n Your goal is to click the matching buttons in a row.\nWhen you finish that, you win.\nEvery incorrect click gives you a point (those are bad).\n GOOD LUCK! \n"
-                    + "for a single level: enter a level between 1 and 10,\nselect easy or hard, then press start.");
-    private Button start;
-    private Button over;
-    private Button easy;
-    private Button hard;
-    private Button inst;
-    private Button redo;
-    private Button goBack;
-    
-    ButtonBuilder builder = new ButtonBuilder();
+  public JFrame frame = new JFrame("Memory Game");
+  private JPanel field = new JPanel();
+  private JPanel startScreen = new JPanel();
+  private JPanel menu = new JPanel();
+  private JPanel menu2 = new JPanel();
+  private JPanel menu3 = new JPanel();
+  private JPanel mini = new JPanel();
+  private JLabel label = new JLabel("Enter level from 1 to 10");
+  private JTextField text = new JTextField(10);
+  private JTextArea instructM = new JTextArea(
+    "When the game begins, the screen will be filled\nwith pairs of buttons.\n Memorize their placement.\nOnce you press any button, they will all clear. \n Your goal is to click the matching buttons in a row.\nWhen you finish that, you win.\nEvery incorrect click gives you a point (those are bad).\n GOOD LUCK! \n"
+    + "for a single level: enter a level between 1 and 10,\nselect easy or hard, then press start.");
+  private Button start;
+  private Button over;
+  private Button easy;
+  private Button hard;
+  private Button inst;
+  private Button redo;
+  private Button goBack;
 
-    public GameView(GameM game) {
-        this.game = game;
-        initializeUI();
-    }
+  ButtonBuilder builder = new ButtonBuilder();
 
-    private void initializeUI() {
-        frame.setSize(500, 300);
-        frame.setLocation(500, 300);
-        frame.setLayout(new BorderLayout());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  public GameView(GameM game) {
+    this.game = game;
+    initializeUI();
+  }
 
-        startScreen.setLayout(new BorderLayout());
-        menu.setLayout(new FlowLayout(FlowLayout.CENTER));
-        menu2.setLayout(new FlowLayout(FlowLayout.CENTER));
-        menu3.setLayout(new FlowLayout(FlowLayout.CENTER));
-        mini.setLayout(new FlowLayout(FlowLayout.CENTER));
+  private void initializeUI() {
+    frame.setSize(500, 300);
+    frame.setLocation(500, 300);
+    frame.setLayout(new BorderLayout());
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        start = createButton("Start");
-        over = createButton("Exit");
-        easy = createButton("Easy");
-        hard = createButton("Hard");
-        inst = createButton("Instructions");
-        redo = createButton("Play Again");
-        goBack = createButton("Main Menu");
+    startScreen.setLayout(new BorderLayout());
+    menu.setLayout(new FlowLayout(FlowLayout.CENTER));
+    menu2.setLayout(new FlowLayout(FlowLayout.CENTER));
+    menu3.setLayout(new FlowLayout(FlowLayout.CENTER));
+    mini.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-        start.setEnabled(true);
-        menu2.add(start);
-        over.setEnabled(true);
-        menu2.add(over);
-        easy.setEnabled(true);
-        hard.setEnabled(true);
-        inst.setEnabled(true);
+    start = createButton("Start");
+    over = createButton("Exit");
+    easy = createButton("Easy");
+    hard = createButton("Hard");
+    inst = createButton("Instructions");
+    redo = createButton("Play Again");
+    goBack = createButton("Main Menu");
 
-        startScreen.add(menu, BorderLayout.NORTH);
-        startScreen.add(menu3, BorderLayout.CENTER);
-        startScreen.add(menu2, BorderLayout.SOUTH);
-        menu3.add(mini, BorderLayout.CENTER);
-        menu.add(label);
-        menu.add(text);
-        mini.add(easy, BorderLayout.NORTH);
-        mini.add(hard, BorderLayout.NORTH);
-        mini.add(inst, BorderLayout.SOUTH);
+    start.setEnabled(true);
+    menu2.add(start);
+    over.setEnabled(true);
+    menu2.add(over);
+    easy.setEnabled(true);
+    hard.setEnabled(true);
+    inst.setEnabled(true);
 
-        frame.add(startScreen, BorderLayout.CENTER);
-        frame.setVisible(true);
-    }
+    startScreen.add(menu, BorderLayout.NORTH);
+    startScreen.add(menu3, BorderLayout.CENTER);
+    startScreen.add(menu2, BorderLayout.SOUTH);
+    menu3.add(mini, BorderLayout.CENTER);
+    menu.add(label);
+    menu.add(text);
+    mini.add(easy, BorderLayout.NORTH);
+    mini.add(hard, BorderLayout.NORTH);
+    mini.add(inst, BorderLayout.SOUTH);
 
-    public Button createButton(String name) {
-        Button button = builder.setName(name).setActionListener(game).build();
-        return button;
-    }
+    frame.add(startScreen, BorderLayout.CENTER);
+    frame.setVisible(true);
+  }
 
-    public void addButton(Button button) {
-        field.add(button);
-    }
+  public Button createButton(String name) {
+    Button button = builder.setName(name).setActionListener(game).build();
+    return button;
+  }
 
-    public void clearMain() {
-        startScreen.remove(menu);
-        startScreen.remove(menu2);
-        startScreen.remove(menu3);
+  public void addButton(Button button) {
+    field.add(button);
+  }
 
-        startScreen.revalidate();
-        startScreen.repaint();
-    }
+  public void clearMain() {
+    startScreen.remove(menu);
+    startScreen.remove(menu2);
+    startScreen.remove(menu3);
 
-    public void showEndScreen(int score) {
-        startScreen.remove(field);
-        startScreen.add(new JPanel(), BorderLayout.CENTER);
-        startScreen.add(new JTextField("You Win"), BorderLayout.NORTH);
-        startScreen.add(new JTextField("Score: " + score), BorderLayout.SOUTH);
-        startScreen.add(goBack);
-        goBack.setEnabled(true);
-        goBack.addActionListener(game);
-    }
+    startScreen.revalidate();
+    startScreen.repaint();
+  }
 
-    public void createBoard() {
-        field.setLayout(new BorderLayout());
-        startScreen.add(field, BorderLayout.CENTER);
+  public void showEndScreen(int score) {
+    startScreen.remove(field);
+    startScreen.add(new JPanel(), BorderLayout.CENTER);
+    startScreen.add(new JTextField("You Win"), BorderLayout.NORTH);
+    startScreen.add(new JTextField("Score: " + score), BorderLayout.SOUTH);
+    startScreen.add(goBack);
+    goBack.setEnabled(true);
+    goBack.addActionListener(game);
+  }
 
-        field.setLayout(new GridLayout(5, 4, 2, 2));
-        field.setBackground(Color.black);
-        field.requestFocus();
-    }
+  public void createBoard() {
+    field.setLayout(new BorderLayout());
+    startScreen.add(field, BorderLayout.CENTER);
 
-    public JTextArea getInstructM() {
-        return instructM;
-    }
+    field.setLayout(new GridLayout(5, 4, 2, 2));
+    field.setBackground(Color.black);
+    field.requestFocus();
+  }
 
-    public JTextField getText() {
-        return text;
-    }
+  public JTextArea getInstructM() {
+    return instructM;
+  }
 
-    public Button getStartButton() {
-        return start;
-    }
+  public JTextField getText() {
+    return text;
+  }
 
-    public Button getExitButton() {
-        return over;
-    }
+  public Button getStartButton() {
+    return start;
+  }
 
-    public Button getEasyButton() {
-        return easy;
-    }
+  public Button getExitButton() {
+    return over;
+  }
 
-    public Button getHardButton() {
-        return hard;
-    }
+  public Button getEasyButton() {
+    return easy;
+  }
 
-    public Button getInstructionsButton() {
-        return inst;
-    }
+  public Button getHardButton() {
+    return hard;
+  }
 
-    public Button getRedoButton() {
-        return redo;
-    }
+  public Button getInstructionsButton() {
+    return inst;
+  }
 
-    public Button getGoBackButton() {
-        return goBack;
-    }
+  public Button getRedoButton() {
+    return redo;
+  }
 
-    public JPanel getInstructScreen() {
-        return new JPanel(); 
-    }
+  public Button getGoBackButton() {
+    return goBack;
+  }
 
-    public JPanel getStartScreen() {
-        return startScreen;
-    }
+  public JPanel getInstructScreen() {
+    return new JPanel(); 
+  }
 
-    public String getLevelText() {
-        return text.getText();
-    }
+  public JPanel getStartScreen() {
+    return startScreen;
+  }
+
+  public String getLevelText() {
+    return text.getText();
+  }
 }

@@ -23,7 +23,7 @@ public class WaitingState implements GameState {
     g.setColor(Color.DARK_GRAY);
     g.fillRect(0, 0, 600, 600);
     g.setColor(Color.WHITE);
-    g.drawString("PRESS START TO BEGIN..", 250, 300);
+    g.drawString("PRESS START TO BEGIN...", 250, 300);
   }
 
   @Override
