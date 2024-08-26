@@ -13,6 +13,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import button.Button;
+import button.ButtonBuilder;
 import command.Command;
 import command.ExitCommand;
 import command.MoveDownCommand;
@@ -25,10 +27,11 @@ import command.StartCommand;
 public class PacMinah extends JFrame implements ActionListener {
     private final int SWIDTH = 900;
     private final int SHEIGHT = 700;
-    private JButton btnStart, btnExit, btnRestart;
-    private JButton btnLeft, btnRight, btnUp, btnDown;
+    private Button btnStart, btnExit, btnRestart;
+    private Button btnLeft, btnRight, btnUp, btnDown;
     private GamePanel gamePanel;
     private Map<JButton, Command> commandMap;
+    private ButtonBuilder builder;
 
     public PacMinah() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -36,52 +39,33 @@ public class PacMinah extends JFrame implements ActionListener {
         setSize(SWIDTH, SHEIGHT);
         setLayout(null);
         gamePanel = new GamePanel();
+        builder = new ButtonBuilder();
         commandMap = new HashMap<>();
     }
 
     public void init() {
         gamePanel.setBounds(25, 25, 600, 630);
         add(gamePanel);
-
-        btnStart = new JButton("START");
-        btnStart.setBounds(650, 150, 100, 25);
-        btnStart.addActionListener(this);
+        
+        btnStart = createButton(btnStart, 650, 150, 100, 25, "START", this);
+        btnRestart = createButton(btnRestart, 762, 150, 100, 25, "RESTART", this);
+        btnLeft = createButton(btnLeft, 650, 250, 100, 25, "LEFT", this);
+        btnRight = createButton(btnRight, 750, 250, 100, 25, "RIGHT", this);
+        btnUp = createButton(btnUp, 700, 225, 100, 25, "UP", this);
+        btnDown = createButton(btnDown, 700, 275, 100, 25, "DOWN", this);
+        btnExit = createButton(btnExit, 650, 350, 200, 25, "EXIT", this);
         add(btnStart);
-
-        btnRestart = new JButton("RESTART");
-        btnRestart.setBounds(762, 150, 100, 25);
-        btnRestart.addActionListener(this);
         add(btnRestart);
-
-        btnLeft = new JButton("LEFT");
-        btnLeft.setBounds(650, 250, 100, 25);
-        btnLeft.addActionListener(this);
         add(btnLeft);
-
-        btnRight = new JButton("RIGHT");
-        btnRight.setBounds(750, 250, 100, 25);
-        btnRight.addActionListener(this);
         add(btnRight);
-
-        btnUp = new JButton("UP");
-        btnUp.setBounds(700, 225, 100, 25);
-        btnUp.addActionListener(this);
         add(btnUp);
-
-        btnDown = new JButton("DOWN");
-        btnDown.setBounds(700, 275, 100, 25);
-        btnDown.addActionListener(this);
         add(btnDown);
-
+        add(btnExit);
+        
         JLabel labName = new JLabel("Tip: Use keyboard arrow keys");
         labName.setBounds(655, 310, 200, 25);
         add(labName);
-
-        btnExit = new JButton("EXIT");
-        btnExit.setBounds(650, 350, 200, 25);
-        btnExit.addActionListener(this);
-        add(btnExit);
-
+        
         commandMap.put(btnStart, new StartCommand(gamePanel));
         commandMap.put(btnRestart, new RestartCommand(gamePanel));
         commandMap.put(btnLeft, new MoveLeftCommand(gamePanel));
@@ -89,7 +73,7 @@ public class PacMinah extends JFrame implements ActionListener {
         commandMap.put(btnUp, new MoveUpCommand(gamePanel));
         commandMap.put(btnDown, new MoveDownCommand(gamePanel));
         commandMap.put(btnExit, new ExitCommand());
-
+     
         setVisible(true);
         File soundFile = new File("src/alister.wav").getAbsoluteFile();
         try {
@@ -100,6 +84,15 @@ public class PacMinah extends JFrame implements ActionListener {
         } catch (Exception e) {
             System.out.println(e);
         }
+    }
+    
+    public Button createButton(Button btn, int x, int y, int width, int height, String name, ActionListener al) {
+    	btn = builder.withPosition(x, y)
+    			.withLetter(name)
+    			.withSize(width, height)
+    			.setActionListener(al)
+    			.build();
+    	return btn;
     }
 
     @Override

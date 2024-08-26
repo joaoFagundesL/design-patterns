@@ -37,7 +37,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 	}
 
 	public GamePanel() {
-        aTimer = new Timer(50, this); // 50 ms 0.05 sec or 20x per second
+        aTimer = new Timer(50, this); 
         addKeyListener(this);
         reset();
     }
@@ -49,7 +49,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         mons2 = new Monster(250, 100, 5);
         score = 0;
         aTimer.start();
-        setState(new WaitingState()); // Initialize with a waiting state
+        setState(new WaitingState()); 
     }
 
     public void setState(GameState state) {
