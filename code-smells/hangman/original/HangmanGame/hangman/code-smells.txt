@@ -1,0 +1,173 @@
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:18:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:18:	ShortClassName:	Avoid short class names like Main
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:18:	CommentRequired:	Class comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:19:	CommentRequired:	Field comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:21:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:21:	ShortVariable:	Avoid variables with short names like op
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:21:	MethodArgumentCouldBeFinal:	Parameter 'op' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:23:	MissingOverride:	The method 'run()' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:25:	LocalVariableCouldBeFinal:	Local variable 'window' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:26:	LawOfDemeter:	Access to field `frame` on foreign value `window` (degree 1)
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:27:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:28:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:34:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:34:	ShortVariable:	Avoid variables with short names like op
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:34:	MethodArgumentCouldBeFinal:	Parameter 'op' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:38:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:39:	LocalVariableCouldBeFinal:	Local variable 'dialogButton' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:40:	LocalVariableCouldBeFinal:	Local variable 'dialogResult' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:46:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:52:	NcssCount:	The method 'initialize(int)' has a NCSS line count of 167.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:52:	CognitiveComplexity:	The method 'initialize(int)' has a cognitive complexity of 15, current threshold is 15
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:52:	CyclomaticComplexity:	The method 'initialize(int)' has a cyclomatic complexity of 10.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:52:	ShortVariable:	Avoid variables with short names like op
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:52:	MethodArgumentCouldBeFinal:	Parameter 'op' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:60:	LocalVariableCouldBeFinal:	Local variable 'chances' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:61:	LocalVariableCouldBeFinal:	Local variable 'lblNewLabel' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:66:	ShortVariable:	Avoid variables with short names like s
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:66:	LocalVariableCouldBeFinal:	Local variable 's' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:67:	LocalVariableCouldBeFinal:	Local variable 'labelChances' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:72:	LocalVariableCouldBeFinal:	Local variable 'palavras' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:75:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:76:	LocalVariableCouldBeFinal:	Local variable 'file' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:77:	ShortVariable:	Avoid variables with short names like sc
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:77:	CloseResource:	Ensure that resources like this Scanner object are closed after use
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:77:	LocalVariableCouldBeFinal:	Local variable 'sc' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:79:	ShortVariable:	Avoid variables with short names like p
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:79:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:85:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:86:	LocalVariableCouldBeFinal:	Local variable 'file' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:87:	ShortVariable:	Avoid variables with short names like sc
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:87:	CloseResource:	Ensure that resources like this Scanner object are closed after use
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:87:	LocalVariableCouldBeFinal:	Local variable 'sc' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:89:	ShortVariable:	Avoid variables with short names like p
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:89:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:95:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:96:	LocalVariableCouldBeFinal:	Local variable 'file' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:97:	ShortVariable:	Avoid variables with short names like sc
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:97:	CloseResource:	Ensure that resources like this Scanner object are closed after use
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:97:	LocalVariableCouldBeFinal:	Local variable 'sc' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:99:	ShortVariable:	Avoid variables with short names like p
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:99:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:108:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:111:	LocalVariableCouldBeFinal:	Local variable 'rand' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:112:	LocalVariableCouldBeFinal:	Local variable 'palavraDoJogo' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:116:	LocalVariableCouldBeFinal:	Local variable 'campos' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:119:	LocalVariableCouldBeFinal:	Local variable 'aux' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:121:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:122:	LocalVariableCouldBeFinal:	Local variable 'label' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:122:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:128:	LocalVariableCouldBeFinal:	Local variable 'label' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:128:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:136:	LocalVariableCouldBeFinal:	Local variable 'letraA' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:140:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:141:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:148:	LocalVariableCouldBeFinal:	Local variable 'letraB' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:150:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:151:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:158:	LocalVariableCouldBeFinal:	Local variable 'letraC' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:160:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:161:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:168:	LocalVariableCouldBeFinal:	Local variable 'letraD' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:170:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:171:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:178:	LocalVariableCouldBeFinal:	Local variable 'letraE' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:180:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:181:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:188:	LocalVariableCouldBeFinal:	Local variable 'letraF' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:190:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:191:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:198:	LocalVariableCouldBeFinal:	Local variable 'letraG' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:200:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:201:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:208:	LocalVariableCouldBeFinal:	Local variable 'letraH' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:210:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:218:	LocalVariableCouldBeFinal:	Local variable 'letraI' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:220:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:221:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:228:	LocalVariableCouldBeFinal:	Local variable 'letraJ' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:230:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:231:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:238:	LocalVariableCouldBeFinal:	Local variable 'letraK' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:240:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:248:	LocalVariableCouldBeFinal:	Local variable 'letraL' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:250:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:251:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:258:	LocalVariableCouldBeFinal:	Local variable 'letraM' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:260:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:261:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:268:	LocalVariableCouldBeFinal:	Local variable 'letraN' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:270:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:271:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:278:	LocalVariableCouldBeFinal:	Local variable 'letraO' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:280:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:281:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:288:	LocalVariableCouldBeFinal:	Local variable 'letraP' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:290:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:291:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:298:	LocalVariableCouldBeFinal:	Local variable 'letraQ' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:300:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:301:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:308:	LocalVariableCouldBeFinal:	Local variable 'letraR' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:310:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:311:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:318:	LocalVariableCouldBeFinal:	Local variable 'letraS' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:320:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:321:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:328:	LocalVariableCouldBeFinal:	Local variable 'letraT' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:330:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:331:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:338:	LocalVariableCouldBeFinal:	Local variable 'letraU' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:340:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:341:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:348:	LocalVariableCouldBeFinal:	Local variable 'letraV' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:350:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:351:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:358:	LocalVariableCouldBeFinal:	Local variable 'letraW' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:360:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:361:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:368:	LocalVariableCouldBeFinal:	Local variable 'letraX' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:370:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:371:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:378:	LocalVariableCouldBeFinal:	Local variable 'letraY' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:380:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:381:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:388:	LocalVariableCouldBeFinal:	Local variable 'letraZ' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:390:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:391:	LocalVariableCouldBeFinal:	Local variable 'encontrou' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:400:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:400:	MethodArgumentCouldBeFinal:	Parameter 'encontrou' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:400:	MethodArgumentCouldBeFinal:	Parameter 'chances' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:400:	MethodArgumentCouldBeFinal:	Parameter 'labelChances' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:400:	MethodArgumentCouldBeFinal:	Parameter 'palavraDoJogo' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:402:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:416:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:416:	MethodArgumentCouldBeFinal:	Parameter 'letra' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:416:	MethodArgumentCouldBeFinal:	Parameter 'campos' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:416:	ShortVariable:	Avoid variables with short names like l
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:416:	MethodArgumentCouldBeFinal:	Parameter 'l' is not assigned and could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:419:	ShortVariable:	Avoid variables with short names like s
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:419:	LocalVariableCouldBeFinal:	Local variable 's' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:423:	AvoidReassigningParameters:	Avoid reassigning parameters such as 'palavraDoJogo'
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:433:	CompareObjectsWithEquals:	Use equals() to compare object references.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Main.java:433:	UseEqualsToCompareStrings:	Use equals() to compare strings instead of '==' or '!='
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:10:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:10:	CommentRequired:	Class comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:12:	CommentRequired:	Field comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:13:	CommentRequired:	Field comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:15:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:17:	MissingOverride:	The method 'run()' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:19:	LocalVariableCouldBeFinal:	Local variable 'window' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:20:	LawOfDemeter:	Access to field `frame` on foreign value `window` (degree 1)
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:21:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:22:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:28:	CommentRequired:	Public method and constructor comments are required
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:39:	LocalVariableCouldBeFinal:	Local variable 'btnNewButton' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:41:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:50:	LocalVariableCouldBeFinal:	Local variable 'btnComidas' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:52:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:61:	LocalVariableCouldBeFinal:	Local variable 'lblJogoDaFoca' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:66:	LocalVariableCouldBeFinal:	Local variable 'btnNewButton_1' could be declared final
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:66:	LocalVariableNamingConventions:	The local variable name 'btnNewButton_1' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/arch/Personal/College/design-patterns/code-smells/hangman/original/HangmanGame/hangman/src/Option.java:68:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+LoosePackageCoupling	-	No packages or classes specified
