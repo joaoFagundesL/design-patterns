@@ -9,26 +9,26 @@ import com.chessgame.pieces.Piece;
 public class KingMoveStrategy implements MoveStrategy {
 
   @Override
-  public boolean canMove(int x, int y, Board board, Piece piece) {
+  public boolean canMove(int positionX, int positionY, Board board, Piece piece) {
     King king = (King) piece;
     int xCord = king.getXcord();
     int yCord = king.getYcord();
 
-    int i = Math.abs(xCord - x);
-    int j = Math.abs(yCord - y);
+    int indexI = Math.abs(xCord - positionX);
+    int indexJ = Math.abs(yCord - positionY);
 
-    if( j == 1 && i == 1 || (i+j) == 1) {
+    if( indexJ == 1 && indexI == 1 || (indexI+indexJ) == 1) {
 
-      if(board.getPiece(x, y) == null) {
+      if(board.getPiece(positionX, positionY) == null) {
         return true;
       }
       else {
-        return board.getPiece(x, y).isWhite() != king.isWhite();				
+        return board.getPiece(positionX, positionY).isWhite() != king.isWhite();				
       }
     }
 
 
-    king.fetchRook(x, board);
+    king.fetchRook(positionX, board);
     if(king.getRook() != null && (king.getRook().HasMoved() || king.getHasMoved())) {
       return false;
     }
@@ -39,13 +39,13 @@ public class KingMoveStrategy implements MoveStrategy {
         if(board.getPiece(k, yCord) != null) {
           return false;
         }
-        for(Movement m: Game.allEnemysMove) {
-          if((m.getToX() == k || m.getToX() == xCord) && m.getToY() == yCord) {
+        for(final Movement movement: Game.allEnemysMove) {
+          if((movement.getToX() == k || movement.getToX() == xCord) && movement.getToY() == yCord) {
             return false;
           }
         }
       }	
-      if(x == king.getRook().getXcord() - 1 && y == yCord) {
+      if(positionX == king.getRook().getXcord() - 1 && positionY == yCord) {
         return true;
       }
 
@@ -59,7 +59,7 @@ public class KingMoveStrategy implements MoveStrategy {
           }
         }
       }
-      if(x == king.getRook().getXcord() + 2 && y == yCord) {
+      if(positionX == king.getRook().getXcord() + 2 && positionX == yCord) {
         return true;
       }
 

@@ -7,7 +7,7 @@ import com.chessgame.pieces.Piece;
 public class PawnMoveStrategy implements MoveStrategy {
 
   @Override
-  public boolean canMove(int x, int y, Board board, Piece piece) {
+  public boolean canMove(int positionX, int positionY, Board board, Piece piece) {
     Pawn pawn = (Pawn) piece;
 
     int xCord = pawn.getXcord();
@@ -25,55 +25,55 @@ public class PawnMoveStrategy implements MoveStrategy {
     if(xCord > 0 && xCord  < 7) {
       if(board.getXY(xCord + 1, yCord) == enpassant) {
         Pawn leftPawn = (Pawn) board.getPiece(xCord + 1, yCord);
-        if(x == leftPawn.getXcord() && y == leftPawn.getYcord() + enpassant && leftPawn.isMoved2Squares()) {
+        if(positionX == leftPawn.getXcord() && positionY == leftPawn.getYcord() + enpassant && leftPawn.isMoved2Squares()) {
           return true;
         }
       }
 
       if(board.getXY(xCord - 1, yCord) == enpassant) {
         Pawn rightPawn = (Pawn) board.getPiece(xCord - 1, yCord);
-        if(x == rightPawn.getXcord() && y == rightPawn.getYcord() + enpassant && rightPawn.isMoved2Squares()) {
+        if(positionX == rightPawn.getXcord() && positionY == rightPawn.getYcord() + enpassant && rightPawn.isMoved2Squares()) {
           return true;
         }
       }
     }
 
     //something blocking the way
-    if ((board.getPiece(x, y) != null && board.getPiece(x, y).isWhite() == pawn.isWhite())) {
+    if ((board.getPiece(positionX, positionY) != null && board.getPiece(positionX, positionY).isWhite() == pawn.isWhite())) {
       return false;
     }
 
     //cant move diagonial if it isnt  for capture
-    if (xCord != x && board.getPiece(x, y) == null) {
+    if (xCord != positionX && board.getPiece(positionX, positionY) == null) {
       return false;
     }
 
     if (pawn.isWhite()) {
       //move two or 1 square at beggining
       if (pawn.isFirstMove()) {
-        if (x == xCord && (y == yCord - 1 || y == yCord - 2) && board.getPiece(x, y) == null && board.getPiece(x, y + 1) == null) {
+        if (positionX == xCord && (positionY == yCord - 1 || positionY == yCord - 2) && board.getPiece(positionX, positionY) == null && board.getPiece(positionX, positionY + 1) == null) {
           return true;
         }
       }
       //move forward
-      if (x == xCord && y == yCord - 1 && board.getPiece(x, y) == null) {
+      if (positionX == xCord && positionY == yCord - 1 && board.getPiece(positionX, positionY) == null) {
         return true;
       }
 
-      return pawn.capture(x, y, board);
+      return pawn.capture(positionX, positionY, board);
 
     }
     if (!pawn.isWhite()) {
       if (pawn.isFirstMove()) {
-        if (x == xCord && (y == yCord + 1 || y == yCord + 2) && board.getPiece(x, y) == null && board.getPiece(x, y - 1) == null) {
+        if (positionX == xCord && (positionY == yCord + 1 || positionY == yCord + 2) && board.getPiece(positionX, positionY) == null && board.getPiece(positionX, positionY - 1) == null) {
           return true;
         }
       }
-      if (x == xCord && y == yCord + 1 && board.getPiece(x, y) == null) {
+      if (positionX == xCord && positionY == yCord + 1 && board.getPiece(positionX, positionY) == null) {
         return true;
       }
 
-      return pawn.capture(x, y, board);
+      return pawn.capture(positionX, positionY, board);
     }
 
     return false;
