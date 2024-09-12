@@ -8,13 +8,18 @@ public class Rook extends Piece {
   private boolean hasMoved;
   private boolean justMoved = false;
 
-  public Rook(int x, int y, boolean iswhite, Board board, int value) {
-    super(x, y, iswhite, board, value, new RookMoveStrategy());
+  public Rook(
+      final int horizontalPos,
+      final int verticalPos,
+      final boolean iswhite,
+      final Board board,
+      final int value) {
+    super(horizontalPos, verticalPos, iswhite, board, value, new RookMoveStrategy());
     hasMoved = false;
     this.pieceImage = PieceImages.ROOK;
   }
 
-  public void intializeSide(int value) {
+  public void intializeSide(final int value) {
     super.intializeSide(value);
     if (isWhite()) {
       image = PieceImages.wr;
@@ -24,8 +29,8 @@ public class Rook extends Piece {
   }
 
   @Override
-  public boolean makeMove(int toX, int toY, Board board) {
-    if (super.makeMove(toX, toY, board)) {
+  public boolean makeMove(final int toHorizontal, final int toVertical, final Board board) {
+    if (super.makeMove(toHorizontal, toVertical, board)) {
       if (!hasMoved) {
         justMoved = true;
       } else {
@@ -37,13 +42,13 @@ public class Rook extends Piece {
     return false;
   }
 
-  public void castleDone(int x, Board board) {
-    if (x == 6) {
-      board.updatePieces(xCord, yCord, x - 1, yCord, this);
-      xCord = x - 1;
+  public void castleDone(final int horizontalPos, final Board board) {
+    if (horizontalPos == 6) {
+      board.updatePieces(xCord, yCord, horizontalPos - 1, yCord, this);
+      xCord = horizontalPos - 1;
     } else {
-      board.updatePieces(xCord, yCord, x + 1, yCord, this);
-      xCord = x + 1;
+      board.updatePieces(xCord, yCord, horizontalPos + 1, yCord, this);
+      xCord = horizontalPos + 1;
     }
     hasMoved = true;
   }
@@ -52,7 +57,7 @@ public class Rook extends Piece {
     return hasMoved;
   }
 
-  public void setHasMoved(boolean hasMoved) {
+  public void setHasMoved(final boolean hasMoved) {
     this.hasMoved = hasMoved;
   }
 
@@ -60,7 +65,7 @@ public class Rook extends Piece {
     return justMoved;
   }
 
-  public void setJustMoved(boolean justMoved) {
+  public void setJustMoved(final boolean justMoved) {
     this.justMoved = justMoved;
   }
 }
