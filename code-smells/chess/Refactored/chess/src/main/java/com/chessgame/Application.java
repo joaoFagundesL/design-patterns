@@ -5,7 +5,6 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class Application {
-
   public static void main(String[] args) throws InvocationTargetException, InterruptedException {
     SwingUtilities.invokeLater(
         new Runnable() {

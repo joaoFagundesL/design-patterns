@@ -83,8 +83,8 @@ public class King extends Piece {
   }
 
   public void fetchRook(final int positionX, final Board board) {
-    int rookX = (isWhite() && positionX >= xCord) ? 7 : 0;
-    int rookY = isWhite() ? 7 : 0;
+    final int rookX = (isWhite() && positionX >= xCord) ? 7 : 0;
+    final int rookY = isWhite() ? 7 : 0;
 
     if (board.getPiece(rookX, rookY) instanceof Rook) {
       rook = (Rook) board.getPiece(rookX, rookY);

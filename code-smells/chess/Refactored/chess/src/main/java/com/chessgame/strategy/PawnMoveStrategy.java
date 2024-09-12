@@ -22,18 +22,25 @@ public class PawnMoveStrategy implements MoveStrategy {
             || pawn.capture(positionX, positionY, board));
   }
 
-  private boolean isBlocked(int positionX, int positionY, Board board, Pawn pawn) {
-    Piece targetPiece = board.getPiece(positionX, positionY);
+  private boolean isBlocked(
+      final int positionX, final int positionY, final Board board, final Pawn pawn) {
+    final Piece targetPiece = board.getPiece(positionX, positionY);
     return targetPiece != null && targetPiece.isWhite() == pawn.isWhite();
   }
 
-  private boolean cantMoveDiagonal(int xCord, int positionX, int positionY, Board board) {
+  private boolean cantMoveDiagonal(
+      final int xCord, final int positionX, final int positionY, final Board board) {
     return xCord != positionX && board.getPiece(positionX, positionY) == null;
   }
 
   private boolean canEnPassantLeft(
-      int xCord, int yCord, int positionX, int positionY, Board board, Pawn pawn) {
-    int enpassant = pawn.isWhite() ? -1 : 1;
+      final int xCord,
+      final int yCord,
+      final int positionX,
+      final int positionY,
+      final Board board,
+      final Pawn pawn) {
+    final int enpassant = pawn.isWhite() ? -1 : 1;
     return xCord > 0
         && xCord < 7
         && board.getXY(xCord + 1, yCord) == enpassant
@@ -43,8 +50,13 @@ public class PawnMoveStrategy implements MoveStrategy {
   }
 
   private boolean canEnPassantRight(
-      int xCord, int yCord, int positionX, int positionY, Board board, Pawn pawn) {
-    int enpassant = pawn.isWhite() ? -1 : 1;
+      final int xCord,
+      final int yCord,
+      final int positionX,
+      final int positionY,
+      final Board board,
+      final Pawn pawn) {
+    final int enpassant = pawn.isWhite() ? -1 : 1;
     return xCord > 0
         && xCord < 7
         && board.getXY(xCord - 1, yCord) == enpassant
@@ -54,10 +66,15 @@ public class PawnMoveStrategy implements MoveStrategy {
   }
 
   private boolean canMoveForward(
-      int positionX, int positionY, int xCord, int yCord, Board board, Pawn pawn) {
-    int forwardDirection = pawn.isWhite() ? -1 : 1;
-    int firstMoveDistance = pawn.isWhite() ? -2 : 2;
-    int nextRow = yCord + forwardDirection;
+      final int positionX,
+      final int positionY,
+      final int xCord,
+      final int yCord,
+      final Board board,
+      final Pawn pawn) {
+    final int forwardDirection = pawn.isWhite() ? -1 : 1;
+    final int firstMoveDistance = pawn.isWhite() ? -2 : 2;
+    final int nextRow = yCord + forwardDirection;
 
     return positionX == xCord
         && ((pawn.isFirstMove()

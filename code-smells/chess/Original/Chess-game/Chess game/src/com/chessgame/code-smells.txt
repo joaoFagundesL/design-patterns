@@ -1,0 +1,879 @@
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:5:	UnnecessaryImport:	Unused import 'com.chessgame.Pieces.*'
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:7:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:8:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:9:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:11:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:12:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:13:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:14:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:15:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:17:	LooseCoupling:	Avoid using implementation types like 'Stack'; use the interface instead
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:17:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:18:	LooseCoupling:	Avoid using implementation types like 'Stack'; use the interface instead
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:18:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:19:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:19:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:21:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:27:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:27:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:27:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:27:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:27:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:27:	MethodArgumentCouldBeFinal:	Parameter 'piece' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:34:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:37:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:37:	MethodArgumentCouldBeFinal:	Parameter 'fromX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:37:	MethodArgumentCouldBeFinal:	Parameter 'fromY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:37:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:37:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:37:	MethodArgumentCouldBeFinal:	Parameter 'piece' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:51:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:55:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:55:	CognitiveComplexity:	The method 'undoMove()' has a cognitive complexity of 17, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:57:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:58:	LocalVariableCouldBeFinal:	Local variable 'dead' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:59:	LawOfDemeter:	Access to field `fromX` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:59:	LawOfDemeter:	Access to field `fromY` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:60:	LawOfDemeter:	Access to field `fromX` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:60:	LawOfDemeter:	Access to field `fromY` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:66:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:72:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:82:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:82:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:83:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:83:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:88:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:88:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:89:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:89:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:93:	UnnecessaryReturn:	Unnecessary return statement
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:96:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:96:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:96:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:96:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:96:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:102:	MethodReturnsInternalArray:	Returning 'grid' may expose an internal array.
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:106:	UseVarargs:	Consider using varargs for methods or constructors which take an array the last parameter.
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:106:	MethodArgumentCouldBeFinal:	Parameter 'grid' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:107:	ArrayIsStoredDirectly:	The user-supplied array 'grid' is stored directly.
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:110:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:110:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:110:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:110:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:110:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	ShortVariable:	Avoid variables with short names like v
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:114:	MethodArgumentCouldBeFinal:	Parameter 'v' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:118:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:119:	ShortVariable:	Avoid variables with short names like b
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:119:	LocalVariableCouldBeFinal:	Local variable 'b' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:130:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:133:	SystemPrintln:	Usage of System.out/err
+./Chess-game/Chess game/src/com/chessgame/Board/Board.java:135:	SystemPrintln:	Usage of System.out/err
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:4:	ShortClassName:	Avoid short class names like Move
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:4:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:4:	DataClass:	The class 'Move' is suspected to be a Data Class (WOC=16.667%, NOPA=0, NOAM=10, WMC=19)
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:5:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:5:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'fromX'
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:5:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:6:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:6:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'piece'
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:7:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:7:	MethodArgumentCouldBeFinal:	Parameter 'fromX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:7:	MethodArgumentCouldBeFinal:	Parameter 'fromY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:7:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:7:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:7:	MethodArgumentCouldBeFinal:	Parameter 'piece' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:19:	MethodArgumentCouldBeFinal:	Parameter 'fromX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:27:	MethodArgumentCouldBeFinal:	Parameter 'fromY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:35:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:43:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:53:	MethodArgumentCouldBeFinal:	Parameter 'piece' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:58:	ShortVariable:	Avoid variables with short names like o
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:58:	MethodArgumentCouldBeFinal:	Parameter 'o' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:60:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:65:	MissingOverride:	The method 'equals(Object)' is missing an @Override annotation.
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:65:	ShortVariable:	Avoid variables with short names like o
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:65:	MethodArgumentCouldBeFinal:	Parameter 'o' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:66:	LocalVariableCouldBeFinal:	Local variable 'otherM' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:67:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition};`
+./Chess-game/Chess game/src/com/chessgame/Board/Move.java:68:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:6:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:9:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:10:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:12:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:12:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:13:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setContentPane(Container) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:14:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:15:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:16:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setResizable(boolean) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:17:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setVisible(boolean) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:18:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.getContentPane() 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:19:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.pack() 
+./Chess-game/Chess game/src/com/chessgame/Frame/Frame.java:20:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setLocationRelativeTo(Component) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:13:	UnnecessaryImport:	Unused import 'com.chessgame.Game.*'
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:16:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:19:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'game'
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:20:	ShortVariable:	Avoid variables with short names like ti
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:20:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'ti'
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:20:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:20:	ShortVariable:	Avoid variables with short names like tj
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:21:	ShortVariable:	Avoid variables with short names like xx
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:21:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:21:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:21:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:21:	ShortVariable:	Avoid variables with short names like yy
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:22:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:22:	AvoidFieldNameMatchingTypeName:	It is somewhat confusing to have a field name matching the declaring class name
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'panel'
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:24:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on constructor 'Panel()'
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:25:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setFocusable(boolean) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:26:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addMouseListener(MouseListener) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:27:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addMouseMotionListener(MouseMotionListener) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:28:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:29:	MissingOverride:	The method 'keyPressed(KeyEvent)' is missing an @Override annotation.
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:29:	ShortVariable:	Avoid variables with short names like e
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:29:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:30:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:39:	MissingOverride:	The method 'paintComponent(Graphics)' is missing an @Override annotation.
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:39:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:39:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:47:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:47:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:47:	CommentDefaultAccessModifier:	Missing commented default access modifier on nested class 'Listener'
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:49:	ShortVariable:	Avoid variables with short names like e
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:49:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:51:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:51:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:52:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:52:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:53:	LawOfDemeter:	Access to field `drag` on foreign value `Game` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:54:	LawOfDemeter:	Access to field `active` on foreign value `game` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:54:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:62:	ShortVariable:	Avoid variables with short names like e
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:62:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:77:	ShortVariable:	Avoid variables with short names like e
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:77:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:78:	LawOfDemeter:	Access to field `drag` on foreign value `Game` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:79:	LawOfDemeter:	Access to field `active` on foreign value `game` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:79:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:83:	LawOfDemeter:	Access to field `drag` on foreign value `Game` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:92:	ShortVariable:	Avoid variables with short names like e
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:92:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:93:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:93:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:94:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Frame/Panel.java:94:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:14:	UnnecessaryImport:	Unused import 'com.chessgame.Pieces.*'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:16:	ShortClassName:	Avoid short class names like Game
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:16:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:16:	CyclomaticComplexity:	The class 'Game' has a total cyclomatic complexity of 102 (highest 14).
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:16:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:17:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:17:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:19:	ShortVariable:	Avoid variables with short names like wk
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:19:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:19:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wk'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:20:	ShortVariable:	Avoid variables with short names like bk
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:20:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:20:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bk'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:21:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:21:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:21:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:21:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wPieces'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:21:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:22:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:22:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:22:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bPieces'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:22:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:24:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:24:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'player'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:25:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'active'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:25:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:26:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'drag'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:26:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:26:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:26:	AvoidFieldNameMatchingMethodName:	Field drag has the same name as a method
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:27:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:27:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:27:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:27:	FieldNamingConventions:	The static field name 'AllPieces' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:27:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:29:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:29:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:29:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'allPossiblesMoves'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:29:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:31:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:31:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:31:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'allPlayersMove'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:31:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:32:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:32:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:32:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:33:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'gameOver'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:33:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:35:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:37:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Game.loadFenPosition(String) 
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:38:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Game.start() 
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:41:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:48:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:56:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:56:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:57:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:58:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:66:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:66:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:67:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:68:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:76:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:84:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:89:	ShortVariable:	Avoid variables with short names like r
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:89:	LocalVariableCouldBeFinal:	Local variable 'r' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:94:	ShortVariable:	Avoid variables with short names like m
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:94:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:99:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:99:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:99:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:99:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:99:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:105:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:105:	CognitiveComplexity:	The method 'checkMate()' has a cognitive complexity of 26, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:105:	CyclomaticComplexity:	The method 'checkMate()' has a cyclomatic complexity of 11.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:107:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:109:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:113:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:121:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:128:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:137:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:138:	UnusedAssignment:	The initializer for variable 'pieces' is never used (overwritten on lines 140 and 142)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:144:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:149:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:149:	CognitiveComplexity:	The method 'checkLegalMoves(Piece)' has a cognitive complexity of 22, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:149:	CyclomaticComplexity:	The method 'checkLegalMoves(Piece)' has a cyclomatic complexity of 14.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:149:	MethodArgumentCouldBeFinal:	Parameter 'piece' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:150:	LocalVariableCouldBeFinal:	Local variable 'movesToRemove' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:150:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:151:	UnusedAssignment:	The initializer for variable 'clonedBoard' is never used (overwritten on line 155)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:154:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:160:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:160:	UnusedAssignment:	The initializer for variable 'enemyPieces' is never used (overwritten on lines 164 and 167)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:160:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:161:	UnusedAssignment:	The initializer for variable 'king' is never used (overwritten on lines 165 and 168)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:171:	LocalVariableCouldBeFinal:	Local variable 'enemyP' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:173:	LocalVariableCouldBeFinal:	Local variable 'clonedEnemyPiece' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:176:	LocalVariableCouldBeFinal:	Local variable 'bMove' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:183:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:195:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	MethodArgumentCouldBeFinal:	Parameter 'piece' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:200:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:201:	SimplifyBooleanExpressions:	Avoid unnecessary comparisons in boolean expressions
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:206:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:206:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:206:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:206:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:206:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:211:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:217:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:217:	MethodArgumentCouldBeFinal:	Parameter 'isWhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:217:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:217:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:217:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:220:	LawOfDemeter:	Access to field `size` on foreign value `Piece` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:220:	LawOfDemeter:	Access to field `size` on foreign value `Piece` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:222:	LawOfDemeter:	Access to field `size` on foreign value `Piece` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:222:	LawOfDemeter:	Access to field `size` on foreign value `Piece` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:228:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:228:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:228:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:231:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:232:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:234:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:236:	LawOfDemeter:	Access to field `size` on foreign value `Piece` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:236:	LawOfDemeter:	Access to field `size` on foreign value `Piece` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:241:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:241:	ShortVariable:	Avoid variables with short names like p
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:241:	MethodArgumentCouldBeFinal:	Parameter 'p' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:243:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:249:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:250:	LocalVariableCouldBeFinal:	Local variable 'options' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:257:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:257:	CyclomaticComplexity:	The method 'choosePiece(Piece, int)' has a cyclomatic complexity of 10.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:257:	ShortVariable:	Avoid variables with short names like p
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:257:	MethodArgumentCouldBeFinal:	Parameter 'choice' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:261:	AvoidReassigningParameters:	Avoid reassigning parameters such as 'p'
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:289:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:289:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:289:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:289:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:290:	ShortVariable:	Avoid variables with short names like g2
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:290:	LocalVariableCouldBeFinal:	Local variable 'g2' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:298:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:298:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:298:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:298:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:299:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:305:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:305:	MethodArgumentCouldBeFinal:	Parameter 'fenString' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:306:	LocalVariableCouldBeFinal:	Local variable 'parts' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:307:	LocalVariableCouldBeFinal:	Local variable 'position' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:308:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:309:	LocalVariableCouldBeFinal:	Local variable 'c' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:310:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:327:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:335:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:336:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:337:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:338:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	CognitiveComplexity:	The method 'addToBoard(int, int, char, boolean)' has a cognitive complexity of 16, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	CyclomaticComplexity:	The method 'addToBoard(int, int, char, boolean)' has a cyclomatic complexity of 14.
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	ShortVariable:	Avoid variables with short names like c
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	MethodArgumentCouldBeFinal:	Parameter 'c' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:347:	MethodArgumentCouldBeFinal:	Parameter 'isWhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:348:	SwitchStmtsShouldHaveDefault:	Switch statements should be exhaustive, add a default case (or missing enum branches)
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:348:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+./Chess-game/Chess game/src/com/chessgame/Game/Game.java:362:	LocalVariableCouldBeFinal:	Local variable 'king' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Main.java:8:	ShortClassName:	Avoid short class names like Main
+./Chess-game/Chess game/src/com/chessgame/Main.java:8:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Main.java:8:	UseUtilityClass:	This utility class has a non-private constructor
+./Chess-game/Chess game/src/com/chessgame/Main.java:10:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:3:	UnnecessaryImport:	Unused import 'com.chessgame.Board.*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:5:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:7:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:9:	LawOfDemeter:	Access to field `BISHOP` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:12:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:12:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:15:	LawOfDemeter:	Access to field `wb` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:18:	LawOfDemeter:	Access to field `bb` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:22:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:22:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:22:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:22:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:22:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:25:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:28:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} && {thenBranch};`
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:29:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	CognitiveComplexity:	The method 'bishopMoves(int, int, Board)' has a cognitive complexity of 34, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	CyclomaticComplexity:	The method 'bishopMoves(int, int, Board)' has a cyclomatic complexity of 17.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:34:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:36:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:39:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:46:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:49:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:56:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:59:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:65:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Bishop.java:68:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:6:	ShortClassName:	Avoid short class names like King
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:6:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:6:	GodClass:	Possible God Class (WMC=53, ATFD=15, TCC=30.000%)
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:7:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:8:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'rook'
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:8:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:10:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:13:	LawOfDemeter:	Access to field `KING` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:15:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:15:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:18:	LawOfDemeter:	Access to field `wk` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:21:	LawOfDemeter:	Access to field `bk` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:25:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:25:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:25:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:25:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:25:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:25:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:26:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:28:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:30:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:37:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:42:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	CognitiveComplexity:	The method 'canMove(int, int, Board)' has a cognitive complexity of 44, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	CyclomaticComplexity:	The method 'canMove(int, int, Board)' has a cyclomatic complexity of 25.
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	NPathComplexity:	The method 'canMove(int, int, Board)' has an NPath complexity of 5465, current threshold is 200
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:49:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:51:	ShortVariable:	Avoid variables with short names like i
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:51:	LocalVariableCouldBeFinal:	Local variable 'i' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:52:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:52:	LocalVariableCouldBeFinal:	Local variable 'j' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:56:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:57:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:60:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:67:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:73:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:75:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:77:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:82:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:87:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:89:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:91:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:96:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:107:	LinguisticNaming:	Linguistics Antipattern - The getter 'getRook' should not return void linguistically
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:107:	CognitiveComplexity:	The method 'getRook(int, Board)' has a cognitive complexity of 24, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:107:	CyclomaticComplexity:	The method 'getRook(int, Board)' has a cyclomatic complexity of 12.
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:107:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:107:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:107:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:134:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:135:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/King.java:137:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:4:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:6:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:8:	LawOfDemeter:	Access to field `KNIGHT` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:11:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:11:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:14:	LawOfDemeter:	Access to field `wn` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:17:	LawOfDemeter:	Access to field `bn` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	CognitiveComplexity:	The method 'canMove(int, int, Board)' has a cognitive complexity of 18, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	CyclomaticComplexity:	The method 'canMove(int, int, Board)' has a cyclomatic complexity of 19.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	NPathComplexity:	The method 'canMove(int, int, Board)' has an NPath complexity of 19683, current threshold is 200
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:20:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:22:	UselessParentheses:	Useless parentheses.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:23:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:27:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:30:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:34:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:41:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:44:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:47:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:49:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition};`
+./Chess-game/Chess game/src/com/chessgame/Pieces/Knight.java:50:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:6:	ShortClassName:	Avoid short class names like Pawn
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:6:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:6:	GodClass:	Possible God Class (WMC=76, ATFD=12, TCC=16.364%)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:7:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:8:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'moved2Squares'
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:8:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:10:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:13:	LawOfDemeter:	Access to field `PAWN` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:16:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:16:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:19:	LawOfDemeter:	Access to field `wp` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:22:	LawOfDemeter:	Access to field `bp` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:28:	CognitiveComplexity:	The method 'makeMove(int, int, Board)' has a cognitive complexity of 21, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:28:	CyclomaticComplexity:	The method 'makeMove(int, int, Board)' has a cyclomatic complexity of 13.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:28:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:28:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:28:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:29:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:31:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:36:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:45:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:54:	UselessParentheses:	Useless parentheses.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:62:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:70:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:77:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:79:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:82:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition};`
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:83:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	CognitiveComplexity:	The method 'canMove(int, int, Board)' has a cognitive complexity of 42, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	CyclomaticComplexity:	The method 'canMove(int, int, Board)' has a cyclomatic complexity of 36.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	NPathComplexity:	The method 'canMove(int, int, Board)' has an NPath complexity of 408726, current threshold is 200
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:88:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:89:	UnusedAssignment:	The initializer for variable 'enpassant' is never used (overwritten on lines 92 and 95)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:100:	LocalVariableCouldBeFinal:	Local variable 'leftPawn' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:102:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:107:	LocalVariableCouldBeFinal:	Local variable 'rightPawn' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:109:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:115:	UselessParentheses:	Useless parentheses.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:116:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:121:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:127:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:128:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:132:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:133:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:136:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:141:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:142:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:145:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:146:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:149:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:156:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:156:	CyclomaticComplexity:	The method 'capture(int, int, Board)' has a cyclomatic complexity of 10.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:156:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:156:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:156:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:156:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:160:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:164:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:169:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:172:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:178:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:178:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:178:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:178:	UncommentedEmptyMethodBody:	Document empty method body
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:186:	MethodArgumentCouldBeFinal:	Parameter 'firstMove' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Pawn.java:194:	MethodArgumentCouldBeFinal:	Parameter 'moved2Squares' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:15:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:16:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:17:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:18:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:18:	AvoidFieldNameMatchingMethodName:	Field isWhite has the same name as a method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:19:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:20:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:21:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:22:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:23:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:24:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:24:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:25:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:26:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:28:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:28:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:28:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:28:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:29:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:31:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:33:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:38:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:44:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:44:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:44:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:47:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:55:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:55:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:57:	LawOfDemeter:	Access to field `WHITECOLOR` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:60:	LawOfDemeter:	Access to field `BLACKCOLOR` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:63:	UnnecessarySemicolon:	Unnecessary semicolon
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:65:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:71:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Piece.intializeSide(int) 
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:75:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:75:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:75:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:75:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:77:	ShortVariable:	Avoid variables with short names like g2
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:77:	LocalVariableCouldBeFinal:	Local variable 'g2' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:79:	LocalVariableCouldBeFinal:	Local variable 'm' could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:99:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:99:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:99:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:99:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:100:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:100:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:100:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:100:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	ShortVariable:	Avoid variables with short names like g
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:105:	MethodArgumentCouldBeFinal:	Parameter 'panel' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:106:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:106:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:106:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:106:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:111:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:111:	ShortVariable:	Avoid variables with short names like b
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:111:	MethodArgumentCouldBeFinal:	Parameter 'b' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:112:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:127:	MethodArgumentCouldBeFinal:	Parameter 'xcord' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:134:	MethodArgumentCouldBeFinal:	Parameter 'ycord' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:138:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:142:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:142:	MethodArgumentCouldBeFinal:	Parameter 'isWhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:150:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:154:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:163:	MethodArgumentCouldBeFinal:	Parameter 'moves' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:166:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:168:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Piece.java:170:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:4:	UnnecessaryImport:	Unused import 'java.nio.file.Path'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:8:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:9:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:9:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:9:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'WHITECOLOR'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:9:	FieldNamingConventions:	The static field name 'WHITECOLOR' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:10:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:10:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:10:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'BLACKCOLOR'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:10:	FieldNamingConventions:	The static field name 'BLACKCOLOR' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:11:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:11:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:11:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'PAWN'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:11:	FieldNamingConventions:	The static field name 'PAWN' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:12:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:12:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:12:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'ROOK'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:12:	FieldNamingConventions:	The static field name 'ROOK' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:13:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:13:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:13:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'KNIGHT'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:13:	FieldNamingConventions:	The static field name 'KNIGHT' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:14:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:14:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:14:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'BISHOP'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:14:	FieldNamingConventions:	The static field name 'BISHOP' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:15:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:15:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:15:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'QUEEN'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:15:	FieldNamingConventions:	The static field name 'QUEEN' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:16:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:16:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:16:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'KING'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:16:	FieldNamingConventions:	The static field name 'KING' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:18:	ShortVariable:	Avoid variables with short names like wk
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:18:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:18:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wk'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:19:	ShortVariable:	Avoid variables with short names like bk
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:19:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:19:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bk'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:20:	ShortVariable:	Avoid variables with short names like wr
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:20:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:20:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wr'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:21:	ShortVariable:	Avoid variables with short names like br
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:21:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:21:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:21:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'br'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:22:	ShortVariable:	Avoid variables with short names like wq
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:22:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:22:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wq'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:23:	ShortVariable:	Avoid variables with short names like bq
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:23:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:23:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bq'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:24:	ShortVariable:	Avoid variables with short names like wb
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:24:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:24:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wb'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:25:	ShortVariable:	Avoid variables with short names like bb
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:25:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:25:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bb'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:26:	ShortVariable:	Avoid variables with short names like wn
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:26:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:26:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:26:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wn'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:27:	ShortVariable:	Avoid variables with short names like bn
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:27:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:27:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bn'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:28:	ShortVariable:	Avoid variables with short names like wp
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:28:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:28:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:28:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wp'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:29:	ShortVariable:	Avoid variables with short names like bp
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:29:	MutableStaticState:	Do not use non-final non-private static fields
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:29:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:29:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bp'
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:31:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:32:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wk' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:33:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bk' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:34:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wr' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:35:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'br' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:36:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wq' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:37:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bq' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:38:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wb' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:39:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bb' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:40:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wn' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:41:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bn' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:42:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wp' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/PieceImages.java:43:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bp' in a constructor.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:4:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:6:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:8:	LawOfDemeter:	Access to field `QUEEN` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:12:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:12:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:15:	LawOfDemeter:	Access to field `wq` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:18:	LawOfDemeter:	Access to field `bq` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:24:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:24:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:24:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:24:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:24:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:27:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:31:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:31:	UselessParentheses:	Useless parentheses.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:34:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	CognitiveComplexity:	The method 'queenMovesStraight(int, int, Board)' has a cognitive complexity of 28, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	CyclomaticComplexity:	The method 'queenMovesStraight(int, int, Board)' has a cyclomatic complexity of 17.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	NPathComplexity:	The method 'queenMovesStraight(int, int, Board)' has an NPath complexity of 625, current threshold is 200
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:40:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:44:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:47:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:53:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:56:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:62:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:65:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:70:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:73:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	CognitiveComplexity:	The method 'queenMovesDiagonial(int, int, Board)' has a cognitive complexity of 34, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	CyclomaticComplexity:	The method 'queenMovesDiagonial(int, int, Board)' has a cyclomatic complexity of 17.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:82:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:84:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:87:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:94:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:97:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:104:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:107:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:113:	ShortVariable:	Avoid variables with short names like j
+./Chess-game/Chess game/src/com/chessgame/Pieces/Queen.java:116:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:1:	PackageCase:	Package name contains upper case characters
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:4:	ShortClassName:	Avoid short class names like Rook
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:4:	CommentRequired:	Class comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:6:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:6:	AvoidFieldNameMatchingMethodName:	Field hasMoved has the same name as a method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:7:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'justMoved'
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:7:	CommentRequired:	Field comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:9:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:12:	LawOfDemeter:	Access to field `ROOK` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:15:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:15:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:18:	LawOfDemeter:	Access to field `wr` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:21:	LawOfDemeter:	Access to field `br` on foreign value `PieceImages` (degree 1)
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:26:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:26:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:26:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:28:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:34:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	CognitiveComplexity:	The method 'canMove(int, int, Board)' has a cognitive complexity of 30, current threshold is 15
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	CyclomaticComplexity:	The method 'canMove(int, int, Board)' has a cyclomatic complexity of 19.
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	NPathComplexity:	The method 'canMove(int, int, Board)' has an NPath complexity of 1875, current threshold is 200
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	ShortVariable:	Avoid variables with short names like y
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:40:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:43:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:49:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:58:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:67:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:70:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:75:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:78:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:85:	CommentRequired:	Public method and constructor comments are required
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:85:	ShortVariable:	Avoid variables with short names like x
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:85:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:85:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:86:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:97:	MethodNamingConventions:	The instance method name 'HasMoved' doesn't match '[a-z][a-zA-Z0-9]*'
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:101:	MethodArgumentCouldBeFinal:	Parameter 'hasMoved' is not assigned and could be declared final
+./Chess-game/Chess game/src/com/chessgame/Pieces/Rook.java:109:	MethodArgumentCouldBeFinal:	Parameter 'justMoved' is not assigned and could be declared final
+LoosePackageCoupling	-	No packages or classes specified

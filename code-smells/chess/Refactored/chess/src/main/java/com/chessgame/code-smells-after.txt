@@ -223,25 +223,15 @@
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:45:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:81:	BooleanGetMethodName:	A getX() method which returns a boolean should be named isX()
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:85:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:86:	LocalVariableCouldBeFinal:	Local variable 'rookX' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:87:	LocalVariableCouldBeFinal:	Local variable 'rookY' could be declared final
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:92:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:96:	CommentRequired:	Public method and constructor comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:99:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:5:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:7:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:9:	LawOfDemeter:	Access to field `KNIGHT` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:12:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:12:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:15:	LawOfDemeter:	Access to field `wn` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:18:	LawOfDemeter:	Access to field `bn` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:6:	CommentRequired:	Class comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:8:	CommentRequired:	Public method and constructor comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:15:	LawOfDemeter:	Access to field `KNIGHT` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:18:	CommentRequired:	Public method and constructor comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:21:	LawOfDemeter:	Access to field `wn` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:23:	LawOfDemeter:	Access to field `bn` on foreign value `PieceImages` (degree 1)
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:7:	ShortClassName:	Avoid short class names like Pawn
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:7:	CommentRequired:	Class comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:8:	CommentRequired:	Field comments are required
@@ -440,20 +430,12 @@
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:39:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bn' in a constructor.
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:40:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wp' in a constructor.
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:41:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bp' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:5:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:7:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:9:	LawOfDemeter:	Access to field `QUEEN` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:12:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:12:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:15:	LawOfDemeter:	Access to field `wq` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:18:	LawOfDemeter:	Access to field `bq` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:6:	CommentRequired:	Class comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:8:	CommentRequired:	Public method and constructor comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:15:	LawOfDemeter:	Access to field `QUEEN` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:18:	CommentRequired:	Public method and constructor comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:21:	LawOfDemeter:	Access to field `wq` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:23:	LawOfDemeter:	Access to field `bq` on foreign value `PieceImages` (degree 1)
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:6:	ShortClassName:	Avoid short class names like Rook
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:6:	CommentRequired:	Class comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:8:	CommentRequired:	Field comments are required
@@ -461,30 +443,14 @@
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:9:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'justMoved'
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:9:	CommentRequired:	Field comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:14:	LawOfDemeter:	Access to field `ROOK` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:17:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:17:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:20:	LawOfDemeter:	Access to field `wr` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:22:	LawOfDemeter:	Access to field `br` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:27:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:27:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:27:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:29:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:35:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:40:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:40:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:40:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:40:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:41:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:55:	MethodArgumentCouldBeFinal:	Parameter 'hasMoved' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:63:	MethodArgumentCouldBeFinal:	Parameter 'justMoved' is not assigned and could be declared final
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:19:	LawOfDemeter:	Access to field `ROOK` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:22:	CommentRequired:	Public method and constructor comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:25:	LawOfDemeter:	Access to field `wr` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:27:	LawOfDemeter:	Access to field `br` on foreign value `PieceImages` (degree 1)
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:34:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:40:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:45:	CommentRequired:	Public method and constructor comments are required
+/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:46:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	CommentRequired:	Class comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	AtLeastOneConstructor:	Each class should declare at least one constructor
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:11:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
@@ -520,30 +486,6 @@
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:62:	CommentRequired:	Public method and constructor comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:7:	CommentRequired:	Class comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:10:	CognitiveComplexity:	The method 'canMove(int, int, Board, Piece)' has a cognitive complexity of 42, current threshold is 15
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:10:	CyclomaticComplexity:	The method 'canMove(int, int, Board, Piece)' has a cyclomatic complexity of 36.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:10:	NPathComplexity:	The method 'canMove(int, int, Board, Piece)' has an NPath complexity of 408726, current threshold is 200
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:12:	LocalVariableCouldBeFinal:	Local variable 'pawn' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:14:	LocalVariableCouldBeFinal:	Local variable 'xCord' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:15:	LocalVariableCouldBeFinal:	Local variable 'yCord' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:17:	UnusedAssignment:	The initializer for variable 'enpassant' is never used (overwritten on lines 20 and 22)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:27:	LocalVariableCouldBeFinal:	Local variable 'leftPawn' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:31:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:36:	LocalVariableCouldBeFinal:	Local variable 'rightPawn' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:40:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:46:	UselessParentheses:	Useless parentheses.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:48:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:53:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:59:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:63:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:67:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:70:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:73:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:77:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:81:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:84:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:87:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:90:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:7:	CommentRequired:	Class comments are required
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
 /home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:18:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
