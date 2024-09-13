@@ -1,507 +1,507 @@
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/Application.java:7:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/Application.java:7:	UseUtilityClass:	This utility class has a non-private constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/Application.java:9:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:11:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:11:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:12:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:13:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:15:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:16:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:17:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:18:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:19:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:21:	LooseCoupling:	Avoid using implementation types like 'Stack'; use the interface instead
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:21:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:22:	LooseCoupling:	Avoid using implementation types like 'Stack'; use the interface instead
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:22:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:23:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:25:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:32:	DoubleCheckedLocking:	Double checked locking is not thread safe in Java.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:34:	AvoidSynchronizedStatement:	Use ReentrantLock rather than synchronization
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:43:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:50:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:54:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:69:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:73:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:73:	CognitiveComplexity:	The method 'undoMove()' has a cognitive complexity of 17, current threshold is 15
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:77:	LawOfDemeter:	Access to field `fromX` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:77:	LawOfDemeter:	Access to field `fromY` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:78:	LawOfDemeter:	Access to field `fromX` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:78:	LawOfDemeter:	Access to field `fromY` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:84:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:90:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:99:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:99:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:100:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:100:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:105:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:105:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:106:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:106:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:113:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:118:	MethodReturnsInternalArray:	Returning 'grid' may expose an internal array.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:121:	UseVarargs:	Consider using varargs for methods or constructors which take an array the last parameter.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:122:	ArrayIsStoredDirectly:	The user-supplied array 'grid' is stored directly.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:125:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:129:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:133:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:146:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:149:	SystemPrintln:	Usage of System.out/err
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Board.java:151:	SystemPrintln:	Usage of System.out/err
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:5:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:5:	DataClass:	The class 'Movement' is suspected to be a Data Class (WOC=16.667%, NOPA=0, NOAM=10, WMC=15)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:6:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:6:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'fromX'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:6:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:7:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:7:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'piece'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/board/Movement.java:9:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:9:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:10:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:12:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:12:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:13:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setContentPane(Container) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:14:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:15:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:16:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setResizable(boolean) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:17:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setVisible(boolean) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:18:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.getContentPane() 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:19:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.pack() 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Frame.java:20:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setLocationRelativeTo(Component) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:14:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:17:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:17:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'game'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:18:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'temporaryIndexI'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:18:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:19:	ShortVariable:	Avoid variables with short names like xx
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:19:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:19:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:19:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:19:	ShortVariable:	Avoid variables with short names like yy
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:20:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:20:	AvoidFieldNameMatchingTypeName:	It is somewhat confusing to have a field name matching the declaring class name
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'panel'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:22:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on constructor 'Panel()'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:23:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setFocusable(boolean) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:24:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addMouseListener(MouseListener) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:25:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addMouseMotionListener(MouseMotionListener) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:26:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:30:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:44:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:44:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:44:	CommentDefaultAccessModifier:	Missing commented default access modifier on nested class 'Listener'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:51:	LawOfDemeter:	Access to field `active` on foreign value `game` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:51:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:75:	LawOfDemeter:	Access to field `active` on foreign value `game` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/frame/Panel.java:75:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/ConcretePieceFactory.java:12:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/ConcretePieceFactory.java:12:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/ConcretePieceFactory.java:14:	CognitiveComplexity:	The method 'createPiece(char, int, int, boolean)' has a cognitive complexity of 16, current threshold is 15
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/ConcretePieceFactory.java:14:	CyclomaticComplexity:	The method 'createPiece(char, int, int, boolean)' has a cyclomatic complexity of 15.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/ConcretePieceFactory.java:35:	LawOfDemeter:	Access to field `wk` on foreign value `Game` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/ConcretePieceFactory.java:37:	LawOfDemeter:	Access to field `bk` on foreign value `Game` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:19:	ShortClassName:	Avoid short class names like Game
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:19:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:19:	GodClass:	Possible God Class (WMC=78, ATFD=48, TCC=30.000%)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:19:	TooManyMethods:	This class has too many methods, consider refactoring it.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:20:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:20:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:22:	ShortVariable:	Avoid variables with short names like wk
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:22:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:22:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wk'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:23:	ShortVariable:	Avoid variables with short names like bk
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:23:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:23:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bk'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:24:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:24:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:24:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'whitePieces'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:24:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:25:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:25:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:25:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'blackPieces'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:25:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:27:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:27:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'player'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:28:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'active'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:28:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:29:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'drag'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:29:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:29:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:29:	AvoidFieldNameMatchingMethodName:	Field drag has the same name as a method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:30:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:30:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:30:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:30:	FieldNamingConventions:	The static field name 'AllPieces' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:30:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:32:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:32:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:32:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'allPossiblesMoves'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:32:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:34:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:34:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:34:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'allPlayersMove'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:34:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:35:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:35:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:35:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:36:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'gameOver'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:36:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:38:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:40:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Game.loadFenPosition(String) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:41:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Game.start() 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:44:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:51:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:60:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:61:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:70:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:71:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:80:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:88:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:98:	ShortVariable:	Avoid variables with short names like m
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:103:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:111:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:128:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:129:	UnusedAssignment:	The initializer for variable 'pieces' is never used (overwritten on lines 131 and 133)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:140:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:163:	UnusedFormalParameter:	Avoid unused method parameters such as 'move'.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:174:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:194:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:200:	SimplifyBooleanExpressions:	Avoid unnecessary comparisons in boolean expressions
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:205:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:210:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:216:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:229:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:232:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:233:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:235:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:242:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:244:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:250:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:265:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:272:	LocalVariableCouldBeFinal:	Local variable 'newPieceType' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:300:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:308:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:314:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:317:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:319:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:336:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:343:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:344:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:345:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:355:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/Game.java:356:	ShortVariable:	Avoid variables with short names like c
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/PieceFactory.java:5:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/PieceFactory.java:6:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/PieceFactory.java:6:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/game/PieceFactory.java:6:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Bishop.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Bishop.java:8:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Bishop.java:15:	LawOfDemeter:	Access to field `BISHOP` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Bishop.java:18:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Bishop.java:21:	LawOfDemeter:	Access to field `wb` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Bishop.java:23:	LawOfDemeter:	Access to field `bb` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:8:	ShortClassName:	Avoid short class names like King
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:8:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:9:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:10:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:12:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:20:	LawOfDemeter:	Access to field `KING` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:23:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:26:	LawOfDemeter:	Access to field `wk` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:28:	LawOfDemeter:	Access to field `bk` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:32:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:36:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:45:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:81:	BooleanGetMethodName:	A getX() method which returns a boolean should be named isX()
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:85:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:92:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:96:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/King.java:99:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:8:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:15:	LawOfDemeter:	Access to field `KNIGHT` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:18:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:21:	LawOfDemeter:	Access to field `wn` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Knight.java:23:	LawOfDemeter:	Access to field `bn` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:7:	ShortClassName:	Avoid short class names like Pawn
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:7:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:8:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:9:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'moved2Squares'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:9:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:14:	LawOfDemeter:	Access to field `PAWN` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:17:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:17:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:20:	LawOfDemeter:	Access to field `wp` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:23:	LawOfDemeter:	Access to field `bp` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:29:	CognitiveComplexity:	The method 'makeMove(int, int, Board)' has a cognitive complexity of 21, current threshold is 15
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:29:	CyclomaticComplexity:	The method 'makeMove(int, int, Board)' has a cyclomatic complexity of 13.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:29:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:29:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:29:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:30:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:37:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:46:	CollapsibleIfStatements:	This if statement could be combined with its parent
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:55:	UselessParentheses:	Useless parentheses.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:63:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:71:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:78:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:80:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:83:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition};`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:84:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:91:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:91:	CyclomaticComplexity:	The method 'capture(int, int, Board)' has a cyclomatic complexity of 10.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:91:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:91:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:91:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:91:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:95:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:99:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:104:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:107:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:113:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:113:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:113:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:113:	UncommentedEmptyMethodBody:	Document empty method body
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:121:	MethodArgumentCouldBeFinal:	Parameter 'firstMove' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Pawn.java:129:	MethodArgumentCouldBeFinal:	Parameter 'moved2Squares' is not assigned and could be declared final
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:15:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:16:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:17:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:18:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:18:	AvoidFieldNameMatchingMethodName:	Field isWhite has the same name as a method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:19:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:20:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:21:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:22:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:23:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:24:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:24:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:25:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:26:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:27:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:29:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:39:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:45:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:45:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:45:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:50:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:60:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:62:	LawOfDemeter:	Access to field `WHITECOLOR` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:64:	LawOfDemeter:	Access to field `BLACKCOLOR` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:69:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:70:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:71:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:81:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Piece.intializeSide(int) 
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:86:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:86:	ShortVariable:	Avoid variables with short names like g
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:88:	ShortVariable:	Avoid variables with short names like g2
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:110:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:110:	ShortVariable:	Avoid variables with short names like g
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:117:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like g
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:125:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:125:	ShortVariable:	Avoid variables with short names like b
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:126:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:152:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:156:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:184:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:186:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Piece.java:188:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:7:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:7:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:7:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'WHITECOLOR'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:7:	FieldNamingConventions:	The static field name 'WHITECOLOR' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:8:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:8:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:8:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'BLACKCOLOR'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:8:	FieldNamingConventions:	The static field name 'BLACKCOLOR' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:9:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:9:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:9:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'PAWN'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:9:	FieldNamingConventions:	The static field name 'PAWN' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:10:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:10:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:10:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'ROOK'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:10:	FieldNamingConventions:	The static field name 'ROOK' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:11:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:11:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:11:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'KNIGHT'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:11:	FieldNamingConventions:	The static field name 'KNIGHT' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:12:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:12:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:12:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'BISHOP'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:12:	FieldNamingConventions:	The static field name 'BISHOP' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:13:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:13:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:13:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'QUEEN'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:13:	FieldNamingConventions:	The static field name 'QUEEN' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:14:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:14:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:14:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'KING'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:14:	FieldNamingConventions:	The static field name 'KING' doesn't match '[a-z][a-zA-Z0-9]*'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:16:	ShortVariable:	Avoid variables with short names like wk
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:16:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:16:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:16:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wk'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:17:	ShortVariable:	Avoid variables with short names like bk
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:17:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:17:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:17:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bk'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:18:	ShortVariable:	Avoid variables with short names like wr
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:18:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:18:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wr'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:19:	ShortVariable:	Avoid variables with short names like br
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:19:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:19:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'br'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:20:	ShortVariable:	Avoid variables with short names like wq
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:20:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:20:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wq'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:21:	ShortVariable:	Avoid variables with short names like bq
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:21:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:21:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:21:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bq'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:22:	ShortVariable:	Avoid variables with short names like wb
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:22:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:22:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wb'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:23:	ShortVariable:	Avoid variables with short names like bb
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:23:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:23:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bb'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:24:	ShortVariable:	Avoid variables with short names like wn
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:24:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:24:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wn'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:25:	ShortVariable:	Avoid variables with short names like bn
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:25:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:25:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bn'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:26:	ShortVariable:	Avoid variables with short names like wp
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:26:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:26:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:26:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wp'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:27:	ShortVariable:	Avoid variables with short names like bp
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:27:	MutableStaticState:	Do not use non-final non-private static fields
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:27:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bp'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:29:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:30:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wk' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:31:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bk' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:32:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wr' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:33:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'br' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:34:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wq' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:35:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bq' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:36:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wb' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:37:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bb' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:38:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wn' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:39:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bn' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:40:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wp' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/PieceImages.java:41:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bp' in a constructor.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:8:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:15:	LawOfDemeter:	Access to field `QUEEN` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:18:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:21:	LawOfDemeter:	Access to field `wq` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Queen.java:23:	LawOfDemeter:	Access to field `bq` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:6:	ShortClassName:	Avoid short class names like Rook
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:8:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:8:	AvoidFieldNameMatchingMethodName:	Field hasMoved has the same name as a method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:9:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'justMoved'
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:9:	CommentRequired:	Field comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:11:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:19:	LawOfDemeter:	Access to field `ROOK` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:22:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:25:	LawOfDemeter:	Access to field `wr` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:27:	LawOfDemeter:	Access to field `br` on foreign value `PieceImages` (degree 1)
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:34:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:40:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:45:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/pieces/Rook.java:46:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:11:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:14:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:32:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CognitiveComplexity:	The method 'canMove(int, int, Board, Piece)' has a cognitive complexity of 44, current threshold is 15
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CyclomaticComplexity:	The method 'canMove(int, int, Board, Piece)' has a cyclomatic complexity of 25.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	NPathComplexity:	The method 'canMove(int, int, Board, Piece)' has an NPath complexity of 5465, current threshold is 200
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:23:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:26:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:42:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:47:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:56:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KingMoveStrategy.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like x
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like y
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:14:	UselessParentheses:	Useless parentheses.
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:15:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:6:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:7:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:9:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:21:	ForLoopVariableCount:	Too many control variables in the for statement
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:32:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:54:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/MoveStrategy.java:62:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:7:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:7:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:18:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:22:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:30:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:39:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:44:	CommentRequired:	Public method and constructor comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:55:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:58:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/RookMoveStrategy.java:7:	CommentRequired:	Class comments are required
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/RookMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/RookMoveStrategy.java:18:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/RookMoveStrategy.java:22:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-/home/arch/personal/workspace-vim/chess/src/main/java/com/chessgame/strategy/RookMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/Application.java:7:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/Application.java:7:	UseUtilityClass:	This utility class has a non-private constructor
+./src/main/java/com/chessgame/Application.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:11:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/board/Board.java:11:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+./src/main/java/com/chessgame/board/Board.java:12:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:13:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:15:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:16:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:17:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:18:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:19:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:21:	LooseCoupling:	Avoid using implementation types like 'Stack'; use the interface instead
+./src/main/java/com/chessgame/board/Board.java:21:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:22:	LooseCoupling:	Avoid using implementation types like 'Stack'; use the interface instead
+./src/main/java/com/chessgame/board/Board.java:22:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:23:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:25:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Board.java:32:	DoubleCheckedLocking:	Double checked locking is not thread safe in Java.
+./src/main/java/com/chessgame/board/Board.java:34:	AvoidSynchronizedStatement:	Use ReentrantLock rather than synchronization
+./src/main/java/com/chessgame/board/Board.java:43:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:50:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./src/main/java/com/chessgame/board/Board.java:54:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:69:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./src/main/java/com/chessgame/board/Board.java:73:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:73:	CognitiveComplexity:	The method 'undoMove()' has a cognitive complexity of 17, current threshold is 15
+./src/main/java/com/chessgame/board/Board.java:77:	LawOfDemeter:	Access to field `fromX` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:77:	LawOfDemeter:	Access to field `fromY` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:78:	LawOfDemeter:	Access to field `fromX` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:78:	LawOfDemeter:	Access to field `fromY` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:84:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./src/main/java/com/chessgame/board/Board.java:90:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./src/main/java/com/chessgame/board/Board.java:99:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:99:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:100:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:100:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:105:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:105:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:106:	LawOfDemeter:	Access to field `toX` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:106:	LawOfDemeter:	Access to field `toY` on foreign value `move` (degree 1)
+./src/main/java/com/chessgame/board/Board.java:113:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:118:	MethodReturnsInternalArray:	Returning 'grid' may expose an internal array.
+./src/main/java/com/chessgame/board/Board.java:121:	UseVarargs:	Consider using varargs for methods or constructors which take an array the last parameter.
+./src/main/java/com/chessgame/board/Board.java:122:	ArrayIsStoredDirectly:	The user-supplied array 'grid' is stored directly.
+./src/main/java/com/chessgame/board/Board.java:125:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:129:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:133:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:146:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/board/Board.java:149:	SystemPrintln:	Usage of System.out/err
+./src/main/java/com/chessgame/board/Board.java:151:	SystemPrintln:	Usage of System.out/err
+./src/main/java/com/chessgame/board/Movement.java:5:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/board/Movement.java:5:	DataClass:	The class 'Movement' is suspected to be a Data Class (WOC=16.667%, NOPA=0, NOAM=10, WMC=15)
+./src/main/java/com/chessgame/board/Movement.java:6:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Movement.java:6:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'fromX'
+./src/main/java/com/chessgame/board/Movement.java:6:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./src/main/java/com/chessgame/board/Movement.java:7:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/board/Movement.java:7:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'piece'
+./src/main/java/com/chessgame/board/Movement.java:9:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/frame/Frame.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/frame/Frame.java:9:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/frame/Frame.java:10:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/frame/Frame.java:12:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/main/java/com/chessgame/frame/Frame.java:12:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/frame/Frame.java:13:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setContentPane(Container) 
+./src/main/java/com/chessgame/frame/Frame.java:14:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./src/main/java/com/chessgame/frame/Frame.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./src/main/java/com/chessgame/frame/Frame.java:15:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./src/main/java/com/chessgame/frame/Frame.java:16:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setResizable(boolean) 
+./src/main/java/com/chessgame/frame/Frame.java:17:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setVisible(boolean) 
+./src/main/java/com/chessgame/frame/Frame.java:18:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.getContentPane() 
+./src/main/java/com/chessgame/frame/Frame.java:19:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.pack() 
+./src/main/java/com/chessgame/frame/Frame.java:20:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setLocationRelativeTo(Component) 
+./src/main/java/com/chessgame/frame/Panel.java:14:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/frame/Panel.java:17:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/frame/Panel.java:17:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'game'
+./src/main/java/com/chessgame/frame/Panel.java:18:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/frame/Panel.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'temporaryIndexI'
+./src/main/java/com/chessgame/frame/Panel.java:18:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./src/main/java/com/chessgame/frame/Panel.java:19:	ShortVariable:	Avoid variables with short names like xx
+./src/main/java/com/chessgame/frame/Panel.java:19:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/frame/Panel.java:19:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/frame/Panel.java:19:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./src/main/java/com/chessgame/frame/Panel.java:19:	ShortVariable:	Avoid variables with short names like yy
+./src/main/java/com/chessgame/frame/Panel.java:20:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/frame/Panel.java:20:	AvoidFieldNameMatchingTypeName:	It is somewhat confusing to have a field name matching the declaring class name
+./src/main/java/com/chessgame/frame/Panel.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'panel'
+./src/main/java/com/chessgame/frame/Panel.java:22:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/main/java/com/chessgame/frame/Panel.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on constructor 'Panel()'
+./src/main/java/com/chessgame/frame/Panel.java:23:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setFocusable(boolean) 
+./src/main/java/com/chessgame/frame/Panel.java:24:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addMouseListener(MouseListener) 
+./src/main/java/com/chessgame/frame/Panel.java:25:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addMouseMotionListener(MouseMotionListener) 
+./src/main/java/com/chessgame/frame/Panel.java:26:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./src/main/java/com/chessgame/frame/Panel.java:30:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/main/java/com/chessgame/frame/Panel.java:44:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/frame/Panel.java:44:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/frame/Panel.java:44:	CommentDefaultAccessModifier:	Missing commented default access modifier on nested class 'Listener'
+./src/main/java/com/chessgame/frame/Panel.java:51:	LawOfDemeter:	Access to field `active` on foreign value `game` (degree 1)
+./src/main/java/com/chessgame/frame/Panel.java:51:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./src/main/java/com/chessgame/frame/Panel.java:75:	LawOfDemeter:	Access to field `active` on foreign value `game` (degree 1)
+./src/main/java/com/chessgame/frame/Panel.java:75:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./src/main/java/com/chessgame/game/ConcretePieceFactory.java:12:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/game/ConcretePieceFactory.java:12:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/game/ConcretePieceFactory.java:14:	CognitiveComplexity:	The method 'createPiece(char, int, int, boolean)' has a cognitive complexity of 16, current threshold is 15
+./src/main/java/com/chessgame/game/ConcretePieceFactory.java:14:	CyclomaticComplexity:	The method 'createPiece(char, int, int, boolean)' has a cyclomatic complexity of 15.
+./src/main/java/com/chessgame/game/ConcretePieceFactory.java:35:	LawOfDemeter:	Access to field `wk` on foreign value `Game` (degree 1)
+./src/main/java/com/chessgame/game/ConcretePieceFactory.java:37:	LawOfDemeter:	Access to field `bk` on foreign value `Game` (degree 1)
+./src/main/java/com/chessgame/game/Game.java:19:	ShortClassName:	Avoid short class names like Game
+./src/main/java/com/chessgame/game/Game.java:19:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/game/Game.java:19:	GodClass:	Possible God Class (WMC=78, ATFD=48, TCC=30.000%)
+./src/main/java/com/chessgame/game/Game.java:19:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./src/main/java/com/chessgame/game/Game.java:20:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:20:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:22:	ShortVariable:	Avoid variables with short names like wk
+./src/main/java/com/chessgame/game/Game.java:22:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:22:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wk'
+./src/main/java/com/chessgame/game/Game.java:23:	ShortVariable:	Avoid variables with short names like bk
+./src/main/java/com/chessgame/game/Game.java:23:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:23:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bk'
+./src/main/java/com/chessgame/game/Game.java:24:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./src/main/java/com/chessgame/game/Game.java:24:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:24:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'whitePieces'
+./src/main/java/com/chessgame/game/Game.java:24:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:25:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./src/main/java/com/chessgame/game/Game.java:25:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:25:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'blackPieces'
+./src/main/java/com/chessgame/game/Game.java:25:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:27:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:27:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'player'
+./src/main/java/com/chessgame/game/Game.java:28:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'active'
+./src/main/java/com/chessgame/game/Game.java:28:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:29:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'drag'
+./src/main/java/com/chessgame/game/Game.java:29:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:29:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:29:	AvoidFieldNameMatchingMethodName:	Field drag has the same name as a method
+./src/main/java/com/chessgame/game/Game.java:30:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./src/main/java/com/chessgame/game/Game.java:30:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:30:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:30:	FieldNamingConventions:	The static field name 'AllPieces' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/game/Game.java:30:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:32:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+./src/main/java/com/chessgame/game/Game.java:32:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:32:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'allPossiblesMoves'
+./src/main/java/com/chessgame/game/Game.java:32:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:34:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:34:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:34:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'allPlayersMove'
+./src/main/java/com/chessgame/game/Game.java:34:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:35:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/game/Game.java:35:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:35:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:36:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'gameOver'
+./src/main/java/com/chessgame/game/Game.java:36:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/game/Game.java:38:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:40:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Game.loadFenPosition(String) 
+./src/main/java/com/chessgame/game/Game.java:41:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Game.start() 
+./src/main/java/com/chessgame/game/Game.java:44:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:51:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:60:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:61:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:70:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:71:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:80:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:88:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:98:	ShortVariable:	Avoid variables with short names like m
+./src/main/java/com/chessgame/game/Game.java:103:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:111:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:128:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:129:	UnusedAssignment:	The initializer for variable 'pieces' is never used (overwritten on lines 131 and 133)
+./src/main/java/com/chessgame/game/Game.java:140:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:163:	UnusedFormalParameter:	Avoid unused method parameters such as 'move'.
+./src/main/java/com/chessgame/game/Game.java:174:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/game/Game.java:194:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:200:	SimplifyBooleanExpressions:	Avoid unnecessary comparisons in boolean expressions
+./src/main/java/com/chessgame/game/Game.java:205:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:210:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./src/main/java/com/chessgame/game/Game.java:216:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:229:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:232:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/main/java/com/chessgame/game/Game.java:233:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./src/main/java/com/chessgame/game/Game.java:235:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./src/main/java/com/chessgame/game/Game.java:242:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:244:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./src/main/java/com/chessgame/game/Game.java:250:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:265:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:272:	LocalVariableCouldBeFinal:	Local variable 'newPieceType' could be declared final
+./src/main/java/com/chessgame/game/Game.java:300:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:308:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:314:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:317:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./src/main/java/com/chessgame/game/Game.java:319:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/main/java/com/chessgame/game/Game.java:336:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+./src/main/java/com/chessgame/game/Game.java:343:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:344:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:345:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/game/Game.java:355:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/Game.java:356:	ShortVariable:	Avoid variables with short names like c
+./src/main/java/com/chessgame/game/PieceFactory.java:5:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/game/PieceFactory.java:6:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/game/PieceFactory.java:6:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/game/PieceFactory.java:6:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Bishop.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/Bishop.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Bishop.java:15:	LawOfDemeter:	Access to field `BISHOP` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Bishop.java:18:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Bishop.java:21:	LawOfDemeter:	Access to field `wb` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Bishop.java:23:	LawOfDemeter:	Access to field `bb` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/King.java:8:	ShortClassName:	Avoid short class names like King
+./src/main/java/com/chessgame/pieces/King.java:8:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/King.java:9:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/King.java:10:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/King.java:12:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/King.java:20:	LawOfDemeter:	Access to field `KING` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/King.java:23:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/King.java:26:	LawOfDemeter:	Access to field `wk` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/King.java:28:	LawOfDemeter:	Access to field `bk` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/King.java:32:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/King.java:36:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/King.java:45:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/King.java:81:	BooleanGetMethodName:	A getX() method which returns a boolean should be named isX()
+./src/main/java/com/chessgame/pieces/King.java:85:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/King.java:92:	NullAssignment:	Assigning an Object to null is a code smell.  Consider refactoring.
+./src/main/java/com/chessgame/pieces/King.java:96:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/King.java:99:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Knight.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/Knight.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Knight.java:15:	LawOfDemeter:	Access to field `KNIGHT` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Knight.java:18:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Knight.java:21:	LawOfDemeter:	Access to field `wn` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Knight.java:23:	LawOfDemeter:	Access to field `bn` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Pawn.java:7:	ShortClassName:	Avoid short class names like Pawn
+./src/main/java/com/chessgame/pieces/Pawn.java:7:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:8:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:9:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'moved2Squares'
+./src/main/java/com/chessgame/pieces/Pawn.java:9:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'iswhite' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:11:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:14:	LawOfDemeter:	Access to field `PAWN` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Pawn.java:17:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:17:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:20:	LawOfDemeter:	Access to field `wp` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Pawn.java:23:	LawOfDemeter:	Access to field `bp` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Pawn.java:29:	CognitiveComplexity:	The method 'makeMove(int, int, Board)' has a cognitive complexity of 21, current threshold is 15
+./src/main/java/com/chessgame/pieces/Pawn.java:29:	CyclomaticComplexity:	The method 'makeMove(int, int, Board)' has a cyclomatic complexity of 13.
+./src/main/java/com/chessgame/pieces/Pawn.java:29:	MethodArgumentCouldBeFinal:	Parameter 'toX' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:29:	MethodArgumentCouldBeFinal:	Parameter 'toY' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:29:	MethodArgumentCouldBeFinal:	Parameter 'board' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:30:	LocalVariableCouldBeFinal:	Local variable 'move' could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:37:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./src/main/java/com/chessgame/pieces/Pawn.java:46:	CollapsibleIfStatements:	This if statement could be combined with its parent
+./src/main/java/com/chessgame/pieces/Pawn.java:55:	UselessParentheses:	Useless parentheses.
+./src/main/java/com/chessgame/pieces/Pawn.java:63:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:71:	LocalVariableCouldBeFinal:	Local variable 'p' could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:78:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:80:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:83:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition};`
+./src/main/java/com/chessgame/pieces/Pawn.java:84:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:91:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:91:	CyclomaticComplexity:	The method 'capture(int, int, Board)' has a cyclomatic complexity of 10.
+./src/main/java/com/chessgame/pieces/Pawn.java:91:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/pieces/Pawn.java:91:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:91:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Pawn.java:91:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:95:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:99:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:104:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:107:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Pawn.java:113:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Pawn.java:113:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/pieces/Pawn.java:113:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Pawn.java:113:	UncommentedEmptyMethodBody:	Document empty method body
+./src/main/java/com/chessgame/pieces/Pawn.java:121:	MethodArgumentCouldBeFinal:	Parameter 'firstMove' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Pawn.java:129:	MethodArgumentCouldBeFinal:	Parameter 'moved2Squares' is not assigned and could be declared final
+./src/main/java/com/chessgame/pieces/Piece.java:15:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:16:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:17:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:18:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:18:	AvoidFieldNameMatchingMethodName:	Field isWhite has the same name as a method
+./src/main/java/com/chessgame/pieces/Piece.java:19:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:20:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:21:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:22:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:23:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:24:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/Piece.java:24:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:25:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:26:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:27:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:29:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Piece.java:39:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Piece.java:45:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:45:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/pieces/Piece.java:45:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Piece.java:50:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:60:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:62:	LawOfDemeter:	Access to field `WHITECOLOR` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Piece.java:64:	LawOfDemeter:	Access to field `BLACKCOLOR` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Piece.java:69:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:70:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/pieces/Piece.java:71:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Piece.java:81:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Piece.intializeSide(int) 
+./src/main/java/com/chessgame/pieces/Piece.java:86:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:86:	ShortVariable:	Avoid variables with short names like g
+./src/main/java/com/chessgame/pieces/Piece.java:88:	ShortVariable:	Avoid variables with short names like g2
+./src/main/java/com/chessgame/pieces/Piece.java:110:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:110:	ShortVariable:	Avoid variables with short names like g
+./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:117:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like g
+./src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:125:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:125:	ShortVariable:	Avoid variables with short names like b
+./src/main/java/com/chessgame/pieces/Piece.java:126:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/pieces/Piece.java:152:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:156:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:184:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:186:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Piece.java:188:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
+./src/main/java/com/chessgame/pieces/PieceImages.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:7:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:7:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:7:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'WHITECOLOR'
+./src/main/java/com/chessgame/pieces/PieceImages.java:7:	FieldNamingConventions:	The static field name 'WHITECOLOR' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:8:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:8:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:8:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'BLACKCOLOR'
+./src/main/java/com/chessgame/pieces/PieceImages.java:8:	FieldNamingConventions:	The static field name 'BLACKCOLOR' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:9:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:9:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:9:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'PAWN'
+./src/main/java/com/chessgame/pieces/PieceImages.java:9:	FieldNamingConventions:	The static field name 'PAWN' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:10:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:10:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:10:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'ROOK'
+./src/main/java/com/chessgame/pieces/PieceImages.java:10:	FieldNamingConventions:	The static field name 'ROOK' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:11:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:11:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:11:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'KNIGHT'
+./src/main/java/com/chessgame/pieces/PieceImages.java:11:	FieldNamingConventions:	The static field name 'KNIGHT' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:12:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:12:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:12:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'BISHOP'
+./src/main/java/com/chessgame/pieces/PieceImages.java:12:	FieldNamingConventions:	The static field name 'BISHOP' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:13:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:13:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:13:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'QUEEN'
+./src/main/java/com/chessgame/pieces/PieceImages.java:13:	FieldNamingConventions:	The static field name 'QUEEN' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:14:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:14:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:14:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'KING'
+./src/main/java/com/chessgame/pieces/PieceImages.java:14:	FieldNamingConventions:	The static field name 'KING' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/main/java/com/chessgame/pieces/PieceImages.java:16:	ShortVariable:	Avoid variables with short names like wk
+./src/main/java/com/chessgame/pieces/PieceImages.java:16:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:16:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:16:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wk'
+./src/main/java/com/chessgame/pieces/PieceImages.java:17:	ShortVariable:	Avoid variables with short names like bk
+./src/main/java/com/chessgame/pieces/PieceImages.java:17:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:17:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:17:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bk'
+./src/main/java/com/chessgame/pieces/PieceImages.java:18:	ShortVariable:	Avoid variables with short names like wr
+./src/main/java/com/chessgame/pieces/PieceImages.java:18:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:18:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wr'
+./src/main/java/com/chessgame/pieces/PieceImages.java:19:	ShortVariable:	Avoid variables with short names like br
+./src/main/java/com/chessgame/pieces/PieceImages.java:19:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:19:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'br'
+./src/main/java/com/chessgame/pieces/PieceImages.java:20:	ShortVariable:	Avoid variables with short names like wq
+./src/main/java/com/chessgame/pieces/PieceImages.java:20:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:20:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wq'
+./src/main/java/com/chessgame/pieces/PieceImages.java:21:	ShortVariable:	Avoid variables with short names like bq
+./src/main/java/com/chessgame/pieces/PieceImages.java:21:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:21:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:21:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bq'
+./src/main/java/com/chessgame/pieces/PieceImages.java:22:	ShortVariable:	Avoid variables with short names like wb
+./src/main/java/com/chessgame/pieces/PieceImages.java:22:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:22:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wb'
+./src/main/java/com/chessgame/pieces/PieceImages.java:23:	ShortVariable:	Avoid variables with short names like bb
+./src/main/java/com/chessgame/pieces/PieceImages.java:23:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:23:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bb'
+./src/main/java/com/chessgame/pieces/PieceImages.java:24:	ShortVariable:	Avoid variables with short names like wn
+./src/main/java/com/chessgame/pieces/PieceImages.java:24:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:24:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wn'
+./src/main/java/com/chessgame/pieces/PieceImages.java:25:	ShortVariable:	Avoid variables with short names like bn
+./src/main/java/com/chessgame/pieces/PieceImages.java:25:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:25:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bn'
+./src/main/java/com/chessgame/pieces/PieceImages.java:26:	ShortVariable:	Avoid variables with short names like wp
+./src/main/java/com/chessgame/pieces/PieceImages.java:26:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:26:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:26:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'wp'
+./src/main/java/com/chessgame/pieces/PieceImages.java:27:	ShortVariable:	Avoid variables with short names like bp
+./src/main/java/com/chessgame/pieces/PieceImages.java:27:	MutableStaticState:	Do not use non-final non-private static fields
+./src/main/java/com/chessgame/pieces/PieceImages.java:27:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bp'
+./src/main/java/com/chessgame/pieces/PieceImages.java:29:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/PieceImages.java:30:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wk' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:31:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bk' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:32:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wr' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:33:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'br' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:34:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wq' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:35:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bq' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:36:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wb' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:37:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bb' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:38:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wn' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:39:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bn' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:40:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'wp' in a constructor.
+./src/main/java/com/chessgame/pieces/PieceImages.java:41:	AssignmentToNonFinalStatic:	Possible unsafe assignment to non-final static field 'bp' in a constructor.
+./src/main/java/com/chessgame/pieces/Queen.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/Queen.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Queen.java:15:	LawOfDemeter:	Access to field `QUEEN` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Queen.java:18:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Queen.java:21:	LawOfDemeter:	Access to field `wq` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Queen.java:23:	LawOfDemeter:	Access to field `bq` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Rook.java:6:	ShortClassName:	Avoid short class names like Rook
+./src/main/java/com/chessgame/pieces/Rook.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/pieces/Rook.java:8:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Rook.java:8:	AvoidFieldNameMatchingMethodName:	Field hasMoved has the same name as a method
+./src/main/java/com/chessgame/pieces/Rook.java:9:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'justMoved'
+./src/main/java/com/chessgame/pieces/Rook.java:9:	CommentRequired:	Field comments are required
+./src/main/java/com/chessgame/pieces/Rook.java:11:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Rook.java:19:	LawOfDemeter:	Access to field `ROOK` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Rook.java:22:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Rook.java:25:	LawOfDemeter:	Access to field `wr` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Rook.java:27:	LawOfDemeter:	Access to field `br` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Rook.java:34:	ConfusingTernary:	Avoid if (x != y) ..; else ..;
+./src/main/java/com/chessgame/pieces/Rook.java:40:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Rook.java:45:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Rook.java:46:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:11:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:14:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:32:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CognitiveComplexity:	The method 'canMove(int, int, Board, Piece)' has a cognitive complexity of 44, current threshold is 15
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CyclomaticComplexity:	The method 'canMove(int, int, Board, Piece)' has a cyclomatic complexity of 25.
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	NPathComplexity:	The method 'canMove(int, int, Board, Piece)' has an NPath complexity of 5465, current threshold is 200
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:23:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:26:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:42:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:47:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:56:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like y
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:14:	UselessParentheses:	Useless parentheses.
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:15:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:6:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:7:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:9:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:21:	ForLoopVariableCount:	Too many control variables in the for statement
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:32:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:54:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/MoveStrategy.java:62:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:7:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/PawnMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:7:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:18:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:22:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:30:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:39:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:44:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:55:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:58:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/QueenMoveStrategy.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/RookMoveStrategy.java:7:	CommentRequired:	Class comments are required
+./src/main/java/com/chessgame/strategy/RookMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/main/java/com/chessgame/strategy/RookMoveStrategy.java:18:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/RookMoveStrategy.java:22:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/RookMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 LoosePackageCoupling	-	No packages or classes specified
