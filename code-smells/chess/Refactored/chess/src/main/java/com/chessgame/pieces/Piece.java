@@ -31,8 +31,8 @@ public class Piece implements Cloneable {
     if (!alive()) {
       return false;
     }
-    for (final Movement m : moves) {
-      if (m.compareTo(move) == 0) {
+    for (final Movement movement : moves) {
+      if (movement.compareTo(move) == 0) {
         board.updatePieces(xCord, yCord, toX, toY, this);
         xCord = toX;
         yCord = toY;
@@ -42,11 +42,10 @@ public class Piece implements Cloneable {
     return false;
   }
 
-  public boolean canMove(final int x, final int y, final Board board) {
-    return moveStrategy.canMove(x, y, board, this);
+  public boolean canMove(final int horizontalPos, final int verticalPos, final Board board) {
+    return moveStrategy.canMove(horizontalPos, verticalPos, board, this);
   }
 
-  @SuppressWarnings("unlikely-arg-type")
   public boolean alive() {
     if (board.getXY(xCord, yCord) != valueInTheBoard
         || board.getXY(xCord, yCord) == 0
@@ -67,66 +66,75 @@ public class Piece implements Cloneable {
   }
 
   public Piece(
-      final int x,
-      final int y,
+      final int horizontalPos,
+      final int verticalPos,
       final boolean iswhite,
       final Board board,
       final int value,
       final MoveStrategy moveStrategy) {
-    this.xCord = x;
-    this.yCord = y;
+    this.xCord = horizontalPos;
+    this.yCord = verticalPos;
     this.isWhite = iswhite;
     isAlive = true;
     this.board = board;
     intializeSide(value);
-    board.setPieceIntoBoard(x, y, this);
+    board.setPieceIntoBoard(horizontalPos, verticalPos, this);
     this.moveStrategy = moveStrategy;
   }
 
-  public void showMoves(final Graphics g, final JPanel panel) {
+  public void showMoves(final Graphics graphics, final JPanel panel) {
 
-    final Graphics2D g2 = (Graphics2D) g;
+    final Graphics2D graphics2D = (Graphics2D) graphics;
 
     for (final Movement m : moves) {
       if (board.getPiece(m.getToX(), m.getToY()) != null
           && board.getPiece(m.getToX(), m.getToY()).isWhite() != isWhite()) {
-        g.setColor(Color.ORANGE);
+        graphics.setColor(Color.ORANGE);
       } else {
-        g.setColor(Color.DARK_GRAY);
+        graphics.setColor(Color.DARK_GRAY);
       }
-      g.fillOval(
+      graphics.fillOval(
           (m.getToX() * size) + size / 3, (m.getToY() * size) + size / 3, size / 3, size / 3);
-      g2.setColor(Color.DARK_GRAY);
+      graphics2D.setColor(Color.DARK_GRAY);
       if (Game.drag) {
-        g2.fillRect(m.getFromX() * size, m.getFromY() * size, size, size);
+        graphics2D.fillRect(m.getFromX() * size, m.getFromY() * size, size, size);
       } else {
-        g2.drawRect(m.getFromX() * size, m.getFromY() * size, size, size);
+        graphics2D.drawRect(m.getFromX() * size, m.getFromY() * size, size, size);
       }
     }
     panel.revalidate();
     panel.repaint();
   }
 
-  public void draw(final Graphics g, final boolean drag, final JPanel panel) {
-    g.drawImage(
+  public void draw(final Graphics graphics, final boolean drag, final JPanel panel) {
+    graphics.drawImage(
         image.getImage(), xCord * Piece.size, yCord * Piece.size, Piece.size, Piece.size, panel);
     panel.revalidate();
     panel.repaint();
   }
 
   public void draw2(
-      final Graphics g, final boolean player, final int x, final int y, final JPanel panel) {
-    g.drawImage(
-        image.getImage(), x - Piece.size / 2, y - Piece.size / 2, Piece.size, Piece.size, panel);
+      final Graphics graphics,
+      final boolean player,
+      final int horizontalPos,
+      final int verticalPos,
+      final JPanel panel) {
+    graphics.drawImage(
+        image.getImage(),
+        horizontalPos - Piece.size / 2,
+        verticalPos - Piece.size / 2,
+        Piece.size,
+        Piece.size,
+        panel);
     panel.revalidate();
     panel.repaint();
   }
 
-  public void fillAllPseudoLegalMoves(final Board b) {
+  public void fillAllPseudoLegalMoves(final Board board) {
     moves = new ArrayList<Movement>();
     for (int i = 0; i < 8; i++) {
       for (int j = 0; j < 8; j++) {
-        if (canMove(i, j, b)) {
+        if (canMove(i, j, board)) {
           moves.add(new Movement(xCord, yCord, i, j, this));
         }
       }
@@ -184,8 +192,8 @@ public class Piece implements Cloneable {
   public Piece getClone() {
     try {
       return (Piece) this.clone();
-    } catch (final CloneNotSupportedException e) {
-      e.printStackTrace();
+    } catch (final CloneNotSupportedException exception) {
+      exception.printStackTrace();
     }
     return null;
   }

@@ -453,30 +453,17 @@
 ./src/main/java/com/chessgame/pieces/Rook.java:46:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
 ./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	AtLeastOneConstructor:	Each class should declare at least one constructor
-./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:11:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:14:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:32:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:13:	LongVariable:	Avoid excessively long variable names like isOccupiedByOwnPiece
 ./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	AtLeastOneConstructor:	Each class should declare at least one constructor
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CognitiveComplexity:	The method 'canMove(int, int, Board, Piece)' has a cognitive complexity of 44, current threshold is 15
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CyclomaticComplexity:	The method 'canMove(int, int, Board, Piece)' has a cyclomatic complexity of 25.
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	NPathComplexity:	The method 'canMove(int, int, Board, Piece)' has an NPath complexity of 5465, current threshold is 200
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:23:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:26:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:42:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:47:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:56:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:36:	LocalVariableCouldBeFinal:	Local variable 'result' could be declared final
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:45:	UnusedFormalParameter:	Avoid unused method parameters such as 'positionX'.
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:87:	ShortVariable:	Avoid variables with short names like x
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:87:	ShortVariable:	Avoid variables with short names like y
 ./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like x
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like y
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:14:	UselessParentheses:	Useless parentheses.
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:15:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:15:	UselessParentheses:	Useless parentheses.
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:17:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 ./src/main/java/com/chessgame/strategy/MoveStrategy.java:6:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/MoveStrategy.java:7:	CommentRequired:	Public method and constructor comments are required
 ./src/main/java/com/chessgame/strategy/MoveStrategy.java:9:	CommentRequired:	Public method and constructor comments are required

@@ -9,9 +9,10 @@ public class BishopMoveStrategy implements MoveStrategy {
   public boolean canMove(
       final int positionX, final int positionY, final Board board, final Piece piece) {
 
-    Piece targetPiece = board.getPiece(positionX, positionY);
-    boolean isOccupiedByOwnPiece = targetPiece != null && targetPiece.isWhite() == piece.isWhite();
-    boolean isDiagonalMove =
+    final Piece targetPiece = board.getPiece(positionX, positionY);
+    final boolean isOccupiedByOwnPiece =
+        targetPiece != null && targetPiece.isWhite() == piece.isWhite();
+    final boolean isDiagonalMove =
         Math.abs(positionX - piece.getXcord()) == Math.abs(positionY - piece.getYcord());
 
     return !isOccupiedByOwnPiece

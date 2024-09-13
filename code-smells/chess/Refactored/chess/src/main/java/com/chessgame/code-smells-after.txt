@@ -301,41 +301,30 @@
 ./src/main/java/com/chessgame/pieces/Piece.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 ./src/main/java/com/chessgame/pieces/Piece.java:39:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 ./src/main/java/com/chessgame/pieces/Piece.java:45:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:45:	ShortVariable:	Avoid variables with short names like x
-./src/main/java/com/chessgame/pieces/Piece.java:45:	ShortVariable:	Avoid variables with short names like y
-./src/main/java/com/chessgame/pieces/Piece.java:50:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:60:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:62:	LawOfDemeter:	Access to field `WHITECOLOR` on foreign value `PieceImages` (degree 1)
-./src/main/java/com/chessgame/pieces/Piece.java:64:	LawOfDemeter:	Access to field `BLACKCOLOR` on foreign value `PieceImages` (degree 1)
-./src/main/java/com/chessgame/pieces/Piece.java:69:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:70:	ShortVariable:	Avoid variables with short names like x
-./src/main/java/com/chessgame/pieces/Piece.java:71:	ShortVariable:	Avoid variables with short names like y
-./src/main/java/com/chessgame/pieces/Piece.java:81:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Piece.intializeSide(int) 
-./src/main/java/com/chessgame/pieces/Piece.java:86:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:86:	ShortVariable:	Avoid variables with short names like g
-./src/main/java/com/chessgame/pieces/Piece.java:88:	ShortVariable:	Avoid variables with short names like g2
-./src/main/java/com/chessgame/pieces/Piece.java:110:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:110:	ShortVariable:	Avoid variables with short names like g
-./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:117:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like g
-./src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like x
-./src/main/java/com/chessgame/pieces/Piece.java:118:	ShortVariable:	Avoid variables with short names like y
-./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:120:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
-./src/main/java/com/chessgame/pieces/Piece.java:125:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:125:	ShortVariable:	Avoid variables with short names like b
-./src/main/java/com/chessgame/pieces/Piece.java:126:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
-./src/main/java/com/chessgame/pieces/Piece.java:152:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:156:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:184:	CommentRequired:	Public method and constructor comments are required
-./src/main/java/com/chessgame/pieces/Piece.java:186:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/pieces/Piece.java:188:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
+./src/main/java/com/chessgame/pieces/Piece.java:49:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:59:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:61:	LawOfDemeter:	Access to field `WHITECOLOR` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Piece.java:63:	LawOfDemeter:	Access to field `BLACKCOLOR` on foreign value `PieceImages` (degree 1)
+./src/main/java/com/chessgame/pieces/Piece.java:68:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:80:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Piece.intializeSide(int) 
+./src/main/java/com/chessgame/pieces/Piece.java:85:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:109:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:111:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:111:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:111:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:111:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:116:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:124:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:125:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:126:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:127:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Piece': 'size' is already in scope because it is declared in an enclosing type
+./src/main/java/com/chessgame/pieces/Piece.java:133:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:134:	UseDiamondOperator:	Explicit type arguments can be replaced by a diamond: `new ArrayList<>()`
+./src/main/java/com/chessgame/pieces/Piece.java:160:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:164:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:192:	CommentRequired:	Public method and constructor comments are required
+./src/main/java/com/chessgame/pieces/Piece.java:194:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/pieces/Piece.java:196:	AvoidPrintStackTrace:	Avoid printStackTrace(); use a logger call instead.
 ./src/main/java/com/chessgame/pieces/PieceImages.java:6:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/pieces/PieceImages.java:7:	MutableStaticState:	Do not use non-final non-private static fields
 ./src/main/java/com/chessgame/pieces/PieceImages.java:7:	CommentRequired:	Field comments are required
@@ -453,30 +442,15 @@
 ./src/main/java/com/chessgame/pieces/Rook.java:46:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
 ./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:6:	AtLeastOneConstructor:	Each class should declare at least one constructor
-./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:11:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:14:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
-./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:32:	SimplifiedTernary:	This conditional expression can be simplified with || or &&
+./src/main/java/com/chessgame/strategy/BishopMoveStrategy.java:13:	LongVariable:	Avoid excessively long variable names like isOccupiedByOwnPiece
 ./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:9:	AtLeastOneConstructor:	Each class should declare at least one constructor
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CognitiveComplexity:	The method 'canMove(int, int, Board, Piece)' has a cognitive complexity of 44, current threshold is 15
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	CyclomaticComplexity:	The method 'canMove(int, int, Board, Piece)' has a cyclomatic complexity of 25.
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:12:	NPathComplexity:	The method 'canMove(int, int, Board, Piece)' has an NPath complexity of 5465, current threshold is 200
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:23:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} || {elseBranch};`
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:24:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:26:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:32:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:37:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:42:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:47:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:52:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:56:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:61:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:36:	LocalVariableCouldBeFinal:	Local variable 'result' could be declared final
+./src/main/java/com/chessgame/strategy/KingMoveStrategy.java:87:	ShortVariable:	Avoid variables with short names like y
 ./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like x
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:9:	ShortVariable:	Avoid variables with short names like y
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:14:	UselessParentheses:	Useless parentheses.
-./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:15:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:15:	UselessParentheses:	Useless parentheses.
+./src/main/java/com/chessgame/strategy/KnightMoveStrategy.java:17:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
 ./src/main/java/com/chessgame/strategy/MoveStrategy.java:6:	CommentRequired:	Class comments are required
 ./src/main/java/com/chessgame/strategy/MoveStrategy.java:7:	CommentRequired:	Public method and constructor comments are required
 ./src/main/java/com/chessgame/strategy/MoveStrategy.java:9:	CommentRequired:	Public method and constructor comments are required
