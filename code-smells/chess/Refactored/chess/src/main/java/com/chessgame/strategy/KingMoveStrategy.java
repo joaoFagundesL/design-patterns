@@ -33,7 +33,7 @@ public class KingMoveStrategy implements MoveStrategy {
 
   private boolean isMoveValidForRegularMove(
       final int positionX, final int positionY, final Board board, final King king) {
-    boolean result;
+    final boolean result;
     if (board.getPiece(positionX, positionY) == null) {
       result = true;
     } else {

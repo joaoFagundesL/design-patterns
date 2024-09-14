@@ -1,8 +1,8 @@
 package button;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionListener;
-
 
 public class ButtonBuilder {
   private String name;
@@ -13,37 +13,37 @@ public class ButtonBuilder {
   private boolean enabled = true;
   private ActionListener actionListener;
 
-  public ButtonBuilder setName(String name) {
+  public ButtonBuilder setName(final String name) {
     this.name = name;
     return this;
   }
 
-  public ButtonBuilder setBackgroundColor(Color color) {
+  public ButtonBuilder setBackgroundColor(final Color color) {
     this.backgroundColor = color;
     return this;
   }
 
-  public ButtonBuilder setTextColor(Color color) {
+  public ButtonBuilder setTextColor(final Color color) {
     this.textColor = color;
     return this;
   }
 
-  public ButtonBuilder setFont(Font font) {
+  public ButtonBuilder setFont(final Font font) {
     this.font = font;
     return this;
   }
 
-  public ButtonBuilder setTooltip(String tooltip) {
+  public ButtonBuilder setTooltip(final String tooltip) {
     this.tooltip = tooltip;
     return this;
   }
 
-  public ButtonBuilder setEnabled(boolean enabled) {
+  public ButtonBuilder setEnabled(final boolean enabled) {
     this.enabled = enabled;
     return this;
   }
 
-  public ButtonBuilder setActionListener(ActionListener listener) {
+  public ButtonBuilder setActionListener(final ActionListener listener) {
     this.actionListener = listener;
     return this;
   }

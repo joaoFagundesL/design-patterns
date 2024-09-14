@@ -1,8 +1,8 @@
 package button;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 
 public class Button extends JButton {
@@ -13,9 +13,16 @@ public class Button extends JButton {
   private Font font = new Font("Arial", Font.PLAIN, 12);
   private String tooltip;
   private boolean enabled = true;
-  private ActionListener actionListener;
+  private final ActionListener actionListener;
 
-  Button(String name, Color backgroundColor, Color textColor, Font font, String tooltip, boolean enabled, ActionListener actionListener) {
+  Button(
+      final String name,
+      final Color backgroundColor,
+      final Color textColor,
+      final Font font,
+      final String tooltip,
+      final boolean enabled,
+      final ActionListener actionListener) {
     super(name);
     this.name = name;
     this.backgroundColor = backgroundColor;
@@ -26,14 +33,15 @@ public class Button extends JButton {
     this.actionListener = actionListener;
 
     addActionListener(this.actionListener);
-
   }
 
+  @Override
   public String getName() {
     return name;
   }
 
-  public void setName(String name) {
+  @Override
+  public void setName(final String name) {
     this.name = name;
   }
 
@@ -41,7 +49,7 @@ public class Button extends JButton {
     return backgroundColor;
   }
 
-  public void setBackgroundColor(Color backgroundColor) {
+  public void setBackgroundColor(final Color backgroundColor) {
     this.backgroundColor = backgroundColor;
   }
 
@@ -49,15 +57,17 @@ public class Button extends JButton {
     return textColor;
   }
 
-  public void setTextColor(Color textColor) {
+  public void setTextColor(final Color textColor) {
     this.textColor = textColor;
   }
 
+  @Override
   public Font getFont() {
     return font;
   }
 
-  public void setFont(Font font) {
+  @Override
+  public void setFont(final Font font) {
     this.font = font;
   }
 
@@ -65,15 +75,17 @@ public class Button extends JButton {
     return tooltip;
   }
 
-  public void setTooltip(String tooltip) {
+  public void setTooltip(final String tooltip) {
     this.tooltip = tooltip;
   }
 
+  @Override
   public boolean isEnabled() {
     return enabled;
   }
 
-  public void setEnabled(boolean enabled) {
+  @Override
+  public void setEnabled(final boolean enabled) {
     this.enabled = enabled;
   }
 }

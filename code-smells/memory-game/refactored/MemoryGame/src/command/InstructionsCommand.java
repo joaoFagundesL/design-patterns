@@ -1,22 +1,25 @@
 package command;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-
-import javax.swing.JPanel;
-
 import button.Button;
 import game.GameM;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import javax.swing.JPanel;
 import view.GameView;
 
 public class InstructionsCommand implements Command {
-  private GameView view;
-  private GameM game;
-  private Button goBack;
-  private JPanel instructScreen;
-  private JPanel startScreen;
+  private final GameView view;
+  private final GameM game;
+  private final Button goBack;
+  private final JPanel instructScreen;
+  private final JPanel startScreen;
 
-  public InstructionsCommand(GameM game, GameView view, Button goBack, JPanel instructScreen, JPanel startScreen) {
+  public InstructionsCommand(
+      final GameM game,
+      final GameView view,
+      final Button goBack,
+      final JPanel instructScreen,
+      final JPanel startScreen) {
     this.game = game;
     this.instructScreen = instructScreen;
     this.startScreen = startScreen;
@@ -30,9 +33,9 @@ public class InstructionsCommand implements Command {
 
     startScreen.add(instructScreen, BorderLayout.NORTH);
 
-    JPanel one = new JPanel();
+    final JPanel one = new JPanel();
     one.setLayout(new FlowLayout(FlowLayout.CENTER));
-    JPanel two = new JPanel();
+    final JPanel two = new JPanel();
     two.setLayout(new FlowLayout(FlowLayout.CENTER));
     instructScreen.setLayout(new BorderLayout());
     instructScreen.add(one, BorderLayout.NORTH);
@@ -44,5 +47,4 @@ public class InstructionsCommand implements Command {
     goBack.addActionListener(game);
     goBack.setEnabled(true);
   }
-
 }

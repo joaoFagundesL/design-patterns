@@ -1,12 +1,13 @@
 package command;
+
 import game.GameM;
 import view.GameView;
 
 public class GoBackCommand implements Command {
-  private GameView view;
-  private GameM game;
+  private final GameView view;
+  private final GameM game;
 
-  public GoBackCommand(GameView view, GameM game) {
+  public GoBackCommand(final GameView view, final GameM game) {
     this.game = game;
     this.view = view;
   }
@@ -16,5 +17,4 @@ public class GoBackCommand implements Command {
     view.frame.dispose();
     game.goToMainScreen();
   }
-
 }

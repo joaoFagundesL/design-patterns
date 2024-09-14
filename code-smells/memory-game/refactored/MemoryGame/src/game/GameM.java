@@ -1,11 +1,5 @@
 package game;
 
-import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.HashMap;
-import java.util.Random;
-
 import button.Button;
 import button.ButtonBuilder;
 import command.Command;
@@ -15,33 +9,38 @@ import command.GoBackCommand;
 import command.HardCommand;
 import command.InstructionsCommand;
 import command.StartCommand;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.HashMap;
+import java.util.Random;
 import strategy.EasyGameStrategy;
 import strategy.GameStrategy;
 import strategy.HardGameStrategy;
 import view.GameView;
 
 public class GameM implements ActionListener {
-  private GameView view;
+  private final GameView view;
 
-  private ButtonBuilder builder = new ButtonBuilder();
-  private HashMap<Button, Command> buttonCommands = new HashMap<>();
+  private final ButtonBuilder builder = new ButtonBuilder();
+  private final HashMap<Button, Command> buttonCommands = new HashMap<>();
   private GameStrategy strategy;
 
-  private Button btn[] = new Button[20];
+  private final Button btn[] = new Button[20];
 
   private boolean purgatory = false;
-  private boolean game_over = false;
+  private boolean gameOver = false;
   private int level = 0;
   private int score = 0;
 
   private String[] board;
-  private int[] boardQ = new int[20];
+  private final int[] boardQ = new int[20];
   private boolean shown = true;
   private int temp = 30;
   private int temp2 = 30;
   private boolean eh = true;
 
-  private Random randomGenerator = new Random();
+  private final Random randomGenerator = new Random();
 
   public GameM() {
     view = new GameView(this);
@@ -52,7 +51,7 @@ public class GameM implements ActionListener {
     return strategy;
   }
 
-  public void setStrategy(GameStrategy strategy) {
+  public void setStrategy(final GameStrategy strategy) {
     this.strategy = strategy;
   }
 
@@ -60,26 +59,37 @@ public class GameM implements ActionListener {
     return eh;
   }
 
-  public void setEh(boolean eh) {
+  public void setEh(final boolean eh) {
     this.eh = eh;
   }
 
   public void initializeCommands() {
     buttonCommands.put(view.getStartButton(), new StartCommand(this));
     buttonCommands.put(view.getExitButton(), new ExitCommand());
-    buttonCommands.put(view.getInstructionsButton(), new InstructionsCommand(this, view, view.getGoBackButton(), view.getInstructScreen(), view.getStartScreen()));
+    buttonCommands.put(
+        view.getInstructionsButton(),
+        new InstructionsCommand(
+            this, view, view.getGoBackButton(), view.getInstructScreen(), view.getStartScreen()));
     buttonCommands.put(view.getGoBackButton(), new GoBackCommand(view, this));
-    buttonCommands.put(view.getEasyButton(), new EasyCommand(this, view.getEasyButton(), view.getHardButton()));
-    buttonCommands.put(view.getHardButton(), new HardCommand(this, view.getEasyButton(), view.getHardButton()));
+    buttonCommands.put(
+        view.getEasyButton(), new EasyCommand(this, view.getEasyButton(), view.getHardButton()));
+    buttonCommands.put(
+        view.getHardButton(), new HardCommand(this, view.getEasyButton(), view.getHardButton()));
   }
 
-  public void setUpGame(int x, Boolean easy) {
+  public void setUpGame(final int x, final Boolean easy) {
     level = x;
     view.clearMain();
 
     board = new String[2 * x];
     for (int i = 0; i < (x * 2); i++) {
-      btn[i] = builder.setName("").setBackgroundColor(new Color(220, 220, 220)).setActionListener(this).setEnabled(true).build();
+      btn[i] =
+          builder
+              .setName("")
+              .setBackgroundColor(new Color(220, 220, 220))
+              .setActionListener(this)
+              .setEnabled(true)
+              .build();
       view.addButton(btn[i]);
     }
 
@@ -96,11 +106,11 @@ public class GameM implements ActionListener {
     createBoard();
   }
 
-  public void setBoardSymbols(String[] symbols, int level) {
+  public void setBoardSymbols(final String[] symbols, final int level) {
     for (int i = 0; i < level; i++) {
       for (int z = 0; z < 2; z++) {
         while (true) {
-          int y = randomGenerator.nextInt(level * 2);
+          final int y = randomGenerator.nextInt(level * 2);
           if (board[y] == null) {
             btn[y].setText(symbols[i]);
             board[y] = symbols[i];
@@ -111,14 +121,14 @@ public class GameM implements ActionListener {
     }
   }
 
-  public void hideField(int x) {
+  public void hideField(final int x) {
     for (int i = 0; i < (x * 2); i++) {
       btn[i].setText("");
     }
     shown = false;
   }
 
-  public void switchSpot(int i) {
+  public void switchSpot(final int i) {
     if (!board[i].equals("done")) {
       if (btn[i].getText().isEmpty()) {
         btn[i].setText(board[i]);
@@ -128,11 +138,11 @@ public class GameM implements ActionListener {
     }
   }
 
-  public void showSpot(int i) {
+  public void showSpot(final int i) {
     btn[i].setText(board[i]);
   }
 
-  public void showField(int x, String a[]) {
+  public void showField(final int x, final String a[]) {
     for (int i = 0; i < (x * 2); i++) {
       btn[i].setText(a[i]);
     }
@@ -142,7 +152,7 @@ public class GameM implements ActionListener {
   void waitABit() {
     try {
       Thread.sleep(5);
-    } catch (Exception e) {
+    } catch (final Exception e) {
     }
   }
 
@@ -170,7 +180,7 @@ public class GameM implements ActionListener {
 
   public void startGame() {
     score = 0;
-    game_over = false;
+    gameOver = false;
     view.clearMain();
     setUpGame(level, eh);
   }
@@ -183,8 +193,9 @@ public class GameM implements ActionListener {
     return eh;
   }
 
-  public void actionPerformed(ActionEvent click) {
-    Object source = click.getSource();
+  @Override
+  public void actionPerformed(final ActionEvent click) {
+    final Object source = click.getSource();
 
     if (buttonCommands.containsKey(source)) {
       buttonCommands.get(source).execute();
@@ -202,7 +213,7 @@ public class GameM implements ActionListener {
     processGameTurn(source);
   }
 
-  public void processGameTurn(Object source) {
+  public void processGameTurn(final Object source) {
     for (int i = 0; i < (level * 2); i++) {
       if (source == btn[i]) {
         if (shown) {
@@ -227,7 +238,7 @@ public class GameM implements ActionListener {
     }
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     new GameM();
   }
 }

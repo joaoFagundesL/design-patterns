@@ -1,0 +1,284 @@
+./memory-link/refactored/MemoryGame/src/button/Button.java:8:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:8:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./memory-link/refactored/MemoryGame/src/button/Button.java:8:	DataClass:	The class 'Button' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=12, WMC=13)
+./memory-link/refactored/MemoryGame/src/button/Button.java:10:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:11:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:11:	UnusedAssignment:	The field initializer for 'backgroundColor' is never used (overwritten on line 21)
+./memory-link/refactored/MemoryGame/src/button/Button.java:12:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:12:	UnusedAssignment:	The field initializer for 'textColor' is never used (overwritten on line 22)
+./memory-link/refactored/MemoryGame/src/button/Button.java:13:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:13:	UnusedAssignment:	The field initializer for 'font' is never used (overwritten on line 23)
+./memory-link/refactored/MemoryGame/src/button/Button.java:14:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:15:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:15:	UnusedAssignment:	The field initializer for 'enabled' is never used (overwritten on line 25)
+./memory-link/refactored/MemoryGame/src/button/Button.java:16:	ImmutableField:	Field 'actionListener' may be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:16:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/Button.java:16:	SingularField:	Perhaps 'actionListener' could be replaced by a local variable.
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on constructor 'Button(String, Color, Color, Font, String, boolean, ActionListener)'
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'name' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'backgroundColor' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'textColor' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'font' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'tooltip' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'enabled' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:18:	MethodArgumentCouldBeFinal:	Parameter 'actionListener' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:28:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: AbstractButton.addActionListener(ActionListener) 
+./memory-link/refactored/MemoryGame/src/button/Button.java:32:	MissingOverride:	The method 'getName()' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/button/Button.java:36:	MissingOverride:	The method 'setName(String)' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/button/Button.java:36:	MethodArgumentCouldBeFinal:	Parameter 'name' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:44:	MethodArgumentCouldBeFinal:	Parameter 'backgroundColor' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:52:	MethodArgumentCouldBeFinal:	Parameter 'textColor' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:56:	MissingOverride:	The method 'getFont()' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/button/Button.java:60:	MissingOverride:	The method 'setFont(Font)' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/button/Button.java:60:	MethodArgumentCouldBeFinal:	Parameter 'font' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:68:	MethodArgumentCouldBeFinal:	Parameter 'tooltip' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/Button.java:72:	MissingOverride:	The method 'isEnabled()' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/button/Button.java:76:	MissingOverride:	The method 'setEnabled(boolean)' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/button/Button.java:76:	MethodArgumentCouldBeFinal:	Parameter 'enabled' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:7:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:8:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:9:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:10:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:11:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:12:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:13:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:14:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:16:	LinguisticNaming:	Linguistics Antipattern - The setter 'setName' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:16:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:16:	MethodArgumentCouldBeFinal:	Parameter 'name' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:21:	LinguisticNaming:	Linguistics Antipattern - The setter 'setBackgroundColor' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:21:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:21:	MethodArgumentCouldBeFinal:	Parameter 'color' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:26:	LinguisticNaming:	Linguistics Antipattern - The setter 'setTextColor' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:26:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:26:	MethodArgumentCouldBeFinal:	Parameter 'color' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:31:	LinguisticNaming:	Linguistics Antipattern - The setter 'setFont' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:31:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:31:	MethodArgumentCouldBeFinal:	Parameter 'font' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:36:	LinguisticNaming:	Linguistics Antipattern - The setter 'setTooltip' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:36:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:36:	MethodArgumentCouldBeFinal:	Parameter 'tooltip' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:41:	LinguisticNaming:	Linguistics Antipattern - The setter 'setEnabled' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:41:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:41:	MethodArgumentCouldBeFinal:	Parameter 'enabled' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:46:	LinguisticNaming:	Linguistics Antipattern - The setter 'setActionListener' should not return any type except void linguistically
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:46:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:46:	MethodArgumentCouldBeFinal:	Parameter 'listener' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/button/ButtonBuilder.java:51:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/Command.java:2:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/Command.java:3:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:8:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:9:	ImmutableField:	Field 'game' may be declared final
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:9:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:10:	ImmutableField:	Field 'easy' may be declared final
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:10:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:11:	ImmutableField:	Field 'hard' may be declared final
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:11:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:13:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:13:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:13:	MethodArgumentCouldBeFinal:	Parameter 'easy' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/EasyCommand.java:13:	MethodArgumentCouldBeFinal:	Parameter 'hard' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/ExitCommand.java:2:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/ExitCommand.java:2:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./memory-link/refactored/MemoryGame/src/command/ExitCommand.java:5:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:5:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:6:	ImmutableField:	Field 'view' may be declared final
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:6:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:7:	ImmutableField:	Field 'game' may be declared final
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:7:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:9:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:9:	MethodArgumentCouldBeFinal:	Parameter 'view' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:9:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/GoBackCommand.java:16:	LawOfDemeter:	Access to field `frame` on foreign value `view` (degree 1)
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:8:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:10:	ImmutableField:	Field 'game' may be declared final
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:10:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:11:	ImmutableField:	Field 'easy' may be declared final
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:11:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:12:	ImmutableField:	Field 'hard' may be declared final
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:12:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:15:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:15:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:15:	MethodArgumentCouldBeFinal:	Parameter 'easy' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/HardCommand.java:15:	MethodArgumentCouldBeFinal:	Parameter 'hard' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:12:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:13:	ImmutableField:	Field 'view' may be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:13:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:14:	ImmutableField:	Field 'game' may be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:14:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:15:	ImmutableField:	Field 'goBack' may be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:15:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:16:	ImmutableField:	Field 'instructScreen' may be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:16:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:17:	ImmutableField:	Field 'startScreen' may be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:17:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:19:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:19:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:19:	MethodArgumentCouldBeFinal:	Parameter 'view' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:19:	MethodArgumentCouldBeFinal:	Parameter 'goBack' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:19:	MethodArgumentCouldBeFinal:	Parameter 'instructScreen' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:19:	MethodArgumentCouldBeFinal:	Parameter 'startScreen' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:33:	LocalVariableCouldBeFinal:	Local variable 'one' could be declared final
+./memory-link/refactored/MemoryGame/src/command/InstructionsCommand.java:35:	LocalVariableCouldBeFinal:	Local variable 'two' could be declared final
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:5:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:6:	ImmutableField:	Field 'game' may be declared final
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:6:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:8:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:15:	LocalVariableCouldBeFinal:	Local variable 'level' could be declared final
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:16:	LocalVariableCouldBeFinal:	Local variable 'easy' could be declared final
+./memory-link/refactored/MemoryGame/src/command/StartCommand.java:18:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./memory-link/refactored/MemoryGame/src/game/GameM.java:23:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:23:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./memory-link/refactored/MemoryGame/src/game/GameM.java:23:	TooManyFields:	Too many fields
+./memory-link/refactored/MemoryGame/src/game/GameM.java:24:	ImmutableField:	Field 'view' may be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:24:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:26:	ImmutableField:	Field 'builder' may be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:26:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:27:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+./memory-link/refactored/MemoryGame/src/game/GameM.java:27:	ImmutableField:	Field 'buttonCommands' may be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:27:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:28:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:30:	ImmutableField:	Field 'btn' may be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:30:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:32:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'purgatory'
+./memory-link/refactored/MemoryGame/src/game/GameM.java:32:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:33:	UnusedPrivateField:	Avoid unused private fields such as 'game_over'.
+./memory-link/refactored/MemoryGame/src/game/GameM.java:33:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'game_over'
+./memory-link/refactored/MemoryGame/src/game/GameM.java:33:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:33:	FieldNamingConventions:	The field name 'game_over' doesn't match '[a-z][a-zA-Z0-9]*'
+./memory-link/refactored/MemoryGame/src/game/GameM.java:34:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'level'
+./memory-link/refactored/MemoryGame/src/game/GameM.java:34:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:35:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'score'
+./memory-link/refactored/MemoryGame/src/game/GameM.java:35:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:37:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:38:	UnusedPrivateField:	Avoid unused private fields such as 'boardQ'.
+./memory-link/refactored/MemoryGame/src/game/GameM.java:38:	ImmutableField:	Field 'boardQ' may be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:38:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:39:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:40:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:41:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:42:	ShortVariable:	Avoid variables with short names like eh
+./memory-link/refactored/MemoryGame/src/game/GameM.java:42:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:44:	ImmutableField:	Field 'randomGenerator' may be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:44:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:46:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:48:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GameM.initializeCommands() 
+./memory-link/refactored/MemoryGame/src/game/GameM.java:55:	MethodArgumentCouldBeFinal:	Parameter 'strategy' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:63:	ShortVariable:	Avoid variables with short names like eh
+./memory-link/refactored/MemoryGame/src/game/GameM.java:63:	MethodArgumentCouldBeFinal:	Parameter 'eh' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:67:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:76:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:76:	ShortVariable:	Avoid variables with short names like x
+./memory-link/refactored/MemoryGame/src/game/GameM.java:76:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:76:	MethodArgumentCouldBeFinal:	Parameter 'easy' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:99:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:99:	MethodArgumentCouldBeFinal:	Parameter 'symbols' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:99:	MethodArgumentCouldBeFinal:	Parameter 'level' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:103:	ShortVariable:	Avoid variables with short names like y
+./memory-link/refactored/MemoryGame/src/game/GameM.java:103:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:114:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:114:	ShortVariable:	Avoid variables with short names like x
+./memory-link/refactored/MemoryGame/src/game/GameM.java:114:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:121:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:121:	ShortVariable:	Avoid variables with short names like i
+./memory-link/refactored/MemoryGame/src/game/GameM.java:121:	MethodArgumentCouldBeFinal:	Parameter 'i' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:122:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+./memory-link/refactored/MemoryGame/src/game/GameM.java:122:	AvoidDuplicateLiterals:	The String literal "done" appears 4 times in this file; the first occurrence is on line 122
+./memory-link/refactored/MemoryGame/src/game/GameM.java:131:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:131:	ShortVariable:	Avoid variables with short names like i
+./memory-link/refactored/MemoryGame/src/game/GameM.java:131:	MethodArgumentCouldBeFinal:	Parameter 'i' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:135:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:135:	ShortVariable:	Avoid variables with short names like x
+./memory-link/refactored/MemoryGame/src/game/GameM.java:135:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:135:	UseVarargs:	Consider using varargs for methods or constructors which take an array the last parameter.
+./memory-link/refactored/MemoryGame/src/game/GameM.java:135:	ShortVariable:	Avoid variables with short names like a
+./memory-link/refactored/MemoryGame/src/game/GameM.java:135:	MethodArgumentCouldBeFinal:	Parameter 'a' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:142:	CommentDefaultAccessModifier:	Missing commented default access modifier on method 'waitABit()'
+./memory-link/refactored/MemoryGame/src/game/GameM.java:144:	DoNotUseThreads:	To be compliant to J2EE, a webapp should not use any thread.
+./memory-link/refactored/MemoryGame/src/game/GameM.java:145:	EmptyCatchBlock:	Avoid empty catch blocks
+./memory-link/refactored/MemoryGame/src/game/GameM.java:145:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./memory-link/refactored/MemoryGame/src/game/GameM.java:149:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:151:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+./memory-link/refactored/MemoryGame/src/game/GameM.java:152:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./memory-link/refactored/MemoryGame/src/game/GameM.java:159:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:163:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:167:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:171:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:178:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:182:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:186:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+./memory-link/refactored/MemoryGame/src/game/GameM.java:186:	MethodArgumentCouldBeFinal:	Parameter 'click' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:187:	LocalVariableCouldBeFinal:	Local variable 'source' could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:205:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/game/GameM.java:205:	CognitiveComplexity:	The method 'processGameTurn(Object)' has a cognitive complexity of 19, current threshold is 15
+./memory-link/refactored/MemoryGame/src/game/GameM.java:205:	MethodArgumentCouldBeFinal:	Parameter 'source' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/game/GameM.java:230:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/strategy/EasyGameStrategy.java:5:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/strategy/EasyGameStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./memory-link/refactored/MemoryGame/src/strategy/EasyGameStrategy.java:8:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/strategy/EasyGameStrategy.java:8:	MethodArgumentCouldBeFinal:	Parameter 'level' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/strategy/EasyGameStrategy.java:9:	LocalVariableCouldBeFinal:	Local variable 'symbols' could be declared final
+./memory-link/refactored/MemoryGame/src/strategy/GameStrategy.java:5:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/strategy/GameStrategy.java:6:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/strategy/HardGameStrategy.java:5:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/strategy/HardGameStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./memory-link/refactored/MemoryGame/src/strategy/HardGameStrategy.java:8:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/strategy/HardGameStrategy.java:8:	MethodArgumentCouldBeFinal:	Parameter 'level' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/strategy/HardGameStrategy.java:9:	LocalVariableCouldBeFinal:	Local variable 'symbols' could be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:18:	CommentRequired:	Class comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:18:	TooManyFields:	Too many fields
+./memory-link/refactored/MemoryGame/src/view/GameView.java:19:	ImmutableField:	Field 'game' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:19:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:21:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:22:	ImmutableField:	Field 'field' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:22:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:23:	ImmutableField:	Field 'startScreen' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:23:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:24:	ImmutableField:	Field 'menu' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:24:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:25:	ImmutableField:	Field 'menu2' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:25:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:26:	ImmutableField:	Field 'menu3' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:26:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:27:	ImmutableField:	Field 'mini' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:27:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:28:	ImmutableField:	Field 'label' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:28:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:29:	ImmutableField:	Field 'text' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:29:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:30:	ImmutableField:	Field 'instructM' may be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:30:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:33:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:34:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:35:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:36:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:37:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:38:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:39:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:41:	CommentRequired:	Field comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:41:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'builder'
+./memory-link/refactored/MemoryGame/src/view/GameView.java:43:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:43:	MethodArgumentCouldBeFinal:	Parameter 'game' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:45:	ConstructorCallsOverridableMethod:	This method may call an overridable method during object construction: GameView.createButton(String) (call stack: [GameView.initializeUI(), GameView.createButton(String)])
+./memory-link/refactored/MemoryGame/src/view/GameView.java:90:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:90:	MethodArgumentCouldBeFinal:	Parameter 'name' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:91:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 'button'
+./memory-link/refactored/MemoryGame/src/view/GameView.java:91:	LocalVariableCouldBeFinal:	Local variable 'button' could be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:95:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:95:	MethodArgumentCouldBeFinal:	Parameter 'button' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:99:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:108:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:108:	MethodArgumentCouldBeFinal:	Parameter 'score' is not assigned and could be declared final
+./memory-link/refactored/MemoryGame/src/view/GameView.java:118:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:135:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:139:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:143:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:147:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:151:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:155:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:159:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:163:	CommentRequired:	Public method and constructor comments are required
+./memory-link/refactored/MemoryGame/src/view/GameView.java:171:	CommentRequired:	Public method and constructor comments are required
+LoosePackageCoupling	-	No packages or classes specified

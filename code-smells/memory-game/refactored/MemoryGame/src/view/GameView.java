@@ -1,35 +1,42 @@
 package view;
 
+import button.Button;
+import button.ButtonBuilder;
+import game.GameM;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import button.Button;
-import button.ButtonBuilder;
-import game.GameM;
-
 public class GameView {
-  private GameM game;
+  private final GameM game;
 
   public JFrame frame = new JFrame("Memory Game");
-  private JPanel field = new JPanel();
-  private JPanel startScreen = new JPanel();
-  private JPanel menu = new JPanel();
-  private JPanel menu2 = new JPanel();
-  private JPanel menu3 = new JPanel();
-  private JPanel mini = new JPanel();
-  private JLabel label = new JLabel("Enter level from 1 to 10");
-  private JTextField text = new JTextField(10);
-  private JTextArea instructM = new JTextArea(
-    "When the game begins, the screen will be filled\nwith pairs of buttons.\n Memorize their placement.\nOnce you press any button, they will all clear. \n Your goal is to click the matching buttons in a row.\nWhen you finish that, you win.\nEvery incorrect click gives you a point (those are bad).\n GOOD LUCK! \n"
-    + "for a single level: enter a level between 1 and 10,\nselect easy or hard, then press start.");
+  private final JPanel field = new JPanel();
+  private final JPanel startScreen = new JPanel();
+  private final JPanel menu = new JPanel();
+  private final JPanel menu2 = new JPanel();
+  private final JPanel menu3 = new JPanel();
+  private final JPanel mini = new JPanel();
+  private final JLabel label = new JLabel("Enter level from 1 to 10");
+  private final JTextField text = new JTextField(10);
+  private final JTextArea instructM =
+      new JTextArea(
+          "When the game begins, the screen will be filled\n"
+              + "with pairs of buttons.\n"
+              + " Memorize their placement.\n"
+              + "Once you press any button, they will all clear. \n"
+              + " Your goal is to click the matching buttons in a row.\n"
+              + "When you finish that, you win.\n"
+              + "Every incorrect click gives you a point (those are bad).\n"
+              + " GOOD LUCK! \n"
+              + "for a single level: enter a level between 1 and 10,\n"
+              + "select easy or hard, then press start.");
   private Button start;
   private Button over;
   private Button easy;
@@ -40,7 +47,7 @@ public class GameView {
 
   ButtonBuilder builder = new ButtonBuilder();
 
-  public GameView(GameM game) {
+  public GameView(final GameM game) {
     this.game = game;
     initializeUI();
   }
@@ -87,12 +94,12 @@ public class GameView {
     frame.setVisible(true);
   }
 
-  public Button createButton(String name) {
-    Button button = builder.setName(name).setActionListener(game).build();
+  public Button createButton(final String name) {
+    final Button button = builder.setName(name).setActionListener(game).build();
     return button;
   }
 
-  public void addButton(Button button) {
+  public void addButton(final Button button) {
     field.add(button);
   }
 
@@ -105,7 +112,7 @@ public class GameView {
     startScreen.repaint();
   }
 
-  public void showEndScreen(int score) {
+  public void showEndScreen(final int score) {
     startScreen.remove(field);
     startScreen.add(new JPanel(), BorderLayout.CENTER);
     startScreen.add(new JTextField("You Win"), BorderLayout.NORTH);
@@ -161,7 +168,7 @@ public class GameView {
   }
 
   public JPanel getInstructScreen() {
-    return new JPanel(); 
+    return new JPanel();
   }
 
   public JPanel getStartScreen() {

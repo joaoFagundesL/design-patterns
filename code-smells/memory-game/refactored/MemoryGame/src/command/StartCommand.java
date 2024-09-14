@@ -3,19 +3,19 @@ package command;
 import game.GameM;
 
 public class StartCommand implements Command {
-  private GameM game;
+  private final GameM game;
 
-  public StartCommand(GameM game) {
+  public StartCommand(final GameM game) {
     this.game = game;
   }
 
   @Override
   public void execute() {
     try {
-      int level = Integer.parseInt(game.getLevelText());
-      boolean easy = game.isEasy(); 
+      final int level = Integer.parseInt(game.getLevelText());
+      final boolean easy = game.isEasy();
       game.setUpGame(level, easy);
-    } catch (Exception e) {
+    } catch (final Exception e) {
       game.setUpGame(1, game.isEasy());
     }
   }

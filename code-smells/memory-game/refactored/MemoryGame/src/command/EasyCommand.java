@@ -1,16 +1,15 @@
 package command;
-import java.awt.Color;
 
 import button.Button;
 import game.GameM;
+import java.awt.Color;
 
+public class EasyCommand implements Command {
+  private final GameM game;
+  private final Button easy;
+  private final Button hard;
 
-public class EasyCommand implements Command{
-  private GameM game;
-  private Button easy;
-  private Button hard;
-
-  public EasyCommand(GameM game, Button easy, Button hard) {
+  public EasyCommand(final GameM game, final Button easy, final Button hard) {
     this.game = game;
     this.easy = easy;
     this.hard = hard;
@@ -22,5 +21,4 @@ public class EasyCommand implements Command{
     easy.setForeground(Color.BLUE);
     hard.setForeground(Color.BLACK);
   }
-
 }
