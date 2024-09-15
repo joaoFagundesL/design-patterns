@@ -8,11 +8,11 @@ import javax.swing.JButton;
 public class Button extends JButton {
 
   private String name;
-  private Color backgroundColor = Color.LIGHT_GRAY;
-  private Color textColor = Color.BLACK;
-  private Font font = new Font("Arial", Font.PLAIN, 12);
+  private Color backgroundColor;
+  private Color textColor;
+  private Font font;
   private String tooltip;
-  private boolean enabled = true;
+  private boolean enabled;
   private final ActionListener actionListener;
 
   Button(

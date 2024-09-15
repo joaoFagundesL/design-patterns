@@ -18,7 +18,7 @@ public class HardCommand implements Command {
 
   @Override
   public void execute() {
-    game.setEh(true);
+    game.setEasyMode(false);
     hard.setForeground(Color.BLUE);
     easy.setForeground(Color.BLACK);
   }

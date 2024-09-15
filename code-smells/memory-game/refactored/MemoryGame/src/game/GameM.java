@@ -34,11 +34,10 @@ public class GameM implements ActionListener {
   private int score = 0;
 
   private String[] board;
-  private final int[] boardQ = new int[20];
   private boolean shown = true;
   private int temp = 30;
   private int temp2 = 30;
-  private boolean eh = true;
+  private boolean easyMode = true;
 
   private final Random randomGenerator = new Random();
 
@@ -55,12 +54,12 @@ public class GameM implements ActionListener {
     this.strategy = strategy;
   }
 
-  public boolean isEh() {
-    return eh;
+  public boolean isEasyMode() {
+    return easyMode;
   }
 
-  public void setEh(final boolean eh) {
-    this.eh = eh;
+  public void setEasyMode(final boolean easyMode) {
+    this.easyMode = easyMode;
   }
 
   public void initializeCommands() {
@@ -77,12 +76,12 @@ public class GameM implements ActionListener {
         view.getHardButton(), new HardCommand(this, view.getEasyButton(), view.getHardButton()));
   }
 
-  public void setUpGame(final int x, final Boolean easy) {
-    level = x;
+  public void setUpGame(final int gameLevel, final Boolean easy) {
+    level = gameLevel;
     view.clearMain();
 
-    board = new String[2 * x];
-    for (int i = 0; i < (x * 2); i++) {
+    board = new String[2 * gameLevel];
+    for (int i = 0; i < (gameLevel * 2); i++) {
       btn[i] =
           builder
               .setName("")
@@ -108,12 +107,12 @@ public class GameM implements ActionListener {
 
   public void setBoardSymbols(final String[] symbols, final int level) {
     for (int i = 0; i < level; i++) {
-      for (int z = 0; z < 2; z++) {
+      for (int j = 0; j < 2; j++) {
         while (true) {
-          final int y = randomGenerator.nextInt(level * 2);
-          if (board[y] == null) {
-            btn[y].setText(symbols[i]);
-            board[y] = symbols[i];
+          final int value = randomGenerator.nextInt(level * 2);
+          if (board[value] == null) {
+            btn[value].setText(symbols[i]);
+            board[value] = symbols[i];
             break;
           }
         }
@@ -121,30 +120,30 @@ public class GameM implements ActionListener {
     }
   }
 
-  public void hideField(final int x) {
-    for (int i = 0; i < (x * 2); i++) {
+  public void hideField(final int level) {
+    for (int i = 0; i < (level * 2); i++) {
       btn[i].setText("");
     }
     shown = false;
   }
 
-  public void switchSpot(final int i) {
-    if (!board[i].equals("done")) {
-      if (btn[i].getText().isEmpty()) {
-        btn[i].setText(board[i]);
+  public void switchSpot(final int index) {
+    if (!board[index].equals("done")) {
+      if (btn[index].getText().isEmpty()) {
+        btn[index].setText(board[index]);
       } else {
-        btn[i].setText("");
+        btn[index].setText("");
       }
     }
   }
 
-  public void showSpot(final int i) {
-    btn[i].setText(board[i]);
+  public void showSpot(final int index) {
+    btn[index].setText(board[index]);
   }
 
-  public void showField(final int x, final String a[]) {
-    for (int i = 0; i < (x * 2); i++) {
-      btn[i].setText(a[i]);
+  public void showField(final int level, final String symbols[]) {
+    for (int i = 0; i < (level * 2); i++) {
+      btn[i].setText(symbols[i]);
     }
     shown = true;
   }
@@ -152,7 +151,7 @@ public class GameM implements ActionListener {
   void waitABit() {
     try {
       Thread.sleep(5);
-    } catch (final Exception e) {
+    } catch (final Exception exception) {
     }
   }
 
@@ -182,7 +181,7 @@ public class GameM implements ActionListener {
     score = 0;
     gameOver = false;
     view.clearMain();
-    setUpGame(level, eh);
+    setUpGame(level, easyMode);
   }
 
   public String getLevelText() {
@@ -190,7 +189,7 @@ public class GameM implements ActionListener {
   }
 
   public boolean isEasy() {
-    return eh;
+    return easyMode;
   }
 
   @Override
