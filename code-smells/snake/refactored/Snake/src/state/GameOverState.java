@@ -3,6 +3,7 @@ package state;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import panel.GamePanel;
+import panel.GameRenderer;
 
 public class GameOverState implements GameState {
 
@@ -12,9 +13,9 @@ public class GameOverState implements GameState {
   }
 
   @Override
-  public void draw(final Graphics graphics, final GamePanel gamePanel) {
-    gamePanel.draw(graphics);
-    gamePanel.gameOver(graphics);
+  public void draw(final Graphics graphics, final GameRenderer gameRenderer) {
+    gameRenderer.draw(graphics);
+    gameRenderer.gameOver(graphics);
   }
 
   @Override

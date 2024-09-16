@@ -3,7 +3,7 @@ package strategy;
 public class MoveUpStrategy implements MoveStrategy {
 
   @Override
-  public void move(int[] horizontal, int[] vertical, int unitSize) {
+  public void move(final int[] horizontal, final int[] vertical, final int unitSize) {
     vertical[0] -= unitSize;
   }
 

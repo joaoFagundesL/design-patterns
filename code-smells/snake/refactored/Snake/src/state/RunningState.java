@@ -3,6 +3,7 @@ package state;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import panel.GamePanel;
+import panel.GameRenderer;
 import strategy.Direction;
 import strategy.MoveDownStrategy;
 import strategy.MoveLeftStrategy;
@@ -19,7 +20,7 @@ public class RunningState implements GameState {
   }
 
   @Override
-  public void draw(final Graphics graphics, final GamePanel gamePanel) {
+  public void draw(final Graphics graphics, final GameRenderer gamePanel) {
     gamePanel.draw(graphics);
   }
 

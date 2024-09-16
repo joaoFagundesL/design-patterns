@@ -24,21 +24,25 @@ public class GamePanel extends JPanel implements ActionListener {
   static final int SCREEN_WIDTH = 700;
   static final int SCREEN_HEIGHT = 700;
   static final int UNIT_SIZE = 26;
-  static final int GAME_UNITS = (SCREEN_WIDTH * SCREEN_HEIGHT) / UNIT_SIZE;
+  static final int GAME_UNITS = SCREEN_WIDTH * SCREEN_HEIGHT / UNIT_SIZE;
   static final int DELAY = 75;
   final int[] horizontal = new int[GAME_UNITS];
   final int[] vertical = new int[GAME_UNITS];
-  private static final Color SNAKE_BODY_COLOR = new Color(45, 180, 0);
+  static final Color SNAKE_BODY_COLOR = new Color(45, 180, 0);
+
   int bodyParts = 6;
   int applesEaten;
   int appleX;
   int appleY;
   char direction = 'R';
   boolean running = false;
+
   Timer timer;
   Random random;
+  private final GameRenderer renderer;
 
   public GamePanel() {
+    super();
     random = new Random();
     this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
     this.setBackground(Color.black);
@@ -46,6 +50,7 @@ public class GamePanel extends JPanel implements ActionListener {
     this.addKeyListener(new MyKeyAdapter());
     this.moveStrategy = new MoveRightStrategy();
     this.gameState = new RunningState();
+    this.renderer = new GameRenderer(this);
     startGame();
   }
 
@@ -68,47 +73,15 @@ public class GamePanel extends JPanel implements ActionListener {
     timer.start();
   }
 
+  @Override
   public void paintComponent(final Graphics graphics) {
     super.paintComponent(graphics);
-    draw(graphics);
-  }
-
-  public void draw(final Graphics graphics) {
-    if (running) {
-      drawGrid(graphics);
-      drawApple(graphics);
-      drawSnake(graphics);
-    } else {
-      gameOver(graphics);
-    }
-  }
-
-  private void drawGrid(final Graphics graphics) {
-    for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
-      graphics.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
-      graphics.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
-    }
-  }
-
-  private void drawApple(final Graphics graphics) {
-    graphics.setColor(Color.RED);
-    graphics.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
-  }
-
-  private void drawSnake(final Graphics graphics) {
-    for (int i = 0; i < bodyParts; i++) {
-      if (i == 0) {
-        graphics.setColor(Color.GREEN);
-      } else {
-        graphics.setColor(SNAKE_BODY_COLOR);
-      }
-      graphics.fillRect(horizontal[i], vertical[i], UNIT_SIZE, UNIT_SIZE);
-    }
+    renderer.draw(graphics);
   }
 
   public void newApple() {
-    appleX = random.nextInt((int) (SCREEN_WIDTH / UNIT_SIZE)) * UNIT_SIZE;
-    appleY = random.nextInt((int) (SCREEN_HEIGHT / UNIT_SIZE)) * UNIT_SIZE;
+    appleX = random.nextInt(SCREEN_WIDTH / UNIT_SIZE) * UNIT_SIZE;
+    appleY = random.nextInt(SCREEN_HEIGHT / UNIT_SIZE) * UNIT_SIZE;
   }
 
   public void move() {
@@ -145,29 +118,15 @@ public class GamePanel extends JPanel implements ActionListener {
       }
     }
     final boolean hitWall =
-        (horizontal[0] < 0
+        horizontal[0] < 0
             || horizontal[0] >= SCREEN_WIDTH
             || vertical[0] < 0
-            || vertical[0] >= SCREEN_HEIGHT);
+            || vertical[0] >= SCREEN_HEIGHT;
 
     if (hitSelf || hitWall) {
       running = false;
       setGameState(new GameOverState());
     }
-  }
-
-  public void gameOver(final Graphics graphics) {
-    graphics.setColor(Color.RED);
-    graphics.setFont(new java.awt.Font("Times New Roman", 1, 75));
-    graphics.drawString("Game Over", 150, 300);
-    graphics.setFont(new java.awt.Font("Times New Roman", 1, 50));
-    graphics.drawString("Score: " + applesEaten, 150, 400);
-    graphics.setFont(new java.awt.Font("Times New Roman", 1, 25));
-    graphics.drawString("Press Space to Restart", 150, 500);
-    graphics.setFont(new java.awt.Font("Times New Roman", 1, 25));
-    graphics.drawString("Press Esc to Exit", 150, 550);
-    // restart the game
-
   }
 
   public void restartGame() {
@@ -203,5 +162,73 @@ public class GamePanel extends JPanel implements ActionListener {
       checkCollisions();
     }
     repaint();
+  }
+
+  public int getHorizontal(final int index) {
+    return horizontal[index];
+  }
+
+  public int getVertical(final int index) {
+    return vertical[index];
+  }
+
+  public int getBodyParts() {
+    return bodyParts;
+  }
+
+  public void setBodyParts(final int bodyParts) {
+    this.bodyParts = bodyParts;
+  }
+
+  public int getApplesEaten() {
+    return applesEaten;
+  }
+
+  public void setApplesEaten(final int applesEaten) {
+    this.applesEaten = applesEaten;
+  }
+
+  public int getAppleX() {
+    return appleX;
+  }
+
+  public void setAppleX(final int appleX) {
+    this.appleX = appleX;
+  }
+
+  public int getAppleY() {
+    return appleY;
+  }
+
+  public void setAppleY(final int appleY) {
+    this.appleY = appleY;
+  }
+
+  public char getDirection() {
+    return direction;
+  }
+
+  public void setDirection(final char direction) {
+    this.direction = direction;
+  }
+
+  public boolean isRunning() {
+    return running;
+  }
+
+  public void setRunning(final boolean running) {
+    this.running = running;
+  }
+
+  public Timer getTimer() {
+    return timer;
+  }
+
+  public void setTimer(final Timer timer) {
+    this.timer = timer;
+  }
+
+  public GameState getGameState() {
+    return gameState;
   }
 }
