@@ -1,0 +1,102 @@
+./src/SnakeGame.java:3:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./src/SnakeGame.java:3:	CommentRequired:	Class comments are required
+./src/SnakeGame.java:3:	UseUtilityClass:	This utility class has a non-private constructor
+./src/SnakeGame.java:5:	CommentRequired:	Public method and constructor comments are required
+./src/frame/GameFrame.java:6:	CommentRequired:	Class comments are required
+./src/frame/GameFrame.java:6:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/frame/GameFrame.java:8:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/frame/GameFrame.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/frame/GameFrame.java:10:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./src/frame/GameFrame.java:11:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./src/frame/GameFrame.java:11:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./src/frame/GameFrame.java:12:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setResizable(boolean) 
+./src/frame/GameFrame.java:13:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.pack() 
+./src/frame/GameFrame.java:14:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setVisible(boolean) 
+./src/frame/GameFrame.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setLocationRelativeTo(Component) 
+./src/panel/GamePanel.java:19:	CommentRequired:	Class comments are required
+./src/panel/GamePanel.java:19:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/panel/GamePanel.java:19:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./src/panel/GamePanel.java:21:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:22:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:24:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'SCREEN_WIDTH'
+./src/panel/GamePanel.java:25:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'SCREEN_HEIGHT'
+./src/panel/GamePanel.java:26:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:26:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'UNIT_SIZE'
+./src/panel/GamePanel.java:27:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'GAME_UNITS'
+./src/panel/GamePanel.java:27:	UselessParentheses:	Useless parentheses.
+./src/panel/GamePanel.java:28:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:28:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'DELAY'
+./src/panel/GamePanel.java:29:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:29:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'horizontal'
+./src/panel/GamePanel.java:30:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:30:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'vertical'
+./src/panel/GamePanel.java:31:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:32:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:32:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bodyParts'
+./src/panel/GamePanel.java:33:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:33:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'applesEaten'
+./src/panel/GamePanel.java:34:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:34:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'appleX'
+./src/panel/GamePanel.java:35:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:35:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'appleY'
+./src/panel/GamePanel.java:36:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:36:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'direction'
+./src/panel/GamePanel.java:37:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'running'
+./src/panel/GamePanel.java:37:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:37:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'running'
+./src/panel/GamePanel.java:38:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:38:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'timer'
+./src/panel/GamePanel.java:39:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:39:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'random'
+./src/panel/GamePanel.java:41:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/panel/GamePanel.java:41:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:43:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setPreferredSize(Dimension) 
+./src/panel/GamePanel.java:44:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setBackground(Color) 
+./src/panel/GamePanel.java:45:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setFocusable(boolean) 
+./src/panel/GamePanel.java:46:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./src/panel/GamePanel.java:49:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GamePanel.startGame() 
+./src/panel/GamePanel.java:64:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:71:	MissingOverride:	The method 'paintComponent(Graphics)' is missing an @Override annotation.
+./src/panel/GamePanel.java:76:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:109:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:110:	UnnecessaryCast:	Unnecessary cast (int)
+./src/panel/GamePanel.java:111:	UnnecessaryCast:	Unnecessary cast (int)
+./src/panel/GamePanel.java:114:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:122:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:128:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:131:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:139:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:148:	UselessParentheses:	Useless parentheses.
+./src/panel/GamePanel.java:159:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:161:	AvoidDuplicateLiterals:	The String literal "Times New Roman" appears 4 times in this file; the first occurrence is on line 161
+./src/panel/GamePanel.java:173:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:191:	CommentRequired:	Class comments are required
+./src/panel/GamePanel.java:191:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/state/GameOverState.java:7:	CommentRequired:	Class comments are required
+./src/state/GameOverState.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/state/GameState.java:7:	CommentRequired:	Class comments are required
+./src/state/GameState.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/state/GameState.java:10:	CommentRequired:	Public method and constructor comments are required
+./src/state/GameState.java:12:	CommentRequired:	Public method and constructor comments are required
+./src/state/RunningState.java:12:	CommentRequired:	Class comments are required
+./src/state/RunningState.java:12:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/state/RunningState.java:29:	SwitchStmtsShouldHaveDefault:	Switch statements should be exhaustive, add a default case (or missing enum branches)
+./src/strategy/Direction.java:3:	CommentRequired:	Enum comments are required
+./src/strategy/Direction.java:4:	ShortVariable:	Avoid variables with short names like UP
+./src/strategy/MoveDownStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveDownStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveLeftStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveLeftStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveRightStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveRightStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveStrategy.java:4:	CommentRequired:	Public method and constructor comments are required
+./src/strategy/MoveStrategy.java:6:	CommentRequired:	Public method and constructor comments are required
+./src/strategy/MoveUpStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveUpStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveUpStrategy.java:6:	MethodArgumentCouldBeFinal:	Parameter 'vertical' is not assigned and could be declared final
+./src/strategy/MoveUpStrategy.java:6:	MethodArgumentCouldBeFinal:	Parameter 'unitSize' is not assigned and could be declared final
+LoosePackageCoupling	-	No packages or classes specified

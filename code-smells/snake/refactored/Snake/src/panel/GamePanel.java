@@ -8,19 +8,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
-
 import javax.swing.JPanel;
 import javax.swing.Timer;
-
 import state.GameOverState;
 import state.GameState;
 import state.RunningState;
-import strategy.Direction;
-import strategy.MoveDownStrategy;
-import strategy.MoveLeftStrategy;
 import strategy.MoveRightStrategy;
 import strategy.MoveStrategy;
-import strategy.MoveUpStrategy;
 
 public class GamePanel extends JPanel implements ActionListener {
 
@@ -32,8 +26,8 @@ public class GamePanel extends JPanel implements ActionListener {
   static final int UNIT_SIZE = 26;
   static final int GAME_UNITS = (SCREEN_WIDTH * SCREEN_HEIGHT) / UNIT_SIZE;
   static final int DELAY = 75;
-  final int[] x = new int[GAME_UNITS];
-  final int[] y = new int[GAME_UNITS];
+  final int[] horizontal = new int[GAME_UNITS];
+  final int[] vertical = new int[GAME_UNITS];
   private static final Color SNAKE_BODY_COLOR = new Color(45, 180, 0);
   int bodyParts = 6;
   int applesEaten;
@@ -55,11 +49,11 @@ public class GamePanel extends JPanel implements ActionListener {
     startGame();
   }
 
-  public void setMoveStrategy(MoveStrategy moveStrategy) {
+  public void setMoveStrategy(final MoveStrategy moveStrategy) {
     this.moveStrategy = moveStrategy;
   }
 
-  public void setGameState(GameState gameState) {
+  public void setGameState(final GameState gameState) {
     this.gameState = gameState;
   }
 
@@ -74,41 +68,41 @@ public class GamePanel extends JPanel implements ActionListener {
     timer.start();
   }
 
-  public void paintComponent(Graphics g) {
-    super.paintComponent(g);
-    draw(g);
+  public void paintComponent(final Graphics graphics) {
+    super.paintComponent(graphics);
+    draw(graphics);
   }
 
-  public void draw(Graphics g) {
+  public void draw(final Graphics graphics) {
     if (running) {
-      drawGrid(g);
-      drawApple(g);
-      drawSnake(g);
+      drawGrid(graphics);
+      drawApple(graphics);
+      drawSnake(graphics);
     } else {
-      gameOver(g);
+      gameOver(graphics);
     }
   }
 
-  private void drawGrid(Graphics g) {
+  private void drawGrid(final Graphics graphics) {
     for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
-      g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
-      g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
+      graphics.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
+      graphics.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
     }
   }
 
-  private void drawApple(Graphics g) {
-    g.setColor(Color.RED);
-    g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
+  private void drawApple(final Graphics graphics) {
+    graphics.setColor(Color.RED);
+    graphics.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
   }
 
-  private void drawSnake(Graphics g) {
+  private void drawSnake(final Graphics graphics) {
     for (int i = 0; i < bodyParts; i++) {
       if (i == 0) {
-        g.setColor(Color.GREEN);
+        graphics.setColor(Color.GREEN);
       } else {
-        g.setColor(SNAKE_BODY_COLOR);
+        graphics.setColor(SNAKE_BODY_COLOR);
       }
-      g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+      graphics.fillRect(horizontal[i], vertical[i], UNIT_SIZE, UNIT_SIZE);
     }
   }
 
@@ -119,14 +113,14 @@ public class GamePanel extends JPanel implements ActionListener {
 
   public void move() {
     for (int i = bodyParts; i > 0; i--) {
-      x[i] = x[i - 1];
-      y[i] = y[i - 1];
+      horizontal[i] = horizontal[i - 1];
+      vertical[i] = vertical[i - 1];
     }
-    moveStrategy.move(x, y, UNIT_SIZE);
+    moveStrategy.move(horizontal, vertical, UNIT_SIZE);
   }
 
   public void checkApple() {
-    if ((x[0] == appleX) && (y[0] == appleY)) {
+    if ((horizontal[0] == appleX) && (vertical[0] == appleY)) {
       bodyParts++;
       applesEaten++;
       newApple();
@@ -145,12 +139,16 @@ public class GamePanel extends JPanel implements ActionListener {
   public void checkCollisions() {
     boolean hitSelf = false;
     for (int i = bodyParts; i > 0; i--) {
-      if ((x[0] == x[i]) && (y[0] == y[i])) {
+      if ((horizontal[0] == horizontal[i]) && (vertical[0] == vertical[i])) {
         hitSelf = true;
         break;
       }
     }
-    boolean hitWall = (x[0] < 0 || x[0] >= SCREEN_WIDTH || y[0] < 0 || y[0] >= SCREEN_HEIGHT);
+    final boolean hitWall =
+        (horizontal[0] < 0
+            || horizontal[0] >= SCREEN_WIDTH
+            || vertical[0] < 0
+            || vertical[0] >= SCREEN_HEIGHT);
 
     if (hitSelf || hitWall) {
       running = false;
@@ -158,16 +156,16 @@ public class GamePanel extends JPanel implements ActionListener {
     }
   }
 
-  public void gameOver(Graphics g) {
-    g.setColor(Color.RED);
-    g.setFont(new java.awt.Font("Times New Roman", 1, 75));
-    g.drawString("Game Over", 150, 300);
-    g.setFont(new java.awt.Font("Times New Roman", 1, 50));
-    g.drawString("Score: " + applesEaten, 150, 400);
-    g.setFont(new java.awt.Font("Times New Roman", 1, 25));
-    g.drawString("Press Space to Restart", 150, 500);
-    g.setFont(new java.awt.Font("Times New Roman", 1, 25));
-    g.drawString("Press Esc to Exit", 150, 550);
+  public void gameOver(final Graphics graphics) {
+    graphics.setColor(Color.RED);
+    graphics.setFont(new java.awt.Font("Times New Roman", 1, 75));
+    graphics.drawString("Game Over", 150, 300);
+    graphics.setFont(new java.awt.Font("Times New Roman", 1, 50));
+    graphics.drawString("Score: " + applesEaten, 150, 400);
+    graphics.setFont(new java.awt.Font("Times New Roman", 1, 25));
+    graphics.drawString("Press Space to Restart", 150, 500);
+    graphics.setFont(new java.awt.Font("Times New Roman", 1, 25));
+    graphics.drawString("Press Esc to Exit", 150, 550);
     // restart the game
 
   }
@@ -179,8 +177,8 @@ public class GamePanel extends JPanel implements ActionListener {
     running = true;
 
     for (int i = 0; i < bodyParts; i++) {
-      x[i] = 0;
-      y[i] = 0;
+      horizontal[i] = 0;
+      vertical[i] = 0;
     }
 
     newApple();
@@ -192,13 +190,13 @@ public class GamePanel extends JPanel implements ActionListener {
 
   public class MyKeyAdapter extends KeyAdapter {
     @Override
-    public void keyPressed(KeyEvent e) {
-      gameState.handleInput(e, GamePanel.this);
+    public void keyPressed(final KeyEvent event) {
+      gameState.handleInput(event, GamePanel.this);
     }
   }
 
   @Override
-  public void actionPerformed(ActionEvent e) {
+  public void actionPerformed(final ActionEvent event) {
     if (running) {
       move();
       checkApple();

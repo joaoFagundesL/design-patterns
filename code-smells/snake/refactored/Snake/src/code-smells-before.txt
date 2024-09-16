@@ -1,0 +1,158 @@
+./src/SnakeGame.java:3:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./src/SnakeGame.java:3:	CommentRequired:	Class comments are required
+./src/SnakeGame.java:3:	UseUtilityClass:	This utility class has a non-private constructor
+./src/SnakeGame.java:5:	CommentRequired:	Public method and constructor comments are required
+./src/frame/GameFrame.java:6:	CommentRequired:	Class comments are required
+./src/frame/GameFrame.java:6:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/frame/GameFrame.java:8:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/frame/GameFrame.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/frame/GameFrame.java:10:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./src/frame/GameFrame.java:11:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./src/frame/GameFrame.java:11:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./src/frame/GameFrame.java:12:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setResizable(boolean) 
+./src/frame/GameFrame.java:13:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.pack() 
+./src/frame/GameFrame.java:14:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setVisible(boolean) 
+./src/frame/GameFrame.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setLocationRelativeTo(Component) 
+./src/panel/GamePanel.java:18:	UnnecessaryImport:	Unused import 'strategy.Direction'
+./src/panel/GamePanel.java:19:	UnnecessaryImport:	Unused import 'strategy.MoveDownStrategy'
+./src/panel/GamePanel.java:20:	UnnecessaryImport:	Unused import 'strategy.MoveLeftStrategy'
+./src/panel/GamePanel.java:23:	UnnecessaryImport:	Unused import 'strategy.MoveUpStrategy'
+./src/panel/GamePanel.java:25:	CommentRequired:	Class comments are required
+./src/panel/GamePanel.java:25:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/panel/GamePanel.java:25:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./src/panel/GamePanel.java:27:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:28:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:30:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:30:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'SCREEN_WIDTH'
+./src/panel/GamePanel.java:31:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:31:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'SCREEN_HEIGHT'
+./src/panel/GamePanel.java:32:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:32:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'UNIT_SIZE'
+./src/panel/GamePanel.java:33:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:33:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'GAME_UNITS'
+./src/panel/GamePanel.java:33:	UselessParentheses:	Useless parentheses.
+./src/panel/GamePanel.java:34:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:34:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'DELAY'
+./src/panel/GamePanel.java:35:	ShortVariable:	Avoid variables with short names like x
+./src/panel/GamePanel.java:35:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:35:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'x'
+./src/panel/GamePanel.java:36:	ShortVariable:	Avoid variables with short names like y
+./src/panel/GamePanel.java:36:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:36:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'y'
+./src/panel/GamePanel.java:37:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:38:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:38:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bodyParts'
+./src/panel/GamePanel.java:39:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:39:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'applesEaten'
+./src/panel/GamePanel.java:40:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:40:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'appleX'
+./src/panel/GamePanel.java:41:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:41:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'appleY'
+./src/panel/GamePanel.java:42:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:42:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'direction'
+./src/panel/GamePanel.java:43:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'running'
+./src/panel/GamePanel.java:43:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:43:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'running'
+./src/panel/GamePanel.java:44:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:44:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'timer'
+./src/panel/GamePanel.java:45:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:45:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'random'
+./src/panel/GamePanel.java:47:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/panel/GamePanel.java:47:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:49:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setPreferredSize(Dimension) 
+./src/panel/GamePanel.java:50:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setBackground(Color) 
+./src/panel/GamePanel.java:51:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setFocusable(boolean) 
+./src/panel/GamePanel.java:52:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./src/panel/GamePanel.java:55:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GamePanel.startGame() 
+./src/panel/GamePanel.java:58:	MethodArgumentCouldBeFinal:	Parameter 'moveStrategy' is not assigned and could be declared final
+./src/panel/GamePanel.java:62:	MethodArgumentCouldBeFinal:	Parameter 'gameState' is not assigned and could be declared final
+./src/panel/GamePanel.java:70:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:77:	MissingOverride:	The method 'paintComponent(Graphics)' is missing an @Override annotation.
+./src/panel/GamePanel.java:77:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:77:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:82:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:82:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:82:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:92:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:92:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:99:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:99:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:104:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:104:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:115:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:116:	UnnecessaryCast:	Unnecessary cast (int)
+./src/panel/GamePanel.java:117:	UnnecessaryCast:	Unnecessary cast (int)
+./src/panel/GamePanel.java:120:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:128:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:134:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:137:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:145:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:153:	LocalVariableCouldBeFinal:	Local variable 'hitWall' could be declared final
+./src/panel/GamePanel.java:153:	UselessParentheses:	Useless parentheses.
+./src/panel/GamePanel.java:161:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:161:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:161:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:163:	AvoidDuplicateLiterals:	The String literal "Times New Roman" appears 4 times in this file; the first occurrence is on line 163
+./src/panel/GamePanel.java:175:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:193:	CommentRequired:	Class comments are required
+./src/panel/GamePanel.java:193:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/panel/GamePanel.java:195:	ShortVariable:	Avoid variables with short names like e
+./src/panel/GamePanel.java:195:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./src/panel/GamePanel.java:201:	ShortVariable:	Avoid variables with short names like e
+./src/state/GameOverState.java:8:	CommentRequired:	Class comments are required
+./src/state/GameOverState.java:8:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/state/GameOverState.java:16:	ShortVariable:	Avoid variables with short names like g
+./src/state/GameOverState.java:16:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/state/GameOverState.java:16:	MethodArgumentCouldBeFinal:	Parameter 'gamePanel' is not assigned and could be declared final
+./src/state/GameOverState.java:22:	ShortVariable:	Avoid variables with short names like e
+./src/state/GameOverState.java:22:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./src/state/GameOverState.java:22:	MethodArgumentCouldBeFinal:	Parameter 'gamePanel' is not assigned and could be declared final
+./src/state/GameState.java:8:	CommentRequired:	Class comments are required
+./src/state/GameState.java:9:	CommentRequired:	Public method and constructor comments are required
+./src/state/GameState.java:10:	CommentRequired:	Public method and constructor comments are required
+./src/state/GameState.java:10:	ShortVariable:	Avoid variables with short names like g
+./src/state/GameState.java:11:	CommentRequired:	Public method and constructor comments are required
+./src/state/GameState.java:11:	ShortVariable:	Avoid variables with short names like e
+./src/state/RunningState.java:13:	CommentRequired:	Class comments are required
+./src/state/RunningState.java:13:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/state/RunningState.java:16:	MethodArgumentCouldBeFinal:	Parameter 'gamePanel' is not assigned and could be declared final
+./src/state/RunningState.java:23:	ShortVariable:	Avoid variables with short names like g
+./src/state/RunningState.java:23:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/state/RunningState.java:23:	MethodArgumentCouldBeFinal:	Parameter 'gamePanel' is not assigned and could be declared final
+./src/state/RunningState.java:28:	ShortVariable:	Avoid variables with short names like e
+./src/state/RunningState.java:28:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./src/state/RunningState.java:28:	MethodArgumentCouldBeFinal:	Parameter 'gamePanel' is not assigned and could be declared final
+./src/state/RunningState.java:29:	LocalVariableCouldBeFinal:	Local variable 'currentDirection' could be declared final
+./src/state/RunningState.java:30:	SwitchStmtsShouldHaveDefault:	Switch statements should be exhaustive, add a default case (or missing enum branches)
+./src/strategy/Direction.java:3:	CommentRequired:	Enum comments are required
+./src/strategy/Direction.java:4:	ShortVariable:	Avoid variables with short names like UP
+./src/strategy/MoveDownStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveDownStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveDownStrategy.java:5:	ShortVariable:	Avoid variables with short names like x
+./src/strategy/MoveDownStrategy.java:5:	ShortVariable:	Avoid variables with short names like y
+./src/strategy/MoveDownStrategy.java:5:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./src/strategy/MoveDownStrategy.java:5:	MethodArgumentCouldBeFinal:	Parameter 'unitSize' is not assigned and could be declared final
+./src/strategy/MoveLeftStrategy.java:4:	CommentRequired:	Class comments are required
+./src/strategy/MoveLeftStrategy.java:4:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveLeftStrategy.java:6:	ShortVariable:	Avoid variables with short names like x
+./src/strategy/MoveLeftStrategy.java:6:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./src/strategy/MoveLeftStrategy.java:6:	ShortVariable:	Avoid variables with short names like y
+./src/strategy/MoveLeftStrategy.java:6:	MethodArgumentCouldBeFinal:	Parameter 'unitSize' is not assigned and could be declared final
+./src/strategy/MoveRightStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveRightStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveRightStrategy.java:5:	ShortVariable:	Avoid variables with short names like x
+./src/strategy/MoveRightStrategy.java:5:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./src/strategy/MoveRightStrategy.java:5:	ShortVariable:	Avoid variables with short names like y
+./src/strategy/MoveRightStrategy.java:5:	MethodArgumentCouldBeFinal:	Parameter 'unitSize' is not assigned and could be declared final
+./src/strategy/MoveStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveStrategy.java:4:	CommentRequired:	Public method and constructor comments are required
+./src/strategy/MoveStrategy.java:4:	ShortVariable:	Avoid variables with short names like x
+./src/strategy/MoveStrategy.java:4:	ShortVariable:	Avoid variables with short names like y
+./src/strategy/MoveStrategy.java:5:	CommentRequired:	Public method and constructor comments are required
+./src/strategy/MoveUpStrategy.java:3:	CommentRequired:	Class comments are required
+./src/strategy/MoveUpStrategy.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/strategy/MoveUpStrategy.java:6:	ShortVariable:	Avoid variables with short names like x
+./src/strategy/MoveUpStrategy.java:6:	ShortVariable:	Avoid variables with short names like y
+./src/strategy/MoveUpStrategy.java:6:	MethodArgumentCouldBeFinal:	Parameter 'y' is not assigned and could be declared final
+./src/strategy/MoveUpStrategy.java:6:	MethodArgumentCouldBeFinal:	Parameter 'unitSize' is not assigned and could be declared final
+LoosePackageCoupling	-	No packages or classes specified

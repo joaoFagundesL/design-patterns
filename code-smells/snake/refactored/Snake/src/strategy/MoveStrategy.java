@@ -1,6 +1,7 @@
 package strategy;
 
 public interface MoveStrategy {
-  void move(int[] x, int[] y, int unitSize);
+  void move(int[] horizontal, int[] vertical, int unitSize);
+
   Direction getDirection();
 }
