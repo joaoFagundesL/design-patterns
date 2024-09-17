@@ -3,36 +3,36 @@ package button;
 import java.awt.event.ActionListener;
 
 public class ButtonBuilder {
-  private int x;
-  private int y;
+  private int horizontal;
+  private int vertical;
   private int width;
   private int height;
   private String name;
   private ActionListener actionListener;
 
-  public ButtonBuilder withLetter(String name) {
+  public ButtonBuilder withLetter(final String name) {
     this.name = name;
     return this;
   }
 
-  public ButtonBuilder withPosition(int x, int y) {
-    this.x = x;
-    this.y = y;
+  public ButtonBuilder withPosition(final int horizontal, final int vertical) {
+    this.horizontal = horizontal;
+    this.vertical = vertical;
     return this;
   }
 
-  public ButtonBuilder withSize(int width, int height) {
+  public ButtonBuilder withSize(final int width, final int height) {
     this.width = width;
     this.height = height;
     return this;
   }
 
-  public ButtonBuilder setActionListener(ActionListener listener) {
+  public ButtonBuilder setActionListener(final ActionListener listener) {
     this.actionListener = listener;
     return this;
   }
 
   public Button build() {
-    return new Button(name, x, y, width, height, actionListener);
+    return new Button(name, horizontal, vertical, width, height, actionListener);
   }
 }

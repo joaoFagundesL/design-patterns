@@ -1,0 +1,181 @@
+./button/Button.java:7:	CommentRequired:	Class comments are required
+./button/Button.java:7:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./button/Button.java:7:	DataClass:	The class 'Button' is suspected to be a Data Class (WOC=10.000%, NOPA=0, NOAM=9, WMC=11)
+./button/Button.java:9:	CommentRequired:	Field comments are required
+./button/Button.java:10:	CommentRequired:	Field comments are required
+./button/Button.java:11:	CommentRequired:	Field comments are required
+./button/Button.java:12:	CommentRequired:	Field comments are required
+./button/Button.java:13:	CommentRequired:	Field comments are required
+./button/Button.java:14:	UnusedPrivateField:	Avoid unused private fields such as 'actionListener'.
+./button/Button.java:14:	CommentRequired:	Field comments are required
+./button/Button.java:16:	CommentRequired:	Public method and constructor comments are required
+./button/Button.java:31:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setFont(Font) 
+./button/Button.java:32:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setToolTipText(String) 
+./button/Button.java:33:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setBounds(int, int, int, int) 
+./button/Button.java:35:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: AbstractButton.addActionListener(ActionListener) 
+./button/Button.java:38:	MissingOverride:	The method 'getName()' is missing an @Override annotation.
+./button/Button.java:42:	CommentRequired:	Public method and constructor comments are required
+./button/Button.java:62:	MissingOverride:	The method 'getWidth()' is missing an @Override annotation.
+./button/Button.java:70:	MissingOverride:	The method 'getHeight()' is missing an @Override annotation.
+./button/ButtonBuilder.java:5:	CommentRequired:	Class comments are required
+./button/ButtonBuilder.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./button/ButtonBuilder.java:6:	CommentRequired:	Field comments are required
+./button/ButtonBuilder.java:7:	CommentRequired:	Field comments are required
+./button/ButtonBuilder.java:8:	CommentRequired:	Field comments are required
+./button/ButtonBuilder.java:9:	CommentRequired:	Field comments are required
+./button/ButtonBuilder.java:10:	CommentRequired:	Field comments are required
+./button/ButtonBuilder.java:11:	CommentRequired:	Field comments are required
+./button/ButtonBuilder.java:13:	CommentRequired:	Public method and constructor comments are required
+./button/ButtonBuilder.java:18:	CommentRequired:	Public method and constructor comments are required
+./button/ButtonBuilder.java:24:	CommentRequired:	Public method and constructor comments are required
+./button/ButtonBuilder.java:30:	LinguisticNaming:	Linguistics Antipattern - The setter 'setActionListener' should not return any type except void linguistically
+./button/ButtonBuilder.java:30:	CommentRequired:	Public method and constructor comments are required
+./button/ButtonBuilder.java:35:	CommentRequired:	Public method and constructor comments are required
+./command/Command.java:3:	CommentRequired:	Class comments are required
+./command/Command.java:4:	CommentRequired:	Public method and constructor comments are required
+./command/ExitCommand.java:3:	CommentRequired:	Class comments are required
+./command/ExitCommand.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./command/ExitCommand.java:6:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+./command/MoveDownCommand.java:5:	CommentRequired:	Class comments are required
+./command/MoveDownCommand.java:6:	CommentRequired:	Field comments are required
+./command/MoveDownCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./command/MoveLeftCommand.java:5:	CommentRequired:	Class comments are required
+./command/MoveLeftCommand.java:6:	CommentRequired:	Field comments are required
+./command/MoveLeftCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./command/MoveRightCommand.java:5:	CommentRequired:	Class comments are required
+./command/MoveRightCommand.java:6:	CommentRequired:	Field comments are required
+./command/MoveRightCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./command/MoveUpCommand.java:5:	CommentRequired:	Class comments are required
+./command/MoveUpCommand.java:6:	CommentRequired:	Field comments are required
+./command/MoveUpCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./command/RestartCommand.java:5:	CommentRequired:	Class comments are required
+./command/RestartCommand.java:6:	CommentRequired:	Field comments are required
+./command/RestartCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./command/StartCommand.java:5:	CommentRequired:	Class comments are required
+./command/StartCommand.java:6:	CommentRequired:	Field comments are required
+./command/StartCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/Alister.java:6:	CommentRequired:	Class comments are required
+./src/Alister.java:8:	CommentRequired:	Field comments are required
+./src/Alister.java:9:	CommentRequired:	Field comments are required
+./src/Alister.java:11:	CommentRequired:	Public method and constructor comments are required
+./src/Alister.java:15:	CommentRequired:	Public method and constructor comments are required
+./src/Alister.java:20:	UseShortArrayInitializer:	Array initialization can be written shorter
+./src/Alister.java:45:	UseShortArrayInitializer:	Array initialization can be written shorter
+./src/Alister.java:73:	CommentRequired:	Public method and constructor comments are required
+./src/Alister.java:82:	CommentRequired:	Public method and constructor comments are required
+./src/Alister.java:87:	UselessParentheses:	Useless parentheses.
+./src/Alister.java:88:	UselessParentheses:	Useless parentheses.
+./src/GamePanel.java:18:	CommentRequired:	Class comments are required
+./src/GamePanel.java:18:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/GamePanel.java:18:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./src/GamePanel.java:20:	CommentRequired:	Field comments are required
+./src/GamePanel.java:21:	CommentRequired:	Field comments are required
+./src/GamePanel.java:22:	CommentRequired:	Field comments are required
+./src/GamePanel.java:23:	CommentRequired:	Field comments are required
+./src/GamePanel.java:24:	CommentRequired:	Field comments are required
+./src/GamePanel.java:25:	CommentRequired:	Field comments are required
+./src/GamePanel.java:26:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'score'
+./src/GamePanel.java:26:	CommentRequired:	Field comments are required
+./src/GamePanel.java:36:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:39:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./src/GamePanel.java:40:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GamePanel.reset() 
+./src/GamePanel.java:43:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:53:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:57:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:64:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:75:	UncommentedEmptyMethodBody:	Document empty method body
+./src/GamePanel.java:78:	UncommentedEmptyMethodBody:	Document empty method body
+./src/GamePanel.java:97:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:102:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:107:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:112:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:117:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:140:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:144:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:148:	CommentRequired:	Public method and constructor comments are required
+./src/GamePanel.java:152:	CommentRequired:	Public method and constructor comments are required
+./src/Item.java:5:	ShortClassName:	Avoid short class names like Item
+./src/Item.java:5:	CommentRequired:	Class comments are required
+./src/Item.java:6:	CommentRequired:	Field comments are required
+./src/Item.java:7:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'directionX'
+./src/Item.java:7:	CommentRequired:	Field comments are required
+./src/Item.java:8:	CommentRequired:	Field comments are required
+./src/Item.java:9:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'directionY'
+./src/Item.java:9:	CommentRequired:	Field comments are required
+./src/Item.java:10:	CommentRequired:	Field comments are required
+./src/Item.java:11:	CommentRequired:	Field comments are required
+./src/Item.java:13:	CommentRequired:	Public method and constructor comments are required
+./src/Item.java:43:	CommentRequired:	Public method and constructor comments are required
+./src/Item.java:49:	CommentRequired:	Public method and constructor comments are required
+./src/Item.java:54:	CommentRequired:	Public method and constructor comments are required
+./src/Monster.java:12:	CommentRequired:	Class comments are required
+./src/Monster.java:14:	CommentRequired:	Field comments are required
+./src/Monster.java:16:	CommentRequired:	Public method and constructor comments are required
+./src/Monster.java:20:	CommentRequired:	Public method and constructor comments are required
+./src/Monster.java:28:	UseShortArrayInitializer:	Array initialization can be written shorter
+./src/Monster.java:54:	UseShortArrayInitializer:	Array initialization can be written shorter
+./src/Monster.java:83:	CommentRequired:	Public method and constructor comments are required
+./src/Monster.java:87:	ControlStatementBraces:	This statement should have braces
+./src/Monster.java:91:	CommentRequired:	Public method and constructor comments are required
+./src/PacMinah.java:25:	CommentRequired:	Class comments are required
+./src/PacMinah.java:25:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/PacMinah.java:26:	CommentRequired:	Field comments are required
+./src/PacMinah.java:26:	FieldNamingConventions:	The final field name 'SWIDTH' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/PacMinah.java:26:	FinalFieldCouldBeStatic:	This final field could be made static
+./src/PacMinah.java:27:	CommentRequired:	Field comments are required
+./src/PacMinah.java:27:	FieldNamingConventions:	The final field name 'SHEIGHT' doesn't match '[a-z][a-zA-Z0-9]*'
+./src/PacMinah.java:27:	FinalFieldCouldBeStatic:	This final field could be made static
+./src/PacMinah.java:28:	CommentRequired:	Field comments are required
+./src/PacMinah.java:28:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./src/PacMinah.java:29:	CommentRequired:	Field comments are required
+./src/PacMinah.java:29:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./src/PacMinah.java:30:	CommentRequired:	Field comments are required
+./src/PacMinah.java:31:	CommentRequired:	Field comments are required
+./src/PacMinah.java:32:	CommentRequired:	Field comments are required
+./src/PacMinah.java:34:	CommentRequired:	Public method and constructor comments are required
+./src/PacMinah.java:36:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./src/PacMinah.java:36:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./src/PacMinah.java:37:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./src/PacMinah.java:38:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setSize(int, int) 
+./src/PacMinah.java:39:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setLayout(LayoutManager) 
+./src/PacMinah.java:45:	CommentRequired:	Public method and constructor comments are required
+./src/PacMinah.java:79:	CloseResource:	Ensure that resources like this AudioInputStream object are closed after use
+./src/PacMinah.java:80:	CloseResource:	Ensure that resources like this Clip object are closed after use
+./src/PacMinah.java:83:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./src/PacMinah.java:84:	SystemPrintln:	Usage of System.out/err
+./src/PacMinah.java:88:	CommentRequired:	Public method and constructor comments are required
+./src/PacMinah.java:89:	UnusedAssignment:	The initial value of parameter 'btn' is never used (overwritten on line 97)
+./src/PacMinah.java:96:	AvoidReassigningParameters:	Avoid reassigning parameters such as 'btn'
+./src/PacMinah.java:114:	CommentRequired:	Public method and constructor comments are required
+./src/PacMinah.java:115:	ShortVariable:	Avoid variables with short names like pm
+./state/GameOverState.java:8:	CommentRequired:	Class comments are required
+./state/GameOverState.java:8:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./state/GameOverState.java:17:	UncommentedEmptyMethodBody:	Document empty method body
+./state/GameState.java:7:	CommentRequired:	Class comments are required
+./state/GameState.java:8:	CommentRequired:	Public method and constructor comments are required
+./state/GameState.java:10:	CommentRequired:	Public method and constructor comments are required
+./state/GameState.java:12:	CommentRequired:	Public method and constructor comments are required
+./state/GameState.java:14:	CommentRequired:	Public method and constructor comments are required
+./state/GameState.java:16:	CommentRequired:	Public method and constructor comments are required
+./state/GameState.java:16:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'handleStart': the method is declared in an interface type
+./state/GameState.java:16:	UncommentedEmptyMethodBody:	Document empty method body
+./state/RunningState.java:8:	CommentRequired:	Class comments are required
+./state/RunningState.java:8:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./state/RunningState.java:11:	UncommentedEmptyMethodBody:	Document empty method body
+./state/WaitingState.java:8:	CommentRequired:	Class comments are required
+./state/WaitingState.java:8:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./state/WaitingState.java:16:	UncommentedEmptyMethodBody:	Document empty method body
+./strategy/MoveDownStrategy.java:5:	CommentRequired:	Class comments are required
+./strategy/MoveDownStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./strategy/MoveLeftStrategy.java:5:	CommentRequired:	Class comments are required
+./strategy/MoveLeftStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./strategy/MoveLeftStrategy.java:7:	MethodArgumentCouldBeFinal:	Parameter 'item' is not assigned and could be declared final
+./strategy/MoveRightStrategy.java:5:	CommentRequired:	Class comments are required
+./strategy/MoveRightStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./strategy/MoveRightStrategy.java:7:	MethodArgumentCouldBeFinal:	Parameter 'item' is not assigned and could be declared final
+./strategy/MoveUpStrategy.java:5:	CommentRequired:	Class comments are required
+./strategy/MoveUpStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./strategy/MoveUpStrategy.java:7:	MethodArgumentCouldBeFinal:	Parameter 'item' is not assigned and could be declared final
+./strategy/MovementStrategy.java:5:	CommentRequired:	Class comments are required
+./strategy/MovementStrategy.java:6:	CommentRequired:	Public method and constructor comments are required
+LoosePackageCoupling	-	No packages or classes specified

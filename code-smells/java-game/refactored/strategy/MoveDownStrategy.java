@@ -4,8 +4,8 @@ import src.Item;
 
 public class MoveDownStrategy implements MovementStrategy {
   @Override
-  public void move(Item item) {
-    item.setDx(0);
-    item.setDy(item.getSpeed());
+  public void move(final Item item) {
+    item.setDirectionX(0);
+    item.setDirectionY(item.getSpeed());
   }
 }

@@ -1,0 +1,92 @@
+./src/SnakeGame.java:3:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./src/SnakeGame.java:3:	CommentRequired:	Class comments are required
+./src/SnakeGame.java:3:	UseUtilityClass:	This utility class has a non-private constructor
+./src/SnakeGame.java:5:	CommentRequired:	Public method and constructor comments are required
+./src/frame/GameFrame.java:6:	CommentRequired:	Class comments are required
+./src/frame/GameFrame.java:6:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/frame/GameFrame.java:8:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/frame/GameFrame.java:8:	CommentRequired:	Public method and constructor comments are required
+./src/frame/GameFrame.java:10:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./src/frame/GameFrame.java:11:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./src/frame/GameFrame.java:11:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./src/frame/GameFrame.java:12:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setResizable(boolean) 
+./src/frame/GameFrame.java:13:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.pack() 
+./src/frame/GameFrame.java:14:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setVisible(boolean) 
+./src/frame/GameFrame.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setLocationRelativeTo(Component) 
+./src/panel/GamePanel.java:14:	CommentRequired:	Class comments are required
+./src/panel/GamePanel.java:14:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./src/panel/GamePanel.java:16:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:16:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'SCREEN_WIDTH'
+./src/panel/GamePanel.java:17:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:17:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'SCREEN_HEIGHT'
+./src/panel/GamePanel.java:18:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'UNIT_SIZE'
+./src/panel/GamePanel.java:19:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'GAME_UNITS'
+./src/panel/GamePanel.java:19:	UselessParentheses:	Useless parentheses.
+./src/panel/GamePanel.java:20:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'DELAY'
+./src/panel/GamePanel.java:21:	ShortVariable:	Avoid variables with short names like x
+./src/panel/GamePanel.java:21:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:21:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'x'
+./src/panel/GamePanel.java:22:	ShortVariable:	Avoid variables with short names like y
+./src/panel/GamePanel.java:22:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:22:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'y'
+./src/panel/GamePanel.java:23:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'bodyParts'
+./src/panel/GamePanel.java:24:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'applesEaten'
+./src/panel/GamePanel.java:25:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'appleX'
+./src/panel/GamePanel.java:26:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:26:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'appleY'
+./src/panel/GamePanel.java:27:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'direction'
+./src/panel/GamePanel.java:28:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'running'
+./src/panel/GamePanel.java:28:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:28:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'running'
+./src/panel/GamePanel.java:29:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:29:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'timer'
+./src/panel/GamePanel.java:30:	CommentRequired:	Field comments are required
+./src/panel/GamePanel.java:30:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'random'
+./src/panel/GamePanel.java:32:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./src/panel/GamePanel.java:32:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:34:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setPreferredSize(Dimension) 
+./src/panel/GamePanel.java:35:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JComponent.setBackground(Color) 
+./src/panel/GamePanel.java:36:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.setFocusable(boolean) 
+./src/panel/GamePanel.java:37:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./src/panel/GamePanel.java:38:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GamePanel.startGame() 
+./src/panel/GamePanel.java:41:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:48:	MissingOverride:	The method 'paintComponent(Graphics)' is missing an @Override annotation.
+./src/panel/GamePanel.java:48:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:48:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:53:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:53:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:53:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:66:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./src/panel/GamePanel.java:75:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:76:	UnnecessaryCast:	Unnecessary cast (int)
+./src/panel/GamePanel.java:77:	UnnecessaryCast:	Unnecessary cast (int)
+./src/panel/GamePanel.java:80:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:85:	SwitchStmtsShouldHaveDefault:	Switch statements should be exhaustive, add a default case (or missing enum branches)
+./src/panel/GamePanel.java:101:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:107:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:110:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:118:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:141:	CommentRequired:	Public method and constructor comments are required
+./src/panel/GamePanel.java:141:	ShortVariable:	Avoid variables with short names like g
+./src/panel/GamePanel.java:141:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./src/panel/GamePanel.java:143:	AvoidDuplicateLiterals:	The String literal "Times New Roman" appears 4 times in this file; the first occurrence is on line 143
+./src/panel/GamePanel.java:155:	CommentRequired:	Class comments are required
+./src/panel/GamePanel.java:155:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./src/panel/GamePanel.java:158:	CyclomaticComplexity:	The method 'keyPressed(KeyEvent)' has a cyclomatic complexity of 12.
+./src/panel/GamePanel.java:158:	ShortVariable:	Avoid variables with short names like e
+./src/panel/GamePanel.java:158:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./src/panel/GamePanel.java:159:	SwitchStmtsShouldHaveDefault:	Switch statements should be exhaustive, add a default case (or missing enum branches)
+./src/panel/GamePanel.java:161:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:166:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:171:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:176:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./src/panel/GamePanel.java:186:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+./src/panel/GamePanel.java:194:	ShortVariable:	Avoid variables with short names like e
+LoosePackageCoupling	-	No packages or classes specified

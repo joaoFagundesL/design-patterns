@@ -1,34 +1,36 @@
 package button;
 
 import java.awt.Font;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
-
 import javax.swing.JButton;
-import javax.swing.JLabel;
 
 public class Button extends JButton {
 
   private String name;
-  private int x;
-  private int y;
+  private int horizontal;
+  private int vertical;
   private int width;
   private int height;
-  private ActionListener actionListener;
+  private final ActionListener actionListener;
 
-  public Button(String name, int x, int y, int width, int height, ActionListener actionListener) {
+  public Button(
+      final String name,
+      final int horizontal,
+      final int vertical,
+      final int width,
+      final int height,
+      final ActionListener actionListener) {
     super(name);
     this.name = name;
-    this.x = x;
-    this.y = y;
+    this.horizontal = horizontal;
+    this.vertical = vertical;
     this.width = width;
     this.height = height;
     this.actionListener = actionListener;
 
     setFont(new Font("Dialog", Font.BOLD, 12));
     setToolTipText("");
-    setBounds(x, y, width, height);
+    setBounds(horizontal, vertical, width, height);
 
     addActionListener(actionListener);
   }
@@ -37,31 +39,31 @@ public class Button extends JButton {
     return name;
   }
 
-  public void setLetter(String letter) {
+  public void setLetter(final String letter) {
     this.name = letter;
   }
 
-  public int getX() {
-    return x;
+  public int getHorizontal() {
+    return horizontal;
   }
 
-  public void setX(int x) {
-    this.x = x;
+  public void setHorizontal(final int horizontal) {
+    this.horizontal = horizontal;
   }
 
-  public int getY() {
-    return y;
+  public int getVertical() {
+    return vertical;
   }
 
-  public void setY(int y) {
-    this.y = y;
+  public void setVertical(final int vertical) {
+    this.vertical = vertical;
   }
 
   public int getWidth() {
     return width;
   }
 
-  public void setWidth(int width) {
+  public void setWidth(final int width) {
     this.width = width;
   }
 
@@ -69,8 +71,7 @@ public class Button extends JButton {
     return height;
   }
 
-  public void setHeight(int height) {
+  public void setHeight(final int height) {
     this.height = height;
   }
-
 }

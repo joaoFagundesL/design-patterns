@@ -1,18 +1,5 @@
 package src;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-
 import button.Button;
 import button.ButtonBuilder;
 import command.Command;
@@ -23,17 +10,29 @@ import command.MoveRightCommand;
 import command.MoveUpCommand;
 import command.RestartCommand;
 import command.StartCommand;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class PacMinah extends JFrame implements ActionListener {
   private final int SWIDTH = 900;
   private final int SHEIGHT = 700;
   private Button btnStart, btnExit, btnRestart;
   private Button btnLeft, btnRight, btnUp, btnDown;
-  private GamePanel gamePanel;
-  private Map<JButton, Command> commandMap;
-  private ButtonBuilder builder;
+  private final GamePanel gamePanel;
+  private final Map<JButton, Command> commandMap;
+  private final ButtonBuilder builder;
 
   public PacMinah() {
+    super();
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setTitle("Pac Minah v1.0 - By Alister Animesh Baroi 0340938");
     setSize(SWIDTH, SHEIGHT);
@@ -62,7 +61,7 @@ public class PacMinah extends JFrame implements ActionListener {
     add(btnDown);
     add(btnExit);
 
-    JLabel labName = new JLabel("Tip: Use keyboard arrow keys");
+    final JLabel labName = new JLabel("Tip: Use keyboard arrow keys");
     labName.setBounds(655, 310, 200, 25);
     add(labName);
 
@@ -75,36 +74,45 @@ public class PacMinah extends JFrame implements ActionListener {
     commandMap.put(btnExit, new ExitCommand());
 
     setVisible(true);
-    File soundFile = new File("src/alister.wav").getAbsoluteFile();
+    final File soundFile = new File("src/alister.wav").getAbsoluteFile();
     try {
-      AudioInputStream ais = AudioSystem.getAudioInputStream(soundFile);
-      Clip myClip = AudioSystem.getClip();
+      final AudioInputStream ais = AudioSystem.getAudioInputStream(soundFile);
+      final Clip myClip = AudioSystem.getClip();
       myClip.open(ais);
       myClip.start();
-    } catch (Exception e) {
-      System.out.println(e);
+    } catch (final Exception exception) {
+      System.out.println(exception);
     }
   }
 
-  public Button createButton(Button btn, int x, int y, int width, int height, String name, ActionListener al) {
-    btn = builder.withPosition(x, y)
-    .withLetter(name)
-    .withSize(width, height)
-    .setActionListener(al)
-    .build();
+  public Button createButton(
+      Button btn,
+      final int horizontal,
+      final int vertical,
+      final int width,
+      final int height,
+      final String name,
+      final ActionListener actionListener) {
+    btn =
+        builder
+            .withPosition(horizontal, vertical)
+            .withLetter(name)
+            .withSize(width, height)
+            .setActionListener(actionListener)
+            .build();
     return btn;
   }
 
   @Override
-  public void actionPerformed(ActionEvent e) {
-    Command command = commandMap.get(e.getSource());
+  public void actionPerformed(final ActionEvent event) {
+    final Command command = commandMap.get(event.getSource());
     if (command != null) {
       command.execute();
     }
   }
 
-  public static void main(String[] args) {
-    PacMinah pm = new PacMinah();
+  public static void main(final String[] args) {
+    final PacMinah pm = new PacMinah();
     pm.init();
   }
 }

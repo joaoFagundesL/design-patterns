@@ -5,13 +5,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
 import javax.swing.JPanel;
 import javax.swing.Timer;
-
 import state.GameOverState;
 import state.GameState;
-import state.RunningState;
 import state.WaitingState;
 import strategy.MoveDownStrategy;
 import strategy.MoveLeftStrategy;
@@ -20,7 +17,7 @@ import strategy.MoveUpStrategy;
 
 public class GamePanel extends JPanel implements ActionListener, KeyListener {
 
-  private Timer aTimer;
+  private final Timer aTimer;
   private GameState currentState;
   private Alister alister;
   private Monster mons;
@@ -32,12 +29,13 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     return score;
   }
 
-  public void setScore(int score) {
+  public void setScore(final int score) {
     this.score = score;
   }
 
   public GamePanel() {
-    aTimer = new Timer(50, this); 
+    super();
+    aTimer = new Timer(50, this);
     addKeyListener(this);
     reset();
   }
@@ -49,16 +47,18 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     mons2 = new Monster(250, 100, 5);
     score = 0;
     aTimer.start();
-    setState(new WaitingState()); 
+    setState(new WaitingState());
   }
 
-  public void setState(GameState state) {
+  public void setState(final GameState state) {
     this.currentState = state;
   }
 
   public boolean isGameOver() {
-    return alister.collideBorder() || alister.collideWithMonster(mons) ||
-    alister.collideWithMonster(mons1) || alister.collideWithMonster(mons2);
+    return alister.collideBorder()
+        || alister.collideWithMonster(mons)
+        || alister.collideWithMonster(mons1)
+        || alister.collideWithMonster(mons2);
   }
 
   public void startTimer() {
@@ -67,29 +67,27 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
   }
 
   @Override
-  public void keyPressed(KeyEvent e) {
-    currentState.handleInput(this, e);
+  public void keyPressed(final KeyEvent event) {
+    currentState.handleInput(this, event);
   }
 
   @Override
-  public void keyReleased(KeyEvent e) {
-  }
+  public void keyReleased(final KeyEvent event) {}
 
   @Override
-  public void keyTyped(KeyEvent e) {
-  }
+  public void keyTyped(final KeyEvent event) {}
 
   @Override
-  protected void paintComponent(Graphics g) {
-    super.paintComponent(g);
+  protected void paintComponent(final Graphics graphics) {
+    super.paintComponent(graphics);
     if (currentState != null) {
-      currentState.draw(this, g);
+      currentState.draw(this, graphics);
     }
   }
 
   @Override
-  public void actionPerformed(ActionEvent e) {
-    if (e.getSource() == aTimer) {
+  public void actionPerformed(final ActionEvent event) {
+    if (event.getSource().equals(aTimer)) {
       currentState.update(this);
       repaint();
       requestFocus();
@@ -151,8 +149,8 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     return mons2;
   }
 
-  public void processMovement(KeyEvent e) {
-    int keyCode = e.getKeyCode();
+  public void processMovement(final KeyEvent event) {
+    final int keyCode = event.getKeyCode();
     if (keyCode == KeyEvent.VK_LEFT) {
       moveLeft();
     } else if (keyCode == KeyEvent.VK_RIGHT) {

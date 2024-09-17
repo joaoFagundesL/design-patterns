@@ -8,45 +8,83 @@ public class Alister extends Item {
   private static final int SIZE = 30;
   private static final int BORDER_LIMIT = 570;
 
-  public Alister(int sx, int sy, int s) {
-    super(sx, sy, s);
+  public Alister(final int startX, final int startY, final int totalSize) {
+    super(startX, startY, totalSize);
   }
 
-  public void draw(Graphics g) {
-    int x = super.getX();
-    int y = super.getY();
-    g.setColor(Color.YELLOW);
+  public void draw(final Graphics graphics) {
+    final int horizonal = super.getHorizontal();
+    final int vertical = super.getVertical();
+    graphics.setColor(Color.YELLOW);
 
-    int[] xpts = new int[] { 
-      x + 8,  x + 16, x + 16, x + 24, x + 24, 
-      x + 16, x + 16, x + 24, x + 24, x + 24, 
-      x + 16, x + 16, x + 8,  x,     x, 
-      x,      x + 8,  x + 8,  x,     x, 
-      x + 8 
-    };
+    final int[] xpts =
+        new int[] {
+          horizonal + 8,
+          horizonal + 16,
+          horizonal + 16,
+          horizonal + 24,
+          horizonal + 24,
+          horizonal + 16,
+          horizonal + 16,
+          horizonal + 24,
+          horizonal + 24,
+          horizonal + 24,
+          horizonal + 16,
+          horizonal + 16,
+          horizonal + 8,
+          horizonal,
+          horizonal,
+          horizonal,
+          horizonal + 8,
+          horizonal + 8,
+          horizonal,
+          horizonal,
+          horizonal + 8
+        };
 
-    int[] ypts = new int[] { 
-      y,      y,     y + 6,  y + 6,  y + 12, 
-      y + 12, y + 18, y + 18, y + 24, y + 30, 
-      y + 30, y + 24, y + 24, y + 30, y + 24, 
-      y + 18, y + 18, y + 12, y + 12, y + 6,  
-      y + 6 
-    };
+    final int[] ypts =
+        new int[] {
+          vertical,
+          vertical,
+          vertical + 6,
+          vertical + 6,
+          vertical + 12,
+          vertical + 12,
+          vertical + 18,
+          vertical + 18,
+          vertical + 24,
+          vertical + 30,
+          vertical + 30,
+          vertical + 24,
+          vertical + 24,
+          vertical + 30,
+          vertical + 24,
+          vertical + 18,
+          vertical + 18,
+          vertical + 12,
+          vertical + 12,
+          vertical + 6,
+          vertical + 6
+        };
 
-    g.fillPolygon(xpts, ypts, xpts.length);
+    graphics.fillPolygon(xpts, ypts, xpts.length);
   }
 
   public boolean collideBorder() {
-    int x = super.getX();
-    int y = super.getY();
-    return x <= 0 || x >= BORDER_LIMIT || y <= 0 || y >= BORDER_LIMIT;
+    final int horizontal = super.getHorizontal();
+    final int vertical = super.getVertical();
+    return horizontal <= 0
+        || horizontal >= BORDER_LIMIT
+        || vertical <= 0
+        || vertical >= BORDER_LIMIT;
   }
 
-  public boolean collideWithMonster(Monster v) {
-    int px = super.getX();
-    int py = super.getY();
-    int vx = v.getX();
-    int vy = v.getY();
-    return (vx >= (px - SIZE) && vx <= (px + SIZE)) && (vy >= (py - SIZE) && vy <= (py + SIZE));
+  public boolean collideWithMonster(final Monster monster) {
+    final int positionX = super.getHorizontal();
+    final int positionY = super.getVertical();
+    final int monsterX = monster.getHorizontal();
+    final int monsterY = monster.getVertical();
+    return (monsterX >= (positionX - SIZE) && monsterX <= (positionX + SIZE))
+        && (monsterY >= (positionY - SIZE) && monsterY <= (positionY + SIZE));
   }
 }

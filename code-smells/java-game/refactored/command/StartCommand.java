@@ -3,9 +3,9 @@ package command;
 import src.GamePanel;
 
 public class StartCommand implements Command {
-  private GamePanel gamePanel;
+  private final GamePanel gamePanel;
 
-  public StartCommand(GamePanel gamePanel) {
+  public StartCommand(final GamePanel gamePanel) {
     this.gamePanel = gamePanel;
   }
 

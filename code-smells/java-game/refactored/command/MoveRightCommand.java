@@ -3,9 +3,9 @@ package command;
 import src.GamePanel;
 
 public class MoveRightCommand implements Command {
-  private GamePanel gamePanel;
+  private final GamePanel gamePanel;
 
-  public MoveRightCommand(GamePanel gamePanel) {
+  public MoveRightCommand(final GamePanel gamePanel) {
     this.gamePanel = gamePanel;
   }
 

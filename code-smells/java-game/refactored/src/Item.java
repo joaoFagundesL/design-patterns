@@ -1,43 +1,42 @@
 package src;
 
-
 import strategy.MovementStrategy;
 
 public class Item {
-  private int x;
-  private int dx = 0;
-  private int y;
-  private int dy = 0;
-  private int speed;
+  private int horizontal;
+  private int directionX = 0;
+  private int vertical;
+  private int directionY = 0;
+  private final int speed;
   private MovementStrategy movementStrategy;
 
-  public Item(int sx, int sy, int s) {
-    x = sx;
-    y = sy;
-    speed = s;
+  public Item(final int startX, final int startY, final int totalSize) {
+    horizontal = startX;
+    vertical = startY;
+    speed = totalSize;
   }
 
-  public int getX() {
-    return x;
+  public int getHorizontal() {
+    return horizontal;
   }
 
-  public int getY() {
-    return y;
+  public int getVertical() {
+    return vertical;
   }
 
   public int getSpeed() {
     return speed;
   }
 
-  public void setDx(int dx) {
-    this.dx = dx;
+  public void setDirectionX(final int directionX) {
+    this.directionX = directionX;
   }
 
-  public void setDy(int dy) {
-    this.dy = dy;
+  public void setDirectionY(final int directionY) {
+    this.directionY = directionY;
   }
 
-  public void setMovementStrategy(MovementStrategy movementStrategy) {
+  public void setMovementStrategy(final MovementStrategy movementStrategy) {
     this.movementStrategy = movementStrategy;
   }
 
@@ -48,12 +47,12 @@ public class Item {
   }
 
   public void updatePosition() {
-    x += dx;
-    y += dy;
+    horizontal += directionX;
+    vertical += directionY;
   }
 
   public void reverseDirection() {
-    dx = -dx;
-    dy = -dy;
+    directionX = -directionX;
+    directionY = -directionY;
   }
 }

@@ -3,9 +3,9 @@ package command;
 import src.GamePanel;
 
 public class RestartCommand implements Command {
-  private GamePanel gamePanel;
+  private final GamePanel gamePanel;
 
-  public RestartCommand(GamePanel gamePanel) {
+  public RestartCommand(final GamePanel gamePanel) {
     this.gamePanel = gamePanel;
   }
 
