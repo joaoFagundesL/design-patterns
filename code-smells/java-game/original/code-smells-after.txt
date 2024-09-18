@@ -1,0 +1,286 @@
+./Alister.java:4:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./Alister.java:4:	CommentRequired:	Class comments are required
+./Alister.java:6:	CommentRequired:	Public method and constructor comments are required
+./Alister.java:6:	ShortVariable:	Avoid variables with short names like sx
+./Alister.java:6:	MethodArgumentCouldBeFinal:	Parameter 'sx' is not assigned and could be declared final
+./Alister.java:6:	ShortVariable:	Avoid variables with short names like sy
+./Alister.java:6:	MethodArgumentCouldBeFinal:	Parameter 'sy' is not assigned and could be declared final
+./Alister.java:6:	ShortVariable:	Avoid variables with short names like s
+./Alister.java:6:	MethodArgumentCouldBeFinal:	Parameter 's' is not assigned and could be declared final
+./Alister.java:10:	CommentRequired:	Public method and constructor comments are required
+./Alister.java:10:	ShortVariable:	Avoid variables with short names like g
+./Alister.java:10:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Alister.java:11:	ShortVariable:	Avoid variables with short names like x
+./Alister.java:11:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+./Alister.java:12:	ShortVariable:	Avoid variables with short names like y
+./Alister.java:12:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./Alister.java:14:	ShortVariable:	Avoid variables with short names like x2
+./Alister.java:14:	LocalVariableCouldBeFinal:	Local variable 'x2' could be declared final
+./Alister.java:15:	ShortVariable:	Avoid variables with short names like x3
+./Alister.java:15:	LocalVariableCouldBeFinal:	Local variable 'x3' could be declared final
+./Alister.java:16:	ShortVariable:	Avoid variables with short names like y6
+./Alister.java:16:	LocalVariableCouldBeFinal:	Local variable 'y6' could be declared final
+./Alister.java:17:	ShortVariable:	Avoid variables with short names like x7
+./Alister.java:17:	LocalVariableCouldBeFinal:	Local variable 'x7' could be declared final
+./Alister.java:18:	ShortVariable:	Avoid variables with short names like y7
+./Alister.java:18:	LocalVariableCouldBeFinal:	Local variable 'y7' could be declared final
+./Alister.java:19:	ShortVariable:	Avoid variables with short names like x8
+./Alister.java:19:	LocalVariableCouldBeFinal:	Local variable 'x8' could be declared final
+./Alister.java:20:	ShortVariable:	Avoid variables with short names like y8
+./Alister.java:20:	LocalVariableCouldBeFinal:	Local variable 'y8' could be declared final
+./Alister.java:21:	ShortVariable:	Avoid variables with short names like x9
+./Alister.java:21:	LocalVariableCouldBeFinal:	Local variable 'x9' could be declared final
+./Alister.java:22:	ShortVariable:	Avoid variables with short names like y9
+./Alister.java:22:	LocalVariableCouldBeFinal:	Local variable 'y9' could be declared final
+./Alister.java:23:	LocalVariableCouldBeFinal:	Local variable 'y11' could be declared final
+./Alister.java:24:	LocalVariableCouldBeFinal:	Local variable 'x12' could be declared final
+./Alister.java:25:	LocalVariableCouldBeFinal:	Local variable 'y12' could be declared final
+./Alister.java:26:	LocalVariableCouldBeFinal:	Local variable 'x13' could be declared final
+./Alister.java:27:	LocalVariableCouldBeFinal:	Local variable 'y13' could be declared final
+./Alister.java:28:	LocalVariableCouldBeFinal:	Local variable 'x14' could be declared final
+./Alister.java:29:	LocalVariableCouldBeFinal:	Local variable 'y14' could be declared final
+./Alister.java:30:	LocalVariableCouldBeFinal:	Local variable 'y16' could be declared final
+./Alister.java:31:	LocalVariableCouldBeFinal:	Local variable 'x17' could be declared final
+./Alister.java:32:	LocalVariableCouldBeFinal:	Local variable 'y17' could be declared final
+./Alister.java:33:	LocalVariableCouldBeFinal:	Local variable 'x18' could be declared final
+./Alister.java:34:	LocalVariableCouldBeFinal:	Local variable 'y18' could be declared final
+./Alister.java:35:	LocalVariableCouldBeFinal:	Local variable 'x19' could be declared final
+./Alister.java:36:	LocalVariableCouldBeFinal:	Local variable 'y19' could be declared final
+./Alister.java:37:	LocalVariableCouldBeFinal:	Local variable 'y21' could be declared final
+./Alister.java:38:	LocalVariableCouldBeFinal:	Local variable 'x22' could be declared final
+./Alister.java:39:	LocalVariableCouldBeFinal:	Local variable 'y22' could be declared final
+./Alister.java:40:	LocalVariableCouldBeFinal:	Local variable 'x23' could be declared final
+./Alister.java:41:	LocalVariableCouldBeFinal:	Local variable 'y23' could be declared final
+./Alister.java:42:	LocalVariableCouldBeFinal:	Local variable 'x24' could be declared final
+./Alister.java:43:	LocalVariableCouldBeFinal:	Local variable 'y24' could be declared final
+./Alister.java:44:	LocalVariableCouldBeFinal:	Local variable 'y26' could be declared final
+./Alister.java:45:	LocalVariableCouldBeFinal:	Local variable 'x27' could be declared final
+./Alister.java:46:	LocalVariableCouldBeFinal:	Local variable 'y27' could be declared final
+./Alister.java:47:	LocalVariableCouldBeFinal:	Local variable 'x28' could be declared final
+./Alister.java:48:	LocalVariableCouldBeFinal:	Local variable 'y28' could be declared final
+./Alister.java:49:	LocalVariableCouldBeFinal:	Local variable 'x29' could be declared final
+./Alister.java:50:	LocalVariableCouldBeFinal:	Local variable 'y29' could be declared final
+./Alister.java:51:	UseShortArrayInitializer:	Array initialization can be written shorter
+./Alister.java:51:	LocalVariableCouldBeFinal:	Local variable 'xpts' could be declared final
+./Alister.java:53:	UseShortArrayInitializer:	Array initialization can be written shorter
+./Alister.java:53:	LocalVariableCouldBeFinal:	Local variable 'ypts' could be declared final
+./Alister.java:58:	CommentRequired:	Public method and constructor comments are required
+./Alister.java:59:	ShortVariable:	Avoid variables with short names like x
+./Alister.java:59:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+./Alister.java:60:	ShortVariable:	Avoid variables with short names like y
+./Alister.java:60:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./Alister.java:68:	CommentRequired:	Public method and constructor comments are required
+./Alister.java:68:	ShortVariable:	Avoid variables with short names like v
+./Alister.java:68:	MethodArgumentCouldBeFinal:	Parameter 'v' is not assigned and could be declared final
+./Alister.java:70:	ShortVariable:	Avoid variables with short names like px
+./Alister.java:70:	LocalVariableCouldBeFinal:	Local variable 'px' could be declared final
+./Alister.java:71:	ShortVariable:	Avoid variables with short names like py
+./Alister.java:71:	LocalVariableCouldBeFinal:	Local variable 'py' could be declared final
+./Alister.java:72:	ShortVariable:	Avoid variables with short names like vx
+./Alister.java:72:	LocalVariableCouldBeFinal:	Local variable 'vx' could be declared final
+./Alister.java:73:	ShortVariable:	Avoid variables with short names like vy
+./Alister.java:73:	LocalVariableCouldBeFinal:	Local variable 'vy' could be declared final
+./Alister.java:74:	ShortVariable:	Avoid variables with short names like sz
+./Alister.java:74:	LocalVariableCouldBeFinal:	Local variable 'sz' could be declared final
+./GamePanel.java:5:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./GamePanel.java:5:	CommentRequired:	Class comments are required
+./GamePanel.java:5:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./GamePanel.java:5:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./GamePanel.java:7:	ImmutableField:	Field 'aTimer' may be declared final
+./GamePanel.java:7:	CommentRequired:	Field comments are required
+./GamePanel.java:8:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'gameStatus'
+./GamePanel.java:8:	CommentRequired:	Field comments are required
+./GamePanel.java:11:	CommentRequired:	Field comments are required
+./GamePanel.java:12:	CommentRequired:	Field comments are required
+./GamePanel.java:13:	CommentRequired:	Field comments are required
+./GamePanel.java:14:	CommentRequired:	Field comments are required
+./GamePanel.java:15:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'score'
+./GamePanel.java:15:	CommentRequired:	Field comments are required
+./GamePanel.java:17:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:21:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./GamePanel.java:21:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:23:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Component.addKeyListener(KeyListener) 
+./GamePanel.java:24:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GamePanel.reset() 
+./GamePanel.java:27:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:37:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:44:	MissingOverride:	The method 'keyPressed(KeyEvent)' is missing an @Override annotation.
+./GamePanel.java:44:	ShortVariable:	Avoid variables with short names like e
+./GamePanel.java:44:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./GamePanel.java:45:	LocalVariableCouldBeFinal:	Local variable 'keyCode' could be declared final
+./GamePanel.java:46:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:48:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:50:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:52:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:57:	MissingOverride:	The method 'keyReleased(KeyEvent)' is missing an @Override annotation.
+./GamePanel.java:57:	ShortVariable:	Avoid variables with short names like e
+./GamePanel.java:57:	UncommentedEmptyMethodBody:	Document empty method body
+./GamePanel.java:60:	MissingOverride:	The method 'keyTyped(KeyEvent)' is missing an @Override annotation.
+./GamePanel.java:60:	ShortVariable:	Avoid variables with short names like e
+./GamePanel.java:60:	UncommentedEmptyMethodBody:	Document empty method body
+./GamePanel.java:63:	MissingOverride:	The method 'paint(Graphics)' is missing an @Override annotation.
+./GamePanel.java:63:	ShortVariable:	Avoid variables with short names like g
+./GamePanel.java:63:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./GamePanel.java:64:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:78:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:104:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GamePanel.java:113:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+./GamePanel.java:113:	ShortVariable:	Avoid variables with short names like e
+./GamePanel.java:113:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./GamePanel.java:114:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GamePanel.java:120:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:124:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:128:	CommentRequired:	Public method and constructor comments are required
+./GamePanel.java:132:	CommentRequired:	Public method and constructor comments are required
+./Item.java:1:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./Item.java:1:	ShortClassName:	Avoid short class names like Item
+./Item.java:1:	CommentRequired:	Class comments are required
+./Item.java:2:	ShortVariable:	Avoid variables with short names like x
+./Item.java:2:	CommentRequired:	Field comments are required
+./Item.java:3:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'dx'
+./Item.java:3:	ShortVariable:	Avoid variables with short names like dx
+./Item.java:3:	CommentRequired:	Field comments are required
+./Item.java:4:	ShortVariable:	Avoid variables with short names like y
+./Item.java:4:	CommentRequired:	Field comments are required
+./Item.java:5:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'dy'
+./Item.java:5:	ShortVariable:	Avoid variables with short names like dy
+./Item.java:5:	CommentRequired:	Field comments are required
+./Item.java:6:	ImmutableField:	Field 'speed' may be declared final
+./Item.java:6:	CommentRequired:	Field comments are required
+./Item.java:8:	CommentRequired:	Public method and constructor comments are required
+./Item.java:8:	ShortVariable:	Avoid variables with short names like sx
+./Item.java:8:	MethodArgumentCouldBeFinal:	Parameter 'sx' is not assigned and could be declared final
+./Item.java:8:	ShortVariable:	Avoid variables with short names like sy
+./Item.java:8:	MethodArgumentCouldBeFinal:	Parameter 'sy' is not assigned and could be declared final
+./Item.java:8:	ShortVariable:	Avoid variables with short names like s
+./Item.java:8:	MethodArgumentCouldBeFinal:	Parameter 's' is not assigned and could be declared final
+./Item.java:22:	CommentRequired:	Public method and constructor comments are required
+./Item.java:27:	CommentRequired:	Public method and constructor comments are required
+./Item.java:32:	CommentRequired:	Public method and constructor comments are required
+./Item.java:37:	CommentRequired:	Public method and constructor comments are required
+./Item.java:42:	CommentRequired:	Public method and constructor comments are required
+./Item.java:47:	CommentRequired:	Public method and constructor comments are required
+./Monster.java:5:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./Monster.java:5:	CommentRequired:	Class comments are required
+./Monster.java:7:	ImmutableField:	Field 'rdm' may be declared final
+./Monster.java:7:	CommentRequired:	Field comments are required
+./Monster.java:9:	CommentRequired:	Public method and constructor comments are required
+./Monster.java:9:	ShortVariable:	Avoid variables with short names like sx
+./Monster.java:9:	MethodArgumentCouldBeFinal:	Parameter 'sx' is not assigned and could be declared final
+./Monster.java:9:	ShortVariable:	Avoid variables with short names like sy
+./Monster.java:9:	MethodArgumentCouldBeFinal:	Parameter 'sy' is not assigned and could be declared final
+./Monster.java:9:	ShortVariable:	Avoid variables with short names like s
+./Monster.java:9:	MethodArgumentCouldBeFinal:	Parameter 's' is not assigned and could be declared final
+./Monster.java:13:	CommentRequired:	Public method and constructor comments are required
+./Monster.java:13:	ShortVariable:	Avoid variables with short names like g
+./Monster.java:13:	MethodArgumentCouldBeFinal:	Parameter 'g' is not assigned and could be declared final
+./Monster.java:14:	ShortVariable:	Avoid variables with short names like x
+./Monster.java:14:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+./Monster.java:15:	ShortVariable:	Avoid variables with short names like y
+./Monster.java:15:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./Monster.java:17:	ShortVariable:	Avoid variables with short names like x2
+./Monster.java:17:	LocalVariableCouldBeFinal:	Local variable 'x2' could be declared final
+./Monster.java:18:	ShortVariable:	Avoid variables with short names like x3
+./Monster.java:18:	LocalVariableCouldBeFinal:	Local variable 'x3' could be declared final
+./Monster.java:19:	ShortVariable:	Avoid variables with short names like y6
+./Monster.java:19:	LocalVariableCouldBeFinal:	Local variable 'y6' could be declared final
+./Monster.java:20:	ShortVariable:	Avoid variables with short names like x7
+./Monster.java:20:	LocalVariableCouldBeFinal:	Local variable 'x7' could be declared final
+./Monster.java:21:	ShortVariable:	Avoid variables with short names like y7
+./Monster.java:21:	LocalVariableCouldBeFinal:	Local variable 'y7' could be declared final
+./Monster.java:22:	ShortVariable:	Avoid variables with short names like x8
+./Monster.java:22:	LocalVariableCouldBeFinal:	Local variable 'x8' could be declared final
+./Monster.java:23:	ShortVariable:	Avoid variables with short names like y8
+./Monster.java:23:	LocalVariableCouldBeFinal:	Local variable 'y8' could be declared final
+./Monster.java:24:	ShortVariable:	Avoid variables with short names like x9
+./Monster.java:24:	LocalVariableCouldBeFinal:	Local variable 'x9' could be declared final
+./Monster.java:25:	ShortVariable:	Avoid variables with short names like y9
+./Monster.java:25:	LocalVariableCouldBeFinal:	Local variable 'y9' could be declared final
+./Monster.java:26:	LocalVariableCouldBeFinal:	Local variable 'y11' could be declared final
+./Monster.java:27:	LocalVariableCouldBeFinal:	Local variable 'x12' could be declared final
+./Monster.java:28:	LocalVariableCouldBeFinal:	Local variable 'y12' could be declared final
+./Monster.java:29:	LocalVariableCouldBeFinal:	Local variable 'x13' could be declared final
+./Monster.java:30:	LocalVariableCouldBeFinal:	Local variable 'y13' could be declared final
+./Monster.java:31:	LocalVariableCouldBeFinal:	Local variable 'x14' could be declared final
+./Monster.java:32:	LocalVariableCouldBeFinal:	Local variable 'y14' could be declared final
+./Monster.java:33:	LocalVariableCouldBeFinal:	Local variable 'y16' could be declared final
+./Monster.java:34:	LocalVariableCouldBeFinal:	Local variable 'x17' could be declared final
+./Monster.java:35:	LocalVariableCouldBeFinal:	Local variable 'y17' could be declared final
+./Monster.java:36:	LocalVariableCouldBeFinal:	Local variable 'x18' could be declared final
+./Monster.java:37:	LocalVariableCouldBeFinal:	Local variable 'y18' could be declared final
+./Monster.java:38:	LocalVariableCouldBeFinal:	Local variable 'x19' could be declared final
+./Monster.java:39:	LocalVariableCouldBeFinal:	Local variable 'y19' could be declared final
+./Monster.java:40:	LocalVariableCouldBeFinal:	Local variable 'y21' could be declared final
+./Monster.java:41:	LocalVariableCouldBeFinal:	Local variable 'x22' could be declared final
+./Monster.java:42:	LocalVariableCouldBeFinal:	Local variable 'y22' could be declared final
+./Monster.java:43:	LocalVariableCouldBeFinal:	Local variable 'x23' could be declared final
+./Monster.java:44:	LocalVariableCouldBeFinal:	Local variable 'y23' could be declared final
+./Monster.java:45:	LocalVariableCouldBeFinal:	Local variable 'x24' could be declared final
+./Monster.java:46:	LocalVariableCouldBeFinal:	Local variable 'y24' could be declared final
+./Monster.java:47:	LocalVariableCouldBeFinal:	Local variable 'y26' could be declared final
+./Monster.java:48:	LocalVariableCouldBeFinal:	Local variable 'x27' could be declared final
+./Monster.java:49:	LocalVariableCouldBeFinal:	Local variable 'y27' could be declared final
+./Monster.java:50:	LocalVariableCouldBeFinal:	Local variable 'x28' could be declared final
+./Monster.java:51:	LocalVariableCouldBeFinal:	Local variable 'y28' could be declared final
+./Monster.java:52:	LocalVariableCouldBeFinal:	Local variable 'x29' could be declared final
+./Monster.java:53:	LocalVariableCouldBeFinal:	Local variable 'y29' could be declared final
+./Monster.java:54:	UseShortArrayInitializer:	Array initialization can be written shorter
+./Monster.java:54:	LocalVariableCouldBeFinal:	Local variable 'xpts' could be declared final
+./Monster.java:56:	UseShortArrayInitializer:	Array initialization can be written shorter
+./Monster.java:56:	LocalVariableCouldBeFinal:	Local variable 'ypts' could be declared final
+./Monster.java:61:	CommentRequired:	Public method and constructor comments are required
+./Monster.java:62:	ShortVariable:	Avoid variables with short names like x
+./Monster.java:62:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+./Monster.java:63:	ShortVariable:	Avoid variables with short names like y
+./Monster.java:63:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./Monster.java:65:	ControlStatementBraces:	This statement should have braces
+./Monster.java:69:	CommentRequired:	Public method and constructor comments are required
+./Monster.java:70:	LocalVariableCouldBeFinal:	Local variable 'dir' could be declared final
+./Monster.java:73:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./Monster.java:75:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./Monster.java:77:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./PacMinah.java:6:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./PacMinah.java:6:	CommentRequired:	Class comments are required
+./PacMinah.java:6:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./PacMinah.java:8:	CommentRequired:	Field comments are required
+./PacMinah.java:8:	FieldNamingConventions:	The final field name 'SWIDTH' doesn't match '[a-z][a-zA-Z0-9]*'
+./PacMinah.java:8:	FinalFieldCouldBeStatic:	This final field could be made static
+./PacMinah.java:9:	CommentRequired:	Field comments are required
+./PacMinah.java:9:	FieldNamingConventions:	The final field name 'SHEIGHT' doesn't match '[a-z][a-zA-Z0-9]*'
+./PacMinah.java:9:	FinalFieldCouldBeStatic:	This final field could be made static
+./PacMinah.java:10:	CommentRequired:	Field comments are required
+./PacMinah.java:10:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./PacMinah.java:11:	CommentRequired:	Field comments are required
+./PacMinah.java:11:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+./PacMinah.java:12:	ImmutableField:	Field 'gameP' may be declared final
+./PacMinah.java:12:	CommentRequired:	Field comments are required
+./PacMinah.java:14:	CallSuperInConstructor:	It is a good practice to call super() in a constructor
+./PacMinah.java:14:	CommentRequired:	Public method and constructor comments are required
+./PacMinah.java:15:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setDefaultCloseOperation(int) 
+./PacMinah.java:15:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+./PacMinah.java:16:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Frame.setTitle(String) 
+./PacMinah.java:17:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: Window.setSize(int, int) 
+./PacMinah.java:18:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: JFrame.setLayout(LayoutManager) 
+./PacMinah.java:21:	CommentRequired:	Public method and constructor comments are required
+./PacMinah.java:55:	LocalVariableCouldBeFinal:	Local variable 'labName' could be declared final
+./PacMinah.java:65:	LocalVariableCouldBeFinal:	Local variable 'soundFile' could be declared final
+./PacMinah.java:67:	CloseResource:	Ensure that resources like this AudioInputStream object are closed after use
+./PacMinah.java:67:	LocalVariableCouldBeFinal:	Local variable 'ais' could be declared final
+./PacMinah.java:68:	CloseResource:	Ensure that resources like this Clip object are closed after use
+./PacMinah.java:68:	LocalVariableCouldBeFinal:	Local variable 'myClip' could be declared final
+./PacMinah.java:71:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./PacMinah.java:72:	SystemPrintln:	Usage of System.out/err
+./PacMinah.java:76:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+./PacMinah.java:76:	ShortVariable:	Avoid variables with short names like e
+./PacMinah.java:76:	MethodArgumentCouldBeFinal:	Parameter 'e' is not assigned and could be declared final
+./PacMinah.java:77:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:78:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+./PacMinah.java:79:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:81:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:83:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:85:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:87:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:89:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./PacMinah.java:94:	CommentRequired:	Public method and constructor comments are required
+./PacMinah.java:95:	ShortVariable:	Avoid variables with short names like pm
+./PacMinah.java:95:	LocalVariableCouldBeFinal:	Local variable 'pm' could be declared final
+LoosePackageCoupling	-	No packages or classes specified

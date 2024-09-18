@@ -1,0 +1,151 @@
+./GameM.java:10:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./GameM.java:10:	CommentRequired:	Class comments are required
+./GameM.java:10:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./GameM.java:10:	TooManyFields:	Too many fields
+./GameM.java:11:	CommentRequired:	Field comments are required
+./GameM.java:11:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'frame'
+./GameM.java:13:	CommentRequired:	Field comments are required
+./GameM.java:13:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'field'
+./GameM.java:14:	CommentRequired:	Field comments are required
+./GameM.java:14:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'menu'
+./GameM.java:15:	CommentRequired:	Field comments are required
+./GameM.java:15:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'menu2'
+./GameM.java:16:	CommentRequired:	Field comments are required
+./GameM.java:16:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'menu3'
+./GameM.java:17:	CommentRequired:	Field comments are required
+./GameM.java:17:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'mini'
+./GameM.java:19:	CommentRequired:	Field comments are required
+./GameM.java:19:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'start_screen'
+./GameM.java:19:	FieldNamingConventions:	The field name 'start_screen' doesn't match '[a-z][a-zA-Z0-9]*'
+./GameM.java:20:	CommentRequired:	Field comments are required
+./GameM.java:20:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'end_screen'
+./GameM.java:20:	FieldNamingConventions:	The field name 'end_screen' doesn't match '[a-z][a-zA-Z0-9]*'
+./GameM.java:21:	CommentRequired:	Field comments are required
+./GameM.java:21:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'instruct_screen'
+./GameM.java:21:	FieldNamingConventions:	The field name 'instruct_screen' doesn't match '[a-z][a-zA-Z0-9]*'
+./GameM.java:23:	CommentRequired:	Field comments are required
+./GameM.java:23:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'btn'
+./GameM.java:24:	CommentRequired:	Field comments are required
+./GameM.java:24:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'start'
+./GameM.java:25:	CommentRequired:	Field comments are required
+./GameM.java:25:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'over'
+./GameM.java:26:	CommentRequired:	Field comments are required
+./GameM.java:26:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'easy'
+./GameM.java:27:	CommentRequired:	Field comments are required
+./GameM.java:27:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'hard'
+./GameM.java:28:	CommentRequired:	Field comments are required
+./GameM.java:28:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'inst'
+./GameM.java:29:	CommentRequired:	Field comments are required
+./GameM.java:29:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'redo'
+./GameM.java:30:	CommentRequired:	Field comments are required
+./GameM.java:30:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'goBack'
+./GameM.java:32:	CommentRequired:	Field comments are required
+./GameM.java:32:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'randomGenerator'
+./GameM.java:33:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'purgatory'
+./GameM.java:33:	CommentRequired:	Field comments are required
+./GameM.java:34:	CommentRequired:	Field comments are required
+./GameM.java:34:	AvoidFieldNameMatchingMethodName:	Field winner has the same name as a method
+./GameM.java:34:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'winner'
+./GameM.java:35:	CommentRequired:	Field comments are required
+./GameM.java:35:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'game_over'
+./GameM.java:35:	FieldNamingConventions:	The field name 'game_over' doesn't match '[a-z][a-zA-Z0-9]*'
+./GameM.java:36:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'level'
+./GameM.java:36:	CommentRequired:	Field comments are required
+./GameM.java:36:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'level'
+./GameM.java:37:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'score'
+./GameM.java:37:	CommentRequired:	Field comments are required
+./GameM.java:37:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'score'
+./GameM.java:39:	CommentRequired:	Field comments are required
+./GameM.java:39:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'board'
+./GameM.java:40:	CommentRequired:	Field comments are required
+./GameM.java:40:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'boardQ'
+./GameM.java:41:	CommentRequired:	Field comments are required
+./GameM.java:41:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'shown'
+./GameM.java:42:	CommentRequired:	Field comments are required
+./GameM.java:42:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'temp'
+./GameM.java:43:	CommentRequired:	Field comments are required
+./GameM.java:43:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'temp2'
+./GameM.java:44:	ShortVariable:	Avoid variables with short names like a
+./GameM.java:44:	CommentRequired:	Field comments are required
+./GameM.java:44:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'a'
+./GameM.java:45:	ShortVariable:	Avoid variables with short names like eh
+./GameM.java:45:	CommentRequired:	Field comments are required
+./GameM.java:45:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'eh'
+./GameM.java:47:	ImmutableField:	Field 'label' may be declared final
+./GameM.java:47:	CommentRequired:	Field comments are required
+./GameM.java:47:	SingularField:	Perhaps 'label' could be replaced by a local variable.
+./GameM.java:48:	ImmutableField:	Field 'text' may be declared final
+./GameM.java:48:	CommentRequired:	Field comments are required
+./GameM.java:49:	ImmutableField:	Field 'instructM' may be declared final
+./GameM.java:49:	CommentRequired:	Field comments are required
+./GameM.java:54:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:93:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:93:	ShortVariable:	Avoid variables with short names like x
+./GameM.java:93:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./GameM.java:93:	MethodArgumentCouldBeFinal:	Parameter 'what' is not assigned and could be declared final
+./GameM.java:100:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+./GameM.java:107:	ShortVariable:	Avoid variables with short names like b
+./GameM.java:107:	LocalVariableCouldBeFinal:	Local variable 'b' could be declared final
+./GameM.java:108:	ShortVariable:	Avoid variables with short names like c
+./GameM.java:108:	LocalVariableCouldBeFinal:	Local variable 'c' could be declared final
+./GameM.java:109:	ControlStatementBraces:	This statement should have braces
+./GameM.java:110:	ControlStatementBraces:	This statement should have braces
+./GameM.java:115:	ShortVariable:	Avoid variables with short names like y
+./GameM.java:115:	LocalVariableCouldBeFinal:	Local variable 'y' could be declared final
+./GameM.java:129:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:129:	ShortVariable:	Avoid variables with short names like x
+./GameM.java:129:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./GameM.java:135:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:135:	ShortVariable:	Avoid variables with short names like i
+./GameM.java:135:	MethodArgumentCouldBeFinal:	Parameter 'i' is not assigned and could be declared final
+./GameM.java:136:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:136:	UseEqualsToCompareStrings:	Use equals() to compare strings instead of '==' or '!='
+./GameM.java:136:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GameM.java:136:	AvoidDuplicateLiterals:	The String literal "done" appears 4 times in this file; the first occurrence is on line 136
+./GameM.java:137:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:137:	UseEqualsToCompareStrings:	Use equals() to compare strings instead of '==' or '!='
+./GameM.java:137:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GameM.java:146:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:146:	ShortVariable:	Avoid variables with short names like i
+./GameM.java:146:	MethodArgumentCouldBeFinal:	Parameter 'i' is not assigned and could be declared final
+./GameM.java:149:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:149:	ShortVariable:	Avoid variables with short names like x
+./GameM.java:149:	MethodArgumentCouldBeFinal:	Parameter 'x' is not assigned and could be declared final
+./GameM.java:149:	UseVarargs:	Consider using varargs for methods or constructors which take an array the last parameter.
+./GameM.java:149:	ShortVariable:	Avoid variables with short names like a
+./GameM.java:149:	MethodArgumentCouldBeFinal:	Parameter 'a' is not assigned and could be declared final
+./GameM.java:155:	CommentDefaultAccessModifier:	Missing commented default access modifier on method 'waitABit()'
+./GameM.java:158:	DoNotUseThreads:	To be compliant to J2EE, a webapp should not use any thread.
+./GameM.java:159:	EmptyCatchBlock:	Avoid empty catch blocks
+./GameM.java:159:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./GameM.java:163:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:165:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:165:	UseEqualsToCompareStrings:	Use equals() to compare strings instead of '==' or '!='
+./GameM.java:165:	AvoidLiteralsInIfCondition:	Avoid using literals in if statements
+./GameM.java:165:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./GameM.java:165:	ControlStatementBraces:	This statement should have braces
+./GameM.java:170:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:184:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:187:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:195:	CommentRequired:	Public method and constructor comments are required
+./GameM.java:203:	CognitiveComplexity:	The method 'actionPerformed(ActionEvent)' has a cognitive complexity of 28, current threshold is 15
+./GameM.java:203:	CyclomaticComplexity:	The method 'actionPerformed(ActionEvent)' has a cyclomatic complexity of 15.
+./GameM.java:203:	NPathComplexity:	The method 'actionPerformed(ActionEvent)' has an NPath complexity of 1008, current threshold is 200
+./GameM.java:203:	MissingOverride:	The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+./GameM.java:203:	MethodArgumentCouldBeFinal:	Parameter 'click' is not assigned and could be declared final
+./GameM.java:204:	LocalVariableCouldBeFinal:	Local variable 'source' could be declared final
+./GameM.java:213:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:216:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./GameM.java:222:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:223:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+./GameM.java:225:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:230:	LocalVariableCouldBeFinal:	Local variable 'one' could be declared final
+./GameM.java:232:	LocalVariableCouldBeFinal:	Local variable 'two' could be declared final
+./GameM.java:243:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:247:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:251:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:258:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:266:	CompareObjectsWithEquals:	Use equals() to compare object references.
+./GameM.java:266:	UseEqualsToCompareStrings:	Use equals() to compare strings instead of '==' or '!='
+./GameM.java:288:	CommentRequired:	Public method and constructor comments are required
+LoosePackageCoupling	-	No packages or classes specified
