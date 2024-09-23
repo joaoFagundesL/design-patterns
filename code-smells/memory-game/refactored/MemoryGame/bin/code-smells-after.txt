@@ -1,0 +1,163 @@
+./refactored/MemoryGame/src/button/Button.java:8:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/button/Button.java:8:	MissingSerialVersionUID:	Classes implementing Serializable should set a serialVersionUID
+./refactored/MemoryGame/src/button/Button.java:8:	DataClass:	The class 'Button' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=12, WMC=13)
+./refactored/MemoryGame/src/button/Button.java:10:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:11:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:12:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:13:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:14:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:15:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:16:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/Button.java:18:	CommentDefaultAccessModifier:	Missing commented default access modifier on constructor 'Button(String, Color, Color, Font, String, boolean, ActionListener)'
+./refactored/MemoryGame/src/button/Button.java:35:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: AbstractButton.addActionListener(ActionListener) 
+./refactored/MemoryGame/src/button/ButtonBuilder.java:7:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:7:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./refactored/MemoryGame/src/button/ButtonBuilder.java:8:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:9:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:10:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:11:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:12:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:13:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:14:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:16:	LinguisticNaming:	Linguistics Antipattern - The setter 'setName' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:16:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:21:	LinguisticNaming:	Linguistics Antipattern - The setter 'setBackgroundColor' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:21:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:26:	LinguisticNaming:	Linguistics Antipattern - The setter 'setTextColor' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:26:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:31:	LinguisticNaming:	Linguistics Antipattern - The setter 'setFont' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:31:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:36:	LinguisticNaming:	Linguistics Antipattern - The setter 'setTooltip' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:36:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:41:	LinguisticNaming:	Linguistics Antipattern - The setter 'setEnabled' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:41:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:46:	LinguisticNaming:	Linguistics Antipattern - The setter 'setActionListener' should not return any type except void linguistically
+./refactored/MemoryGame/src/button/ButtonBuilder.java:46:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/button/ButtonBuilder.java:51:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/Command.java:3:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/Command.java:4:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/EasyCommand.java:7:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/EasyCommand.java:8:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/EasyCommand.java:9:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/EasyCommand.java:10:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/EasyCommand.java:12:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/ExitCommand.java:3:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/ExitCommand.java:3:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./refactored/MemoryGame/src/command/ExitCommand.java:6:	DoNotTerminateVM:	System.exit() should not be used in J2EE/JEE apps
+./refactored/MemoryGame/src/command/GoBackCommand.java:6:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/GoBackCommand.java:7:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/GoBackCommand.java:8:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/GoBackCommand.java:10:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/GoBackCommand.java:17:	LawOfDemeter:	Access to field `frame` on foreign value `view` (degree 1)
+./refactored/MemoryGame/src/command/HardCommand.java:7:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/HardCommand.java:9:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/HardCommand.java:10:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/HardCommand.java:11:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/HardCommand.java:13:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:10:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:11:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:12:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:13:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:14:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:15:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/InstructionsCommand.java:17:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/StartCommand.java:5:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/command/StartCommand.java:6:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/command/StartCommand.java:8:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/command/StartCommand.java:18:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./refactored/MemoryGame/src/game/GameM.java:22:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/game/GameM.java:22:	TooManyMethods:	This class has too many methods, consider refactoring it.
+./refactored/MemoryGame/src/game/GameM.java:23:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:25:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:26:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+./refactored/MemoryGame/src/game/GameM.java:26:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:27:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:29:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:31:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'purgatory'
+./refactored/MemoryGame/src/game/GameM.java:31:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:32:	UnusedPrivateField:	Avoid unused private fields such as 'gameOver'.
+./refactored/MemoryGame/src/game/GameM.java:32:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'gameOver'
+./refactored/MemoryGame/src/game/GameM.java:32:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:33:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'level'
+./refactored/MemoryGame/src/game/GameM.java:33:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:34:	RedundantFieldInitializer:	Avoid using redundant field initializer for 'score'
+./refactored/MemoryGame/src/game/GameM.java:34:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:36:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:37:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:38:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:39:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:40:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:42:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/game/GameM.java:44:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:46:	ConstructorCallsOverridableMethod:	Overridable method called during object construction: GameM.initializeCommands() 
+./refactored/MemoryGame/src/game/GameM.java:65:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:79:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:108:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:123:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:130:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:131:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+./refactored/MemoryGame/src/game/GameM.java:131:	AvoidDuplicateLiterals:	The String literal "done" appears 4 times in this file; the first occurrence is on line 131
+./refactored/MemoryGame/src/game/GameM.java:140:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:144:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:144:	UseVarargs:	Consider using varargs for methods or constructors which take an array the last parameter.
+./refactored/MemoryGame/src/game/GameM.java:151:	CommentDefaultAccessModifier:	Missing commented default access modifier on method 'waitABit()'
+./refactored/MemoryGame/src/game/GameM.java:153:	DoNotUseThreads:	To be compliant to J2EE, a webapp should not use any thread.
+./refactored/MemoryGame/src/game/GameM.java:154:	EmptyCatchBlock:	Avoid empty catch blocks
+./refactored/MemoryGame/src/game/GameM.java:154:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+./refactored/MemoryGame/src/game/GameM.java:158:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:160:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+./refactored/MemoryGame/src/game/GameM.java:161:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+./refactored/MemoryGame/src/game/GameM.java:168:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:172:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:176:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:180:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:187:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:191:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:215:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/game/GameM.java:215:	CognitiveComplexity:	The method 'processGameTurn(Object)' has a cognitive complexity of 19, current threshold is 15
+./refactored/MemoryGame/src/game/GameM.java:240:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/strategy/EasyGameStrategy.java:5:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/strategy/EasyGameStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./refactored/MemoryGame/src/strategy/GameStrategy.java:5:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/strategy/GameStrategy.java:6:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/strategy/HardGameStrategy.java:5:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/strategy/HardGameStrategy.java:5:	AtLeastOneConstructor:	Each class should declare at least one constructor
+./refactored/MemoryGame/src/view/GameView.java:16:	CommentRequired:	Class comments are required
+./refactored/MemoryGame/src/view/GameView.java:17:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:19:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:20:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:21:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:22:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:23:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:24:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:25:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:26:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:27:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:28:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:40:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:41:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:42:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:43:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:44:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:45:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:46:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:48:	CommentRequired:	Field comments are required
+./refactored/MemoryGame/src/view/GameView.java:48:	CommentDefaultAccessModifier:	Missing commented default access modifier on field 'builder'
+./refactored/MemoryGame/src/view/GameView.java:50:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:52:	ConstructorCallsOverridableMethod:	This method may call an overridable method during object construction: GameView.createButton(String) (call stack: [GameView.initializeUI(), GameView.createButton(String)])
+./refactored/MemoryGame/src/view/GameView.java:97:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:98:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 'button'
+./refactored/MemoryGame/src/view/GameView.java:102:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:106:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:115:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:125:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:142:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:146:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:150:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:154:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:158:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:162:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:166:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:170:	CommentRequired:	Public method and constructor comments are required
+./refactored/MemoryGame/src/view/GameView.java:178:	CommentRequired:	Public method and constructor comments are required
+LoosePackageCoupling	-	No packages or classes specified

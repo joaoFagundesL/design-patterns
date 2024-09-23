@@ -1,8 +1,6 @@
 package com.chessgame.Pieces;
 
 import java.awt.Color;
-import java.nio.file.Path;
-
 import javax.swing.ImageIcon;
 
 public class PieceImages {

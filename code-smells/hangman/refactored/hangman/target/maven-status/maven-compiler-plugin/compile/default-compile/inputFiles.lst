@@ -1,0 +1,11 @@
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/app/HangmanGameManager.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/app/Option.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/button/Button.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/button/ButtonBuilder.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/file/FileReader.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/mediator/Component.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/mediator/Mediator.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/state/GameInProgressState.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/state/GameLostState.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/state/GameState.java
+/home/arch/personal/workspace-vim/hangman/src/main/java/com/utfpr/src/state/GameWonState.java
