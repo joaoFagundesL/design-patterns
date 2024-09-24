@@ -5,9 +5,7 @@ import com.utfpr.src.mediator.Mediator;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
 import javax.swing.JButton;
-import javax.swing.JLabel;
 
 public class Button extends JButton implements Component {
   private Mediator mediator;
@@ -103,8 +101,8 @@ public class Button extends JButton implements Component {
 
   @Override
   protected void fireActionPerformed(final ActionEvent actionEvent) {
-    final String palavraDoJogo = mediator.getPalavraDoJogo();
-    final List<JLabel> campos = mediator.getCampos();
-    mediator.checkGuess(palavraDoJogo, letter.charAt(0), campos, this);
+    setEnabled(false);
+    final int encontrou = mediator.checkGuess(letter.charAt(0));
+    // mediator.processGuess(encontrou);
   }
 }

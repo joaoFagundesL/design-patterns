@@ -1,7 +1,10 @@
+/home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/app/GameUI.java
+/home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/app/GuessProcessor.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/app/HangmanGameManager.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/app/Option.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/button/Button.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/button/ButtonBuilder.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/file/FileReader.java
+/home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/file/WordProvider.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/mediator/Component.java
 /home/arch/personal/college/internship/design-patterns/code-smells/hangman/refactored/hangman/src/main/java/com/utfpr/src/mediator/Mediator.java
