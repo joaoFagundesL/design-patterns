@@ -167,31 +167,18 @@ public class HangmanGameManager implements Mediator {
 
   @Override
   public int checkGuess(String palavraDoJogo, char letra, List<JLabel> campos, JButton l) {
+    palavraDoJogo = normalizeWord(palavraDoJogo);
     int encontrou = 0;
-    int cont = 0;
-    String s = "__";
 
     for (int i = 0; i < palavraDoJogo.length(); i++) {
-      // Remove todos os acentos para depois verificar letra por letra
-      palavraDoJogo = Normalizer.normalize(palavraDoJogo, Normalizer.Form.NFD);
-      palavraDoJogo = palavraDoJogo.replaceAll("[^\\p{ASCII}]", "");
-
-      if (Character.toLowerCase(letra) == palavraDoJogo.charAt(i)
-          || Character.toUpperCase(letra) == palavraDoJogo.charAt(i)) {
-
-        campos
-            .get(i)
-            .setText(l.getText()); // Caso a palavra tenha a letra informada ele insere na posi
+      if (isLetterMatched(letra, palavraDoJogo.charAt(i))) {
+        updateCampo(campos, l, i);
         encontrou++;
-      }
-
-      if (encontrou >= 0 && campos.get(i).getText() != s) {
-        cont++;
       }
     }
 
-    if (cont == palavraDoJogo.length()) {
-      JOptionPane.showMessageDialog(null, "Você Ganhou!", "Mensagem", JOptionPane.WARNING_MESSAGE);
+    if (isGameWon(campos, palavraDoJogo.length())) {
+      displayWinMessage();
       mensagem();
     } else {
       processGuess(encontrou, chances, labelChances, palavraDoJogo);
@@ -199,6 +186,32 @@ public class HangmanGameManager implements Mediator {
 
     l.setVisible(false);
     return encontrou;
+  }
+
+  private String normalizeWord(String palavraDoJogo) {
+    palavraDoJogo = Normalizer.normalize(palavraDoJogo, Normalizer.Form.NFD);
+    return palavraDoJogo.replaceAll("[^\\p{ASCII}]", "");
+  }
+
+  private boolean isLetterMatched(char letra, char character) {
+    return Character.toLowerCase(letra) == character || Character.toUpperCase(letra) == character;
+  }
+
+  private void updateCampo(List<JLabel> campos, JButton l, int index) {
+    campos.get(index).setText(l.getText());
+  }
+
+  private boolean isGameWon(List<JLabel> campos, int wordLength) {
+    for (JLabel campo : campos) {
+      if (campo.getText().equals("__")) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private void displayWinMessage() {
+    JOptionPane.showMessageDialog(null, "Você Ganhou!", "Mensagem", JOptionPane.WARNING_MESSAGE);
   }
 
   @Override
