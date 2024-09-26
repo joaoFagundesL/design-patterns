@@ -8,9 +8,7 @@ import panel.GameRenderer;
 public class GameOverState implements GameState {
 
   @Override
-  public void update(final GamePanel gamePanel) {
-    // No updates when game is over
-  }
+  public void update(final GamePanel gamePanel) {}
 
   @Override
   public void draw(final Graphics graphics, final GameRenderer gameRenderer) {

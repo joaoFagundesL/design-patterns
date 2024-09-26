@@ -1,14 +1,12 @@
 package state;
 
+import factory.MoveStrategyFactory;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import panel.GamePanel;
 import panel.GameRenderer;
 import strategy.Direction;
-import strategy.MoveDownStrategy;
-import strategy.MoveLeftStrategy;
-import strategy.MoveRightStrategy;
-import strategy.MoveUpStrategy;
+import strategy.MoveStrategy;
 
 public class RunningState implements GameState {
 
@@ -27,27 +25,12 @@ public class RunningState implements GameState {
   @Override
   public void handleInput(final KeyEvent event, final GamePanel gamePanel) {
     final Direction currentDirection = gamePanel.getMoveStrategy().getDirection();
-    switch (event.getKeyCode()) {
-      case KeyEvent.VK_LEFT:
-        if (currentDirection != Direction.RIGHT) {
-          gamePanel.setMoveStrategy(new MoveLeftStrategy());
-        }
-        break;
-      case KeyEvent.VK_RIGHT:
-        if (currentDirection != Direction.LEFT) {
-          gamePanel.setMoveStrategy(new MoveRightStrategy());
-        }
-        break;
-      case KeyEvent.VK_UP:
-        if (currentDirection != Direction.DOWN) {
-          gamePanel.setMoveStrategy(new MoveUpStrategy());
-        }
-        break;
-      case KeyEvent.VK_DOWN:
-        if (currentDirection != Direction.UP) {
-          gamePanel.setMoveStrategy(new MoveDownStrategy());
-        }
-        break;
+
+    final MoveStrategy newStrategy =
+        MoveStrategyFactory.createMoveStrategy(currentDirection, event.getKeyCode());
+
+    if (newStrategy != null) {
+      gamePanel.setMoveStrategy(newStrategy);
     }
   }
 }

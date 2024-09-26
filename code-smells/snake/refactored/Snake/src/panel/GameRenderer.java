@@ -4,24 +4,14 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
-public class GameRenderer {
-  private final GamePanel panel;
+public class GameRenderer extends BaseRenderer {
 
   public GameRenderer(final GamePanel panel) {
-    this.panel = panel;
+    super(panel);
   }
 
-  public void draw(final Graphics graphics) {
-    if (panel.isRunning()) {
-      drawGrid(graphics);
-      drawApple(graphics);
-      drawSnake(graphics);
-    } else {
-      gameOver(graphics);
-    }
-  }
-
-  private void drawGrid(final Graphics graphics) {
+  @Override
+  public void drawGrid(final Graphics graphics) {
     for (int i = 0; i < GamePanel.SCREEN_HEIGHT / GamePanel.UNIT_SIZE; i++) {
       graphics.drawLine(
           i * GamePanel.UNIT_SIZE, 0, i * GamePanel.UNIT_SIZE, GamePanel.SCREEN_HEIGHT);
@@ -30,27 +20,29 @@ public class GameRenderer {
     }
   }
 
-  private void drawApple(final Graphics graphics) {
+  @Override
+  public void drawApple(final Graphics graphics) {
     graphics.setColor(Color.RED);
     graphics.fillOval(
         panel.getAppleX(), panel.getAppleY(), GamePanel.UNIT_SIZE, GamePanel.UNIT_SIZE);
   }
 
-  private void drawSnake(final Graphics graphics) {
+  @Override
+  public void drawSnake(final Graphics graphics) {
     for (int i = 0; i < panel.getBodyParts(); i++) {
       if (i == 0) {
-        graphics.setColor(Color.GREEN);
+        graphics.setColor(Color.GREEN); // Head of the snake
       } else {
-        graphics.setColor(GamePanel.SNAKE_BODY_COLOR);
+        graphics.setColor(GamePanel.SNAKE_BODY_COLOR); // Body of the snake
       }
       graphics.fillRect(
           panel.getHorizontal(i), panel.getVertical(i), GamePanel.UNIT_SIZE, GamePanel.UNIT_SIZE);
     }
   }
 
+  @Override
   public void gameOver(final Graphics graphics) {
     graphics.setColor(Color.RED);
-
     drawStringWithFont(graphics, "Game Over", new Font("Times New Roman", Font.BOLD, 75), 150, 300);
     drawStringWithFont(
         graphics,
