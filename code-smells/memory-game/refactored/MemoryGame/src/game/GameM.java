@@ -3,20 +3,15 @@ package game;
 import button.Button;
 import button.ButtonBuilder;
 import command.Command;
-import command.EasyCommand;
-import command.ExitCommand;
-import command.GoBackCommand;
-import command.HardCommand;
-import command.InstructionsCommand;
-import command.StartCommand;
+import factory.ButtonFactory;
+import factory.CommandFactory;
+import factory.GameStrategyFactory;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Random;
-import strategy.EasyGameStrategy;
 import strategy.GameStrategy;
-import strategy.HardGameStrategy;
 import view.GameView;
 
 public class GameM implements ActionListener {
@@ -63,41 +58,26 @@ public class GameM implements ActionListener {
   }
 
   public void initializeCommands() {
-    buttonCommands.put(view.getStartButton(), new StartCommand(this));
-    buttonCommands.put(view.getExitButton(), new ExitCommand());
+    buttonCommands.put(view.getStartButton(), CommandFactory.createCommand("start", this, view));
+    buttonCommands.put(view.getExitButton(), CommandFactory.createCommand("exit", this, view));
     buttonCommands.put(
-        view.getInstructionsButton(),
-        new InstructionsCommand(
-            this, view, view.getGoBackButton(), view.getInstructScreen(), view.getStartScreen()));
-    buttonCommands.put(view.getGoBackButton(), new GoBackCommand(view, this));
-    buttonCommands.put(
-        view.getEasyButton(), new EasyCommand(this, view.getEasyButton(), view.getHardButton()));
-    buttonCommands.put(
-        view.getHardButton(), new HardCommand(this, view.getEasyButton(), view.getHardButton()));
+        view.getInstructionsButton(), CommandFactory.createCommand("instructions", this, view));
+    buttonCommands.put(view.getGoBackButton(), CommandFactory.createCommand("goback", this, view));
+    buttonCommands.put(view.getEasyButton(), CommandFactory.createCommand("easy", this, view));
+    buttonCommands.put(view.getHardButton(), CommandFactory.createCommand("hard", this, view));
   }
 
   public void setUpGame(final int gameLevel, final Boolean easy) {
     level = gameLevel;
     view.clearMain();
-
     board = new String[2 * gameLevel];
+
     for (int i = 0; i < (gameLevel * 2); i++) {
-      btn[i] =
-          builder
-              .setName("")
-              .setBackgroundColor(new Color(220, 220, 220))
-              .setActionListener(this)
-              .setEnabled(true)
-              .build();
+      btn[i] = ButtonFactory.createButton("", new Color(220, 220, 220), this);
       view.addButton(btn[i]);
     }
 
-    if (easy) {
-      setStrategy(new EasyGameStrategy());
-    } else {
-      setStrategy(new HardGameStrategy());
-    }
-
+    strategy = GameStrategyFactory.createStrategy(easy);
     if (strategy != null) {
       strategy.configureBoard(this, level);
     }

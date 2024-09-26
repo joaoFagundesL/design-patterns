@@ -1,7 +1,7 @@
 package view;
 
 import button.Button;
-import button.ButtonBuilder;
+import factory.ButtonFactory;
 import game.GameM;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -45,8 +45,6 @@ public class GameView {
   private Button redo;
   private Button goBack;
 
-  ButtonBuilder builder = new ButtonBuilder();
-
   public GameView(final GameM game) {
     this.game = game;
     initializeUI();
@@ -64,39 +62,33 @@ public class GameView {
     menu3.setLayout(new FlowLayout(FlowLayout.CENTER));
     mini.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-    start = createButton("Start");
-    over = createButton("Exit");
-    easy = createButton("Easy");
-    hard = createButton("Hard");
-    inst = createButton("Instructions");
-    redo = createButton("Play Again");
-    goBack = createButton("Main Menu");
+    start = ButtonFactory.createDefaultButton("Start", game);
+    over = ButtonFactory.createDefaultButton("Exit", game);
+    easy = ButtonFactory.createDefaultButton("Easy", game);
+    hard = ButtonFactory.createDefaultButton("Hard", game);
+    inst = ButtonFactory.createDefaultButton("Instructions", game);
+    redo = ButtonFactory.createDefaultButton("Play Again", game);
+    goBack = ButtonFactory.createDisabledButton("Main Menu", game);
 
-    start.setEnabled(true);
-    menu2.add(start);
-    over.setEnabled(true);
-    menu2.add(over);
-    easy.setEnabled(true);
-    hard.setEnabled(true);
-    inst.setEnabled(true);
-
-    startScreen.add(menu, BorderLayout.NORTH);
-    startScreen.add(menu3, BorderLayout.CENTER);
-    startScreen.add(menu2, BorderLayout.SOUTH);
-    menu3.add(mini, BorderLayout.CENTER);
-    menu.add(label);
-    menu.add(text);
-    mini.add(easy, BorderLayout.NORTH);
-    mini.add(hard, BorderLayout.NORTH);
-    mini.add(inst, BorderLayout.SOUTH);
+    setupLayout();
 
     frame.add(startScreen, BorderLayout.CENTER);
     frame.setVisible(true);
   }
 
-  public Button createButton(final String name) {
-    final Button button = builder.setName(name).setActionListener(game).build();
-    return button;
+  private void setupLayout() {
+    menu.add(label);
+    menu.add(text);
+    mini.add(easy);
+    mini.add(hard);
+    mini.add(inst);
+    menu2.add(start);
+    menu2.add(over);
+
+    startScreen.add(menu, BorderLayout.NORTH);
+    startScreen.add(menu3, BorderLayout.CENTER);
+    startScreen.add(menu2, BorderLayout.SOUTH);
+    menu3.add(mini, BorderLayout.CENTER);
   }
 
   public void addButton(final Button button) {
