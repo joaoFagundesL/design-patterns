@@ -16,13 +16,15 @@ import javax.swing.JTextField;
 public class GameView {
   private final GameM game;
 
-  public JFrame frame = new JFrame("Memory Game");
+  private JFrame frame = new JFrame("Memory Game");
+
   private final JPanel field = new JPanel();
-  private final JPanel startScreen = new JPanel();
-  private final JPanel menu = new JPanel();
-  private final JPanel menu2 = new JPanel();
-  private final JPanel menu3 = new JPanel();
-  private final JPanel mini = new JPanel();
+  private final JPanel startScreen = new JPanel(new BorderLayout());
+  private final JPanel menu = new JPanel(new FlowLayout(FlowLayout.CENTER));
+  private final JPanel menu2 = new JPanel(new FlowLayout(FlowLayout.CENTER));
+  private final JPanel menu3 = new JPanel(new FlowLayout(FlowLayout.CENTER));
+  private final JPanel mini = new JPanel(new FlowLayout(FlowLayout.CENTER));
+
   private final JLabel label = new JLabel("Enter level from 1 to 10");
   private final JTextField text = new JTextField(10);
   private final JTextArea instructM =
@@ -37,6 +39,7 @@ public class GameView {
               + " GOOD LUCK! \n"
               + "for a single level: enter a level between 1 and 10,\n"
               + "select easy or hard, then press start.");
+
   private Button start;
   private Button over;
   private Button easy;
@@ -47,21 +50,11 @@ public class GameView {
 
   public GameView(final GameM game) {
     this.game = game;
+    initializeButtons();
     initializeUI();
   }
 
-  private void initializeUI() {
-    frame.setSize(500, 300);
-    frame.setLocation(500, 300);
-    frame.setLayout(new BorderLayout());
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-    startScreen.setLayout(new BorderLayout());
-    menu.setLayout(new FlowLayout(FlowLayout.CENTER));
-    menu2.setLayout(new FlowLayout(FlowLayout.CENTER));
-    menu3.setLayout(new FlowLayout(FlowLayout.CENTER));
-    mini.setLayout(new FlowLayout(FlowLayout.CENTER));
-
+  private void initializeButtons() {
     start = ButtonFactory.createDefaultButton("Start", game);
     over = ButtonFactory.createDefaultButton("Exit", game);
     easy = ButtonFactory.createDefaultButton("Easy", game);
@@ -69,6 +62,12 @@ public class GameView {
     inst = ButtonFactory.createDefaultButton("Instructions", game);
     redo = ButtonFactory.createDefaultButton("Play Again", game);
     goBack = ButtonFactory.createDisabledButton("Main Menu", game);
+  }
+
+  public void initializeUI() {
+    frame.setSize(500, 300);
+    frame.setLocation(500, 300);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     setupLayout();
 
@@ -99,27 +98,23 @@ public class GameView {
     startScreen.remove(menu);
     startScreen.remove(menu2);
     startScreen.remove(menu3);
-
     startScreen.revalidate();
     startScreen.repaint();
   }
 
   public void showEndScreen(final int score) {
     startScreen.remove(field);
-    startScreen.add(new JPanel(), BorderLayout.CENTER);
-    startScreen.add(new JTextField("You Win"), BorderLayout.NORTH);
-    startScreen.add(new JTextField("Score: " + score), BorderLayout.SOUTH);
-    startScreen.add(goBack);
+    startScreen.add(new JLabel("You Win"), BorderLayout.NORTH);
+    startScreen.add(new JLabel("Score: " + score), BorderLayout.CENTER);
+    startScreen.add(goBack, BorderLayout.SOUTH);
     goBack.setEnabled(true);
     goBack.addActionListener(game);
   }
 
   public void createBoard() {
-    field.setLayout(new BorderLayout());
-    startScreen.add(field, BorderLayout.CENTER);
-
     field.setLayout(new GridLayout(5, 4, 2, 2));
     field.setBackground(Color.black);
+    startScreen.add(field, BorderLayout.CENTER);
     field.requestFocus();
   }
 
@@ -169,5 +164,9 @@ public class GameView {
 
   public String getLevelText() {
     return text.getText();
+  }
+
+  public JFrame getFrame() {
+    return frame;
   }
 }

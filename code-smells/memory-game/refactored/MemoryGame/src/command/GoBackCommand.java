@@ -14,7 +14,7 @@ public class GoBackCommand implements Command {
 
   @Override
   public void execute() {
-    view.frame.dispose();
+    view.getFrame().dispose();
     game.goToMainScreen();
   }
 }

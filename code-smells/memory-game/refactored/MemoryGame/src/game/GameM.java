@@ -5,6 +5,7 @@ import button.ButtonBuilder;
 import command.Command;
 import factory.ButtonFactory;
 import factory.CommandFactory;
+import factory.CommandType;
 import factory.GameStrategyFactory;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -15,7 +16,15 @@ import strategy.GameStrategy;
 import view.GameView;
 
 public class GameM implements ActionListener {
-  private final GameView view;
+  private GameView view = null;
+  private static GameM instance;
+
+  public static GameM getInstance() {
+    if (instance == null) {
+      instance = new GameM();
+    }
+    return instance;
+  }
 
   private final ButtonBuilder builder = new ButtonBuilder();
   private final HashMap<Button, Command> buttonCommands = new HashMap<>();
@@ -37,7 +46,9 @@ public class GameM implements ActionListener {
   private final Random randomGenerator = new Random();
 
   public GameM() {
-    view = new GameView(this);
+    if (view == null) {
+      view = new GameView(this);
+    }
     initializeCommands();
   }
 
@@ -58,13 +69,19 @@ public class GameM implements ActionListener {
   }
 
   public void initializeCommands() {
-    buttonCommands.put(view.getStartButton(), CommandFactory.createCommand("start", this, view));
-    buttonCommands.put(view.getExitButton(), CommandFactory.createCommand("exit", this, view));
     buttonCommands.put(
-        view.getInstructionsButton(), CommandFactory.createCommand("instructions", this, view));
-    buttonCommands.put(view.getGoBackButton(), CommandFactory.createCommand("goback", this, view));
-    buttonCommands.put(view.getEasyButton(), CommandFactory.createCommand("easy", this, view));
-    buttonCommands.put(view.getHardButton(), CommandFactory.createCommand("hard", this, view));
+        view.getStartButton(), CommandFactory.createCommand(CommandType.START, this, view));
+    buttonCommands.put(
+        view.getExitButton(), CommandFactory.createCommand(CommandType.EXIT, this, view));
+    buttonCommands.put(
+        view.getInstructionsButton(),
+        CommandFactory.createCommand(CommandType.INSTRUCTIONS, this, view));
+    buttonCommands.put(
+        view.getGoBackButton(), CommandFactory.createCommand(CommandType.GOBACK, this, view));
+    buttonCommands.put(
+        view.getEasyButton(), CommandFactory.createCommand(CommandType.EASY, this, view));
+    buttonCommands.put(
+        view.getHardButton(), CommandFactory.createCommand(CommandType.HARD, this, view));
   }
 
   public void setUpGame(final int gameLevel, final Boolean easy) {
@@ -150,7 +167,11 @@ public class GameM implements ActionListener {
   }
 
   public void goToMainScreen() {
-    new GameM();
+    if (view.getFrame() != null) {
+      view.getFrame().dispose();
+    }
+    instance = null;
+    GameM.getInstance();
   }
 
   public void createBoard() {
@@ -218,6 +239,6 @@ public class GameM implements ActionListener {
   }
 
   public static void main(final String[] args) {
-    new GameM();
+    GameM.getInstance();
   }
 }

@@ -11,20 +11,21 @@ import game.GameM;
 import view.GameView;
 
 public class CommandFactory {
-  public static Command createCommand(final String type, final GameM game, final GameView view) {
+  public static Command createCommand(
+      final CommandType type, final GameM game, final GameView view) {
     switch (type) {
-      case "start":
+      case START:
         return new StartCommand(game);
-      case "exit":
+      case EXIT:
         return new ExitCommand();
-      case "instructions":
+      case INSTRUCTIONS:
         return new InstructionsCommand(
             game, view, view.getGoBackButton(), view.getInstructScreen(), view.getStartScreen());
-      case "goback":
+      case GOBACK:
         return new GoBackCommand(view, game);
-      case "easy":
+      case EASY:
         return new EasyCommand(game, view.getEasyButton(), view.getHardButton());
-      case "hard":
+      case HARD:
         return new HardCommand(game, view.getEasyButton(), view.getHardButton());
       default:
         throw new IllegalArgumentException("Unknown command type: " + type);
