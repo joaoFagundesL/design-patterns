@@ -1,7 +1,7 @@
 package src;
 
 import button.Button;
-import button.ButtonBuilder;
+import button.ButtonFactory; // Import the factory
 import command.Command;
 import command.ExitCommand;
 import command.MoveDownCommand;
@@ -12,13 +12,8 @@ import command.RestartCommand;
 import command.StartCommand;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -28,8 +23,9 @@ public class PacMinah extends JFrame implements ActionListener {
   private Button btnStart, btnExit, btnRestart;
   private Button btnLeft, btnRight, btnUp, btnDown;
   private final GamePanel gamePanel;
-  private final Map<JButton, Command> commandMap;
-  private final ButtonBuilder builder;
+  private final Map<Button, Command> commandMap;
+  private final ButtonFactory buttonFactory;
+  private final SoundManager soundManager;
 
   public PacMinah() {
     super();
@@ -38,21 +34,23 @@ public class PacMinah extends JFrame implements ActionListener {
     setSize(SWIDTH, SHEIGHT);
     setLayout(null);
     gamePanel = new GamePanel();
-    builder = new ButtonBuilder();
     commandMap = new HashMap<>();
+    soundManager = new SoundManager(); // Initialize SoundManager
+    buttonFactory = new ButtonFactory(); // Initialize ButtonFactory
   }
 
   public void init() {
     gamePanel.setBounds(25, 25, 600, 630);
     add(gamePanel);
 
-    btnStart = createButton(btnStart, 650, 150, 100, 25, "START", this);
-    btnRestart = createButton(btnRestart, 762, 150, 100, 25, "RESTART", this);
-    btnLeft = createButton(btnLeft, 650, 250, 100, 25, "LEFT", this);
-    btnRight = createButton(btnRight, 750, 250, 100, 25, "RIGHT", this);
-    btnUp = createButton(btnUp, 700, 225, 100, 25, "UP", this);
-    btnDown = createButton(btnDown, 700, 275, 100, 25, "DOWN", this);
-    btnExit = createButton(btnExit, 650, 350, 200, 25, "EXIT", this);
+    btnStart = buttonFactory.createButton(650, 150, 100, 25, "START", this);
+    btnRestart = buttonFactory.createButton(762, 150, 100, 25, "RESTART", this);
+    btnLeft = buttonFactory.createButton(650, 250, 100, 25, "LEFT", this);
+    btnRight = buttonFactory.createButton(750, 250, 100, 25, "RIGHT", this);
+    btnUp = buttonFactory.createButton(700, 225, 100, 25, "UP", this);
+    btnDown = buttonFactory.createButton(700, 275, 100, 25, "DOWN", this);
+    btnExit = buttonFactory.createButton(650, 350, 200, 25, "EXIT", this);
+
     add(btnStart);
     add(btnRestart);
     add(btnLeft);
@@ -74,33 +72,7 @@ public class PacMinah extends JFrame implements ActionListener {
     commandMap.put(btnExit, new ExitCommand());
 
     setVisible(true);
-    final File soundFile = new File("src/alister.wav").getAbsoluteFile();
-    try {
-      final AudioInputStream ais = AudioSystem.getAudioInputStream(soundFile);
-      final Clip myClip = AudioSystem.getClip();
-      myClip.open(ais);
-      myClip.start();
-    } catch (final Exception exception) {
-      System.out.println(exception);
-    }
-  }
-
-  public Button createButton(
-      Button btn,
-      final int horizontal,
-      final int vertical,
-      final int width,
-      final int height,
-      final String name,
-      final ActionListener actionListener) {
-    btn =
-        builder
-            .withPosition(horizontal, vertical)
-            .withLetter(name)
-            .withSize(width, height)
-            .setActionListener(actionListener)
-            .build();
-    return btn;
+    soundManager.playSound("alister.wav");
   }
 
   @Override
